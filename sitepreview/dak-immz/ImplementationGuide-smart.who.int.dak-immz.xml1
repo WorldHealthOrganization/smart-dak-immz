@@ -14,7 +14,7 @@
   <name value="DakImmz"/>
   <title value="SMART DAK IMMZ"/>
   <status value="active"/>
-  <date value="2025-03-06T09:39:15+00:00"/>
+  <date value="2025-03-06T10:16:38+00:00"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>
@@ -25,7 +25,7 @@
   </contact>
   <description value="SMART DAK for Immunizations"/>
   <packageId value="smart.who.int.dak-immz"/>
-  <license value="CC0-1.0"/>
+  <license value="CC-BY-SA-3.0-IGO"/>
   <fhirVersion value="4.0.1"/>
   <dependsOn id="hl7tx">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
