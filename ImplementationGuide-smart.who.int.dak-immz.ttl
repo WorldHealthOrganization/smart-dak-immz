@@ -1,0 +1,3983 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://smart.who.int/dak-immz/ImplementationGuide/smart.who.int.dak-immz> a fhir:ImplementationGuide ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "smart.who.int.dak-immz"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://smart.who.int/base/StructureDefinition/SGImplementationGuide"^^xsd:anyURI ;
+       fhir:link <http://smart.who.int/base/StructureDefinition/SGImplementationGuide>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide smart.who.int.dak-immz</b></p><a name=\"smart.who.int.dak-immz\"> </a><a name=\"hcsmart.who.int.dak-immz\"> </a><a name=\"smart.who.int.dak-immz-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://smart.who.int/base/0.1.0/StructureDefinition-SGImplementationGuide.html\">SMART Guidelines ImplementationGuide</a></p></div><h2>DakImmz</h2><p>The official URL for this implementation guide is: </p><pre>http://smart.who.int/dak-immz/ImplementationGuide/smart.who.int.dak-immz</pre><div><p>SMART DAK for Immunizations</p>\n</div></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://smart.who.int/dak-immz/ImplementationGuide/smart.who.int.dak-immz"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.1"] ; # 
+  fhir:name [ fhir:v "DakImmz"] ; # 
+  fhir:title [ fhir:v "SMART DAK IMMZ"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2025-03-13T13:11:43+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "WHO"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "WHO" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://who.int" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "SMART DAK for Immunizations"] ; # 
+  fhir:packageId [ fhir:v "smart.who.int.dak-immz"] ; # 
+  fhir:license [ fhir:v "CC0-1.0"] ; # 
+  fhir:fhirVersion ( [ fhir:v "4.0.1"] ) ; # 
+  fhir:dependsOn ( [
+     fhir:id [ fhir:v "hl7tx" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:markdown ;
+         fhir:v "Automatically added as a dependency - all IGs depend on HL7 Terminology"
+       ]
+     ] ) ;
+     fhir:uri [
+       fhir:v "http://terminology.hl7.org/ImplementationGuide/hl7.terminology"^^xsd:anyURI ;
+       fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
+     fhir:version [ fhir:v "6.2.0" ]
+  ] [
+     fhir:id [ fhir:v "hl7ext" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:markdown ;
+         fhir:v "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"
+       ]
+     ] ) ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r4" ] ;
+     fhir:version [ fhir:v "5.2.0" ]
+  ] [
+     fhir:id [ fhir:v "smart_who_int_base" ] ;
+     fhir:uri [
+       fhir:v "http://smart.who.int/base/ImplementationGuide/smart.who.int.base"^^xsd:anyURI ;
+       fhir:link <http://smart.who.int/base/ImplementationGuide/smart.who.int.base>
+     ] ;
+     fhir:packageId [ fhir:v "smart.who.int.base" ] ;
+     fhir:version [ fhir:v "0.1.0" ]
+  ] ) ; # 
+  fhir:definition [
+     fhir:extension ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "copyrightyear"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "2023+"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "releaselabel"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ci-build"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "autoload-resources"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "path-liquid"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "template/liquid"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "path-liquid"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "input/liquid"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "path-qa"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "temp/qa"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "path-temp"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "temp/pages"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "path-output"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "output"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "path-suppressed-warnings"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "input/ignoreWarnings.txt"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "path-history"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "http://smart.who.int/dak-immz/history.html"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "template-html"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "template-page.html"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "template-md"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "template-page-md.html"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "apply-contact"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "apply-context"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "apply-copyright"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "apply-jurisdiction"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "apply-license"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "apply-publisher"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "apply-version"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "apply-wg"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "active-tables"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "fmm-definition"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "http://hl7.org/fhir/versions.html#maturity"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "propagate-status"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "excludelogbinaryformat"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "tabbed-snapshots"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:code ;
+         fhir:v "hl7.fhir.uv.tools.r4#0.3.0"
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "copyrightyear"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "2023+"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "releaselabel"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ci-build"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "autoload-resources"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "path-liquid"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "template/liquid"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "path-liquid"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "input/liquid"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "path-qa"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "temp/qa"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "path-temp"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "temp/pages"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "path-output"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "output"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "path-suppressed-warnings"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "input/ignoreWarnings.txt"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "path-history"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "http://smart.who.int/dak-immz/history.html"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "template-html"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "template-page.html"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "template-md"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "template-page-md.html"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "apply-contact"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "apply-context"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "apply-copyright"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "apply-jurisdiction"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "apply-license"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "apply-publisher"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "apply-version"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "apply-wg"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "active-tables"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "fmm-definition"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "http://hl7.org/fhir/versions.html#maturity"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "propagate-status"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "excludelogbinaryformat"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:code ;
+           fhir:v "tabbed-snapshots"
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "true"
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] ) ;
+     fhir:resource ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ034> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ034" ]
+       ] ;
+       fhir:name [ fhir:v "Assemble all needed materials for immunization session" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>The system to provide a immunization session materials checklist, which is a list of materials I would need for immunization session\n\nso that\n\n>I can make sure I have the materials I need for immunization session" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ061> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ061" ]
+       ] ;
+       fhir:name [ fhir:v "Capture or update client history" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>The system to provide a history of previous care (including previous vaccination records)\n\nso that\n\n>I have access and review client's history" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ062> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ062" ]
+       ] ;
+       fhir:name [ fhir:v "Capture or update client history" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>To add client's health history (including previous vaccination records)\n\nso that\n\n>I can appropriately determine which vaccinations are required" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ068> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ068" ]
+       ] ;
+       fhir:name [ fhir:v "Check stock availability of recommended vaccines" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>The system to display stock availability of recommended vaccines\n\nso that\n\n>I can check if the vaccines are available" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ069> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ069" ]
+       ] ;
+       fhir:name [ fhir:v "Check stock availability of recommended vaccines" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>The system to warn if required vaccine is not in stock\n\nso that\n\n>I can alert the client if the vaccine is not available" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ070> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ070" ]
+       ] ;
+       fhir:name [ fhir:v "Check stock availability of recommended vaccines" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>The system to display the expiry date of stock to ensure expired vaccines are not administered\n\nso that\n\n>I give safe and effective doses only" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ049> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ049" ]
+       ] ;
+       fhir:name [ fhir:v "Create client record" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>The system to enforce a minimal required data set for new registrations\n\nso that\n\n>Sufficient data is entered to be able to identify the client" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ052> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ052" ]
+       ] ;
+       fhir:name [ fhir:v "Create client record" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>The system to uniquely identify every client using a system generated unique identifier or an existing identifier (e.g. health care, national ID, health unique ID)\n\nso that\n\n>The client can be definitively identified using that number" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ053> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ053" ]
+       ] ;
+       fhir:name [ fhir:v "Create client record" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>The system to generate a unique identifier\n\nso that\n\n>The client can be uniquely identified for vaccination activities across systems using the same ID" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ054> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ054" ]
+       ] ;
+       fhir:name [ fhir:v "Create client record" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>Validate a unique identifier when system is offline\n\nso that\n\n>Entry errors are prevented" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ008> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ008" ]
+       ] ;
+       fhir:name [ fhir:v "Create/update vaccination location record" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-EIRstaff.html\">EIR staff</a>, I want:\n>The system to be able to update vaccination location information\n\nso that\n\n>We have a complete vaccination location record" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ142> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ142" ]
+       ] ;
+       fhir:name [ fhir:v "Define parameters for report" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>To be able to configure report parameters when creating new reports (period of time, inactive versus active clients, client's age, vaccine type, vaccine manufacturer, etc.)\n\nso that\n\n>Appropriate reports can be generated" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ143> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ143" ]
+       ] ;
+       fhir:name [ fhir:v "Define parameters for report" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>To be able to select report parameters when creating vaccination coverage reports (i.e. by vaccine, by dose, by age, by area, by condition, by vaccine manufacturer, etc)\n\nso that\n\n>Appropriate vaccination coverage reports can be generated" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ144> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ144" ]
+       ] ;
+       fhir:name [ fhir:v "Define parameters for report" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>To be able to customize report parameters for error monitoring reports\n\nso that\n\n>I can generate reports specific to my needs and the nature of potential programmatic errors I want to monitor" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ145> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ145" ]
+       ] ;
+       fhir:name [ fhir:v "Define parameters for report" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>To be able to select what information a report shows (i.e. display options, summary versus detail report, sort options)\n\nso that\n\n>The report presentation can be customised" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ146> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ146" ]
+       ] ;
+       fhir:name [ fhir:v "Define parameters for report" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>To be able to schedule routine reports (specific date/time, daily, weekly, etc.)\n\nso that\n\n>The reports can be generated automatically and are available at the right time" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ084> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ084" ]
+       ] ;
+       fhir:name [ fhir:v "Define/evaluate criteria" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>To select reminder parameters. May include but not limited to, age range, vaccine type(s), vaccine schedules, geographic area, number of days overdue, number of reminders, etc.\n\nso that\n\n>Reminders can be optimized" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ085> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ085" ]
+       ] ;
+       fhir:name [ fhir:v "Define/evaluate criteria" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>To associate a client with a vaccination location to generate a provider-based reminder/recall\n\nso that\n\n>Vaccination location specific lists of clients can be generated" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ086> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ086" ]
+       ] ;
+       fhir:name [ fhir:v "Define/evaluate criteria" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>To validate data against the vaccine schedule (Note: Can use the vaccine schedule to best schedule reminders/recall for series vaccinations)\n\nso that\n\n>The generated list adheres to guidelines" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ097> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ097" ]
+       ] ;
+       fhir:name [ fhir:v "Determine if vaccines were missed" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>The system to flag a client as a defaulter after a configured number of reminders are sent\n\nso that\n\n>We can identify those who have not come and are overdue, requiring additional intervention" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ098> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ098" ]
+       ] ;
+       fhir:name [ fhir:v "Determine if vaccines were missed" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>To specify thresholds for a client to qualify as requiring follow-up, based on the national immunization guidelines\n\nso that\n\n>Follow up is only done at the appropriate time" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ063> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ063" ]
+       ] ;
+       fhir:name [ fhir:v "Determine required vaccination(s)" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>The system to display vaccines due according to predefined vaccine protocol\n\nso that\n\n>I can assess which vaccines need to be administered" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ064> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ064" ]
+       ] ;
+       fhir:name [ fhir:v "Determine required vaccination(s)" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>The system to determine vaccines due for a given client by considering relevant information, such as the age of the client, vaccine products, vaccines already given and predefined vaccine protocol\n\nso that\n\n>it helps me with selecting the appropriate vaccines for the client" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ065> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ065" ]
+       ] ;
+       fhir:name [ fhir:v "Determine required vaccination(s)" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>The system to ensure I have the most up-to-date vaccine protocols\n\nso that\n\n>It will recommend the correct schedule" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ080> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ080" ]
+       ] ;
+       fhir:name [ fhir:v "Determine time for next visit (as needed)" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>The system to display due date of the next vaccine\n\nso that\n\n>I can inform the client when to return for their next vaccination" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ066> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ066" ]
+       ] ;
+       fhir:name [ fhir:v "Determine vaccine(s) to be administered based on contraindications" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>To be alerted of any relevant potential contraindications for the vaccine (e.g. based on age, previous allergic reactions, etc.)\n\nso that\n\n>I can withhold the vaccine, if contraindicated" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ067> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ067" ]
+       ] ;
+       fhir:name [ fhir:v "Determine vaccine(s) to be administered based on contraindications" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>To be able to quickly access information regarding any contraindications by antigen\n\nso that\n\n>I can access all information on contraindications in one place" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ071> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ071" ]
+       ] ;
+       fhir:name [ fhir:v "Dispose of waste" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>To update stock record\n\nso that\n\n>I know which stock adjustments have not been done automatically (such as in instances if something is wasted)" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ082> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ082" ]
+       ] ;
+       fhir:name [ fhir:v "Does client require a verifiable digital certificate?" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>To be prompted to ask client if they want a digital vaccination certificate where appropriate\n\nso that\n\n>The digital vaccination certificate can be generated" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ132> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ132" ]
+       ] ;
+       fhir:name [ fhir:v "Evaluate vaccine event records" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-EIRstaffORhealthworker.html\">EIR staff OR health worker</a>, I want:\n>To be able to manually initiate duplicates identification process\n\nso that\n\n>It can be done when the user is available to review" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ133> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ133" ]
+       ] ;
+       fhir:name [ fhir:v "Evaluate vaccine event records" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-EIRstaffORhealthworker.html\">EIR staff OR health worker</a>, I want:\n>To be able to manually flag duplicate vaccination events\n\nso that\n\n>I can report duplicates that the system was not able to identify" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ134> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ134" ]
+       ] ;
+       fhir:name [ fhir:v "Evaluate vaccine event records" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-EIRstaffORhealthworker.html\">EIR staff OR health worker</a>, I want:\n>The system to display a specific set of data related to the possible duplicated events (such as vaccine type, manufacturer, administration date, etc.) for manual review\n\nso that\n\n>I am able to perform the review" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ135> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ135" ]
+       ] ;
+       fhir:name [ fhir:v "Evaluate vaccine event records" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-EIRstaffORhealthworker.html\">EIR staff OR health worker</a>, I want:\n>To be able to view simultaneously potential duplicate records\n\nso that\n\n>I can easily compare the records and to determine if they are duplicates" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ136> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ136" ]
+       ] ;
+       fhir:name [ fhir:v "Evaluate vaccine event records" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-EIRstaffORhealthworker.html\">EIR staff OR health worker</a>, I want:\n>To be able to access the vaccination events while reviewing the duplicates\n\nso that\n\n>I can review other fields to aid in my decision-making" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ113> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ113" ]
+       ] ;
+       fhir:name [ fhir:v "Flag client records for evaluation" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-EIRstaff.html\">EIR staff</a>, I want:\n>The system to support a rules-based algorithm to evaluate duplicate records\n\nso that\n\n>Duplicates can be found by the system using pre-defined rules" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ114> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ114" ]
+       ] ;
+       fhir:name [ fhir:v "Flag client records for evaluation" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-EIRstaff.html\">EIR staff</a>, I want:\n>To be able to modify the business rules used for identifying duplicate client records\n\nso that\n\n>The de-duplication process is optimized" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ115> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ115" ]
+       ] ;
+       fhir:name [ fhir:v "Flag client records for evaluation" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-EIRstaff.html\">EIR staff</a>, I want:\n>The system to automatically flag client records as possible duplicates by marking them as pending for review\n\nso that\n\n>The health worker or EIR staff is informed and aware of pending review" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ089> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ089" ]
+       ] ;
+       fhir:name [ fhir:v "Generate list of clients" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>The system to track the number of reminders attempts (i.e. per client and total)\n\nso that\n\n>I can know if additional action may be required, or when to stop sending reminders" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ090> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ090" ]
+       ] ;
+       fhir:name [ fhir:v "Generate list of clients" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>The system to prevent all records given an inactive or deceased status from being included in the list of clients for reminder/recall\n\nso that\n\n>Notifications will not be inappropriately sent to clients" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ091> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ091" ]
+       ] ;
+       fhir:name [ fhir:v "Generate list of clients" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>to be able to generate a list of clients according to defined parameters\n\nso that\n\n>I have a list according to my needs" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ092> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ092" ]
+       ] ;
+       fhir:name [ fhir:v "Generate list of clients" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>To print the list of clients generated according to defined parameters\n\nso that\n\n>I can use it when I am offline" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ093> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ093" ]
+       ] ;
+       fhir:name [ fhir:v "Generate list of clients" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>The system to log each time a user prints a list of clients\n\nso that\n\n>Printing needs can be monitored" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ094> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ094" ]
+       ] ;
+       fhir:name [ fhir:v "Generate list of clients" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>The system to display the date the reminder/recall notice was sent to a client\n\nso that\n\n>I will know when it was sent and can follow-up accordingly" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ099> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ099" ]
+       ] ;
+       fhir:name [ fhir:v "Generate list of clients who are due or overdue for vaccination" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>To produce a list of clients who missed their vaccine for each antigen, along with their location and personal information\n\nso that\n\n>I can plan follow up activities and contact the clients" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ100> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ100" ]
+       ] ;
+       fhir:name [ fhir:v "Generate list of clients who are due or overdue for vaccination" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>To print a list of clients requiring follow-up\n\nso that\n\n>I will have an offline version" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ101> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ101" ]
+       ] ;
+       fhir:name [ fhir:v "Generate list of clients who are due or overdue for vaccination" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>To export a list of clients for follow-up\n\nso that\n\n>Information can be sent to another health worker or system as appropriate" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ147> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ147" ]
+       ] ;
+       fhir:name [ fhir:v "Generate report" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-EIRstaff.html\">EIR staff</a>, I want:\n>The system to produce and export reports in multiple formats (i.e. CSV, PDF) on demand\n\nso that\n\n>I can select the most appropriate format for my needs" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ148> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ148" ]
+       ] ;
+       fhir:name [ fhir:v "Generate report" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-EIRstaff.html\">EIR staff</a>, I want:\n>The system to be able to print reports on demand\n\nso that\n\n>I can have a paper version of the report" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ149> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ149" ]
+       ] ;
+       fhir:name [ fhir:v "Generate report" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-EIRstaff.html\">EIR staff</a>, I want:\n>The system to show me a preview of the report before printing\n\nso that\n\n>I can review before printing" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ150> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ150" ]
+       ] ;
+       fhir:name [ fhir:v "Generate report" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-EIRstaff.html\">EIR staff</a>, I want:\n>The system to log the actions performed on the reports\n\nso that\n\n>An audit can be performed when needed" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ151> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ151" ]
+       ] ;
+       fhir:name [ fhir:v "Generate report" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>The system to offer the posibility of sending the generated report by email\n\nso that\n\n>I do not have to manually do that" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ141> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ141" ]
+       ] ;
+       fhir:name [ fhir:v "Generate report of duplicate vaccine events" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-EIRstaff.html\">EIR staff</a>, I want:\n>The system to be able to generate a report of duplicate vaccine events including the resolutions\n\nso that\n\n>I can have a summary of the changes made" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ015> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ015" ]
+       ] ;
+       fhir:name [ fhir:v "Generate unique location identifier" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-EIRstaff.html\">EIR staff</a>, I want:\n>The system to generate a unique EIR identifier which may be linked to national ID or health ID\n\nso that\n\n>The vaccination location will have an unique identifier in the EIR system" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ083> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ083" ]
+       ] ;
+       fhir:name [ fhir:v "Generate verifiable digital certificate" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>The system to apply an authorised digital signature when necessary and appropriate\n\nso that\n\n>The identity of the issuing authority can be validated" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ030> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ030" ]
+       ] ;
+       fhir:name [ fhir:v "Get needed stock" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>The system to allow me to print the stock order(s) to be fulfilled\n\nso that\n\n>I can use this as my pick up list, even when I am offline" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ127> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ127" ]
+       ] ;
+       fhir:name [ fhir:v "Identify groups of vaccination events for evaluation" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-EIRstaff.html\">EIR staff</a>, I want:\n>The system to support a rules-based algorithm to evaluate duplicate events\n\nso that\n\n>Duplicates can be found by the system using pre-defined rules" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ128> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ128" ]
+       ] ;
+       fhir:name [ fhir:v "Identify groups of vaccination events for evaluation" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-EIRstaff.html\">EIR staff</a>, I want:\n>The system to automatically flag event records as possible duplicates by marking them as pending for review\n\nso that\n\n>The health worker or EIR staff is informed and aware of pending review" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ129> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ129" ]
+       ] ;
+       fhir:name [ fhir:v "Identify groups of vaccination events for evaluation" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-EIRstaff.html\">EIR staff</a>, I want:\n>to be able to modify the business rules used for identifying vaccination events duplicates\n\nso that\n\n>The de-duplication process can be optimized" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ130> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ130" ]
+       ] ;
+       fhir:name [ fhir:v "Identify groups of vaccination events for evaluation" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-EIRstaff.html\">EIR staff</a>, I want:\n>The system to prompt the user that a new vaccination event might already exist\n\nso that\n\n>The user can decide if it is a duplicate and if so not save it" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ131> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ131" ]
+       ] ;
+       fhir:name [ fhir:v "Identify groups of vaccination events for evaluation" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-EIRstaff.html\">EIR staff</a>, I want:\n>The system to generate automatically a list of possible duplicated vaccination events\n\nso that\n\n>The review process is optimized" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ125> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ125" ]
+       ] ;
+       fhir:name [ fhir:v "Mark as \"not a duplicate\" or \"pending\"" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-EIRstaffORhealthworker.html\">EIR staff OR health worker</a>, I want:\n>To be able to flag records as \\\"not a duplicate\\\"\n\nso that\n\n>It is not presented as a possible duplicates by the system" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ126> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ126" ]
+       ] ;
+       fhir:name [ fhir:v "Mark as \"not a duplicate\" or \"pending\"" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-EIRstaffORhealthworker.html\">EIR staff OR health worker</a>, I want:\n>To be able to enter comments for records marked as \\\"not a duplicate\\\"\n\nso that\n\n>I can add any additional information to let other users see why it was determined to not be a duplicate" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ121> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ121" ]
+       ] ;
+       fhir:name [ fhir:v "Merge records" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-EIRstaff.html\">EIR staff</a>, I want:\n>The system to be able to merge records confirmed to be duplicates\n\nso that\n\n>Duplicate records can be merged" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ122> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ122" ]
+       ] ;
+       fhir:name [ fhir:v "Merge records" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-EIRstaff.html\">EIR staff</a>, I want:\n>The system to support an audit trail when records are merged\n\nso that\n\n>Accountability can be maintained" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ123> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ123" ]
+       ] ;
+       fhir:name [ fhir:v "Merge records" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-EIRstaff.html\">EIR staff</a>, I want:\n>The system to be able to provide history of merged record for a given client\n\nso that\n\n>I can double check if the merge was done appropriately" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ124> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ124" ]
+       ] ;
+       fhir:name [ fhir:v "Merge records" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-EIRstaff.html\">EIR staff</a>, I want:\n>The system to be able to undo a merge\n\nso that\n\n>I can restore records merged incorrectly" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ078> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ078" ]
+       ] ;
+       fhir:name [ fhir:v "Monitor the client for any adverse reactions" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>To record any significant observations (such as reaction) that may be specific to that client\n\nso that\n\n>I can treat as appropriate" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ001> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ001" ]
+       ] ;
+       fhir:name [ fhir:v "Obtain vaccination location information" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-ElectronicimmunizationregistryEIRstaff.html\">Electronic immunization registry (EIR) staff</a>, I want:\n>The EIR system to be able to communicate with other systems (such as a national health management information system [HMIS] and Expanded Programme on Immunization [EPI]) to obtain vaccination locations information and other necessary information\n\nso that\n\n>I will know about new vaccination locations and be informed about any updated information" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ117> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ117" ]
+       ] ;
+       fhir:name [ fhir:v "Perform manual review" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-EIRstaffORhealthworker.html\">EIR staff OR health worker</a>, I want:\n>To be able to manually flag duplicate records\n\nso that\n\n>I can identify potential duplicates myself for resolution" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ118> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ118" ]
+       ] ;
+       fhir:name [ fhir:v "Perform manual review" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-EIRstaffORhealthworker.html\">EIR staff OR health worker</a>, I want:\n>To be able to view simultaneously potential duplicate records\n\nso that\n\n>I can easily compare the records and determine if they are duplicates" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ119> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ119" ]
+       ] ;
+       fhir:name [ fhir:v "Perform manual review" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-EIRstaffORhealthworker.html\">EIR staff OR health worker</a>, I want:\n>To be able to access the client records while reviewing the duplicates\n\nso that\n\n>I can review other fields, such as immunization history, to aid in my decision-making" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ120> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ120" ]
+       ] ;
+       fhir:name [ fhir:v "Perform manual review" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-EIRstaffORhealthworker.html\">EIR staff OR health worker</a>, I want:\n>To be able to decide what information to keep from the duplicates\n\nso that\n\n>I make sure the most appropriate information is kept in the consolidated record" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ104> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ104" ]
+       ] ;
+       fhir:name [ fhir:v "Plan for follow-up directly or during outreach" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>To display a list of clients due for specific planned outreach and immunization sessions, based on area\n\nso that\n\n>The immunization session or outreach will have a targeted list of clients, allowing for prioritization of tasks and workload" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ116> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ116" ]
+       ] ;
+       fhir:name [ fhir:v "Produce list of potential duplicate records" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-EIRstaff.html\">EIR staff</a>, I want:\n>The system to schedule batching of duplicate record process\n\nso that\n\n>They may be processed and assessed together when user is ready" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ106> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ106" ]
+       ] ;
+       fhir:name [ fhir:v "Provide feedback" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Communityhealthworker.html\">Community health worker</a>, I want:\n>To record in the system the results of the follow-up\n\nso that\n\n>The information is available in the system and is available for review" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ081> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ081" ]
+       ] ;
+       fhir:name [ fhir:v "Provide vaccination record" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>To be prompted for any data required to produce a digital vaccine certificate\n\nso that\n\n>The record will have all relevant data to produce a certificate" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ035> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ035" ]
+       ] ;
+       fhir:name [ fhir:v "Query client record" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>To search for a client using at least two identifying information\n\nso that\n\n>I improve my chances of finding a match and distinguishing between similar records" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ036> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ036" ]
+       ] ;
+       fhir:name [ fhir:v "Query client record" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>To search for the client record given some demographic information\n\nso that\n\n>I can find the client record if I do not have the unique ID" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ037> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ037" ]
+       ] ;
+       fhir:name [ fhir:v "Query client record" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>The system to return all potential matches based upon search criteria\n\nso that\n\n>I can find the best match" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ038> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ038" ]
+       ] ;
+       fhir:name [ fhir:v "Query client record" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>The search to match on partial information (such as partial birthdates)\n\nso that\n\n>I have a better chance of finding a match" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ039> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ039" ]
+       ] ;
+       fhir:name [ fhir:v "Query client record" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>The system to allow search parameters configuration: mandatory fields, when partial information is acceptable, etc.\n\nso that\n\n>A search can be optimized without compromising confidentiality" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ040> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ040" ]
+       ] ;
+       fhir:name [ fhir:v "Query client record" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>To search with wild cards (using a symbol to replace one or more characters)\n\nso that\n\n>I can find something without knowing the exact spelling" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ041> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ041" ]
+       ] ;
+       fhir:name [ fhir:v "Query client record" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>To find client records using barcodes that contain the client ID\n\nso that\n\n>I can quickly pull up the correct record" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ042> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ042" ]
+       ] ;
+       fhir:name [ fhir:v "Query client record" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>The ability for searches to include results that look or sound similar to the search term (phonetic search)\n\nso that\n\n>I can find something that may be spelt incorrectly" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ043> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ043" ]
+       ] ;
+       fhir:name [ fhir:v "Query client record" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>the system to identify any records that may have been imported from another system\n\nso that\n\n>I can verify the quality of imported data" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ044> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ044" ]
+       ] ;
+       fhir:name [ fhir:v "Query client record" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>The system to prompt a search for the client (check if it is already in the system) prior to starting a new record\n\nso that\n\n>Duplicates are prevented" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ045> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ045" ]
+       ] ;
+       fhir:name [ fhir:v "Query client record" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>The system to retrieve and display, as a search result, a specific set of data (demographic information/photo/unique ID, etc. )\n\nso that\n\n>I can select the correct record" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ046> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ046" ]
+       ] ;
+       fhir:name [ fhir:v "Query client record" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>The system to display the most probable matches at the top of the list\n\nso that\n\n>I can review them first" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ047> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ047" ]
+       ] ;
+       fhir:name [ fhir:v "Query client record" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>To be able to extend the search to external systems (such as a birth registry or a scheduling system)\n\nso that\n\n>Duplicates of client record are prevented" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ048> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ048" ]
+       ] ;
+       fhir:name [ fhir:v "Query client record" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>To enter additional search criteria if there are multiple possible matches\n\nso that\n\n>My list of matches is shorter and easier to review" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ021> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ021" ]
+       ] ;
+       fhir:name [ fhir:v "Record details on planning sheet" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>To print the list of necessary antigens and accessories (e.g. syringes, wipes) based on projected need\n\nso that\n\n>I can make sure I have an offline list of all the things I need for my immunization session" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ022> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ022" ]
+       ] ;
+       fhir:name [ fhir:v "Record details on planning sheet" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>To be able to check in the system the available stock at my vaccination location or at the local storage area/warehouse\n\nso that\n\n>I can determine the stock available for use" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ023> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ023" ]
+       ] ;
+       fhir:name [ fhir:v "Record details on planning sheet" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>The system to compare the list of needed antigens to the stock on hand and indicate if there is sufficient stock\n\nso that\n\n>I do not have to make these calculations myself" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ031> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ031" ]
+       ] ;
+       fhir:name [ fhir:v "Record stock taken" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>The system to allow barcode reading of stock taken\n\nso that\n\n>the system can be automatically and accurately updated" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ032> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ032" ]
+       ] ;
+       fhir:name [ fhir:v "Record stock taken" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>To record stock removed from cold storage and taken to immunization session\n\nso that\n\n>The count for the cold storage will be accurate, and the immunization session stock will be accounted for" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ033> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ033" ]
+       ] ;
+       fhir:name [ fhir:v "Record stock taken" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>The system to maintain a tally of stock available at each location (e.g. stock available in the cold fridge at vaccination location, stock that is out for immunization session)\n\nso that\n\n>I can see where all stock is physically located in real time" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ102> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ102" ]
+       ] ;
+       fhir:name [ fhir:v "Record the necessary information to follow-up" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>To assign a community health worker to a client\n\nso that\n\n>I can send client information to the correct community health worker" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ103> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ103" ]
+       ] ;
+       fhir:name [ fhir:v "Record the necessary information to follow-up" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>The system to group the defaulters by location and community health worker\n\nso that\n\n>I can send to the community health workers the appropriate list" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ013> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ013" ]
+       ] ;
+       fhir:name [ fhir:v "Request additional information" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-EIRstaff.html\">EIR staff</a>, I want:\n>The system to notify me of incomplete mandatory fields\n\nso that\n\n>I can ensure all necessary data is entered" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ014> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ014" ]
+       ] ;
+       fhir:name [ fhir:v "Request additional information" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-EIRstaff.html\">EIR staff</a>, I want:\n>The system to support the process of sending a request for information\n\nso that\n\n>I will not have to transcribe the request and send it manually" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ018> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ018" ]
+       ] ;
+       fhir:name [ fhir:v "Review past vaccination records to estimate vaccines needed" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>To identify, by checking the information in the system, all clients that are due (or overdue) for vaccination by the next immunization session date\n\nso that\n\n>I can plan my immunization session" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ019> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ019" ]
+       ] ;
+       fhir:name [ fhir:v "Review past vaccination records to estimate vaccines needed" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>To sort the list of needed vaccines by antigen\n\nso that\n\n>I know how much of each vaccine is needed" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ020> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ020" ]
+       ] ;
+       fhir:name [ fhir:v "Review past vaccination records to estimate vaccines needed" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>The system to provide range estimates for needed vaccines based on historical data (high and low ranges)\n\nso that\n\n>I can know how much vaccine has typically been used and adjust my specific list accordingly" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ087> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ087" ]
+       ] ;
+       fhir:name [ fhir:v "Select notification method" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>To select one or more notification methods (e.g. automated telephone calls [i.e. robocall], text message, letter, email, community health worker notification, home visits)\n\nso that\n\n>The most appropriate notification method will be used" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ088> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ088" ]
+       ] ;
+       fhir:name [ fhir:v "Select notification method" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>To set client's preferred contact method\n\nso that\n\n>Any notification will go through the client’s preferred method" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ137> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ137" ]
+       ] ;
+       fhir:name [ fhir:v "Select the most accurate/suitable event record" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-EIRstaffORhealthworker.html\">EIR staff OR health worker</a>, I want:\n>The system to automatically select the most accurate/suitable vaccination event to be used as the (primary or master) record\n\nso that\n\n>the manual review process is optimized" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ138> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ138" ]
+       ] ;
+       fhir:name [ fhir:v "Select the most accurate/suitable event record" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-EIRstaffORhealthworker.html\">EIR staff OR health worker</a>, I want:\n>To be able to merge manually duplicate records and decide what information to keep from the duplicates into a consolidated event record\n\nso that\n\n>I make sure the most accurate consolidated record is kept" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ105> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ105" ]
+       ] ;
+       fhir:name [ fhir:v "Send client information to community health worker" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>To send list of clients who missed immunization sessions by email or SMS to the community health worker\n\nso that\n\n>The community health worker will have a digital version" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ095> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ095" ]
+       ] ;
+       fhir:name [ fhir:v "Send notifications" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>The system to automatically send reminder notification to client or designated health worker (i.e. community health worker) based on the configured reminder parameters\n\nso that\n\n>they will be alerted of an upcoming or overdue appointment" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ096> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ096" ]
+       ] ;
+       fhir:name [ fhir:v "Send notifications" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>The notification to include specific details about upcoming immunization session dates and times or outreach dates and times as appropriate\n\nso that\n\n>The client will know specifically when and where to go to receive a vaccination" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ016> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ016" ]
+       ] ;
+       fhir:name [ fhir:v "Send vaccination location registration notification" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-EIRstaff.html\">EIR staff</a>, I want:\n>The system to send EIR registration notification with EIR identifer to other systems\n\nso that\n\n>Other systems will be informed of the new vaccination location" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ017> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ017" ]
+       ] ;
+       fhir:name [ fhir:v "Send vaccination location registration notification" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-EIRstaff.html\">EIR staff</a>, I want:\n>The system to include instructions on how to use EIR identifier\n\nso that\n\n>Other systems will know how to interact with the EIR" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ072> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ072" ]
+       ] ;
+       fhir:name [ fhir:v "Update client record" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>To document why a vaccine was not given\n\nso that\n\n>The client has a complete record" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ073> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ073" ]
+       ] ;
+       fhir:name [ fhir:v "Update client record" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>To update clients’ vaccination record with all relevant information (i.e. date, dose, batch number, lot number, vaccine type, vaccine vial monitor status)\n\nso that\n\n>The client has a complete record, and doses can be traced" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ074> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ074" ]
+       ] ;
+       fhir:name [ fhir:v "Update client record" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>The system to associate the context data for each entry (e.g. the vaccination location where the dose was given, the health worker administering it)\n\nso that\n\n>The client has a complete record and I can investigate if any issues arise" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ075> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ075" ]
+       ] ;
+       fhir:name [ fhir:v "Update client record" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>To record additional vaccinations, even those that are not included in the national vaccination schedule\n\nso that\n\n>The client has a complete record" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ076> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ076" ]
+       ] ;
+       fhir:name [ fhir:v "Update client record" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>The system to log updates of client information\n\nso that\n\n>Users are accountable for the data they modify" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ077> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ077" ]
+       ] ;
+       fhir:name [ fhir:v "Update client record" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>The system to request confirmation if data is modified\n\nso that\n\n>Accidental or erroneous changes will not be saved" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ107> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ107" ]
+       ] ;
+       fhir:name [ fhir:v "Update record to document reason/lost follow-up" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>To record reason vaccine was missed\n\nso that\n\n>This information can be used for planning and reporting purposes" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ108> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ108" ]
+       ] ;
+       fhir:name [ fhir:v "Update record to document reason/lost follow-up" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>To update client information such as including change of address (moved permanently or temporarily)\n\nso that\n\n>To facilitate the client being contacted or being removed from a immunization session’s list" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ109> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ109" ]
+       ] ;
+       fhir:name [ fhir:v "Update record to document reason/lost follow-up" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>To flag when there is a change of address and a new client has been added to another catchment area\n\nso that\n\n>The client will appear on the correct list for follow up" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ110> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ110" ]
+       ] ;
+       fhir:name [ fhir:v "Update record to document reason/lost follow-up" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>To be able to indicate if a client is inactive, identified as either permanently or temporarily, with a reason (e.g. death, moved, refuses vaccine)\n\nso that\n\n>No further follow up will be done, and they will not appear as defaulters" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ111> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ111" ]
+       ] ;
+       fhir:name [ fhir:v "Update record to document reason/lost follow-up" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>To be able to set a specific inactivity time frame for temporarily inactive clients (e.g. temporarily lost residence, crop harvest season)\n\nso that\n\n>I can distinguish between those who may require follow up at a specific time in future versus those which are inactive for a indeterminate period of time" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ112> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ112" ]
+       ] ;
+       fhir:name [ fhir:v "Update record to document reason/lost follow-up" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>To be able to generate a report of clients who are inactive and disaggregate by the reason they are inactive\n\nso that\n\n>It can be used for reporting and planning" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ139> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ139" ]
+       ] ;
+       fhir:name [ fhir:v "Update vaccination event records" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-EIRstaff.html\">EIR staff</a>, I want:\n>The system to support an audit trail when event records are merged\n\nso that\n\n>Accountability can be maintained" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ140> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ140" ]
+       ] ;
+       fhir:name [ fhir:v "Update vaccination event records" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-EIRstaff.html\">EIR staff</a>, I want:\n>The system to be able to provide history of merged event records\n\nso that\n\n>I can double check if the merge was done appropriately" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ005> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ005" ]
+       ] ;
+       fhir:name [ fhir:v "Update/add new vaccination location" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-EIRstaff.html\">EIR staff</a>, I want:\n>The system to allow manual insertion of a new vaccination location not present in the NMFL in the EIR master list\n\nso that\n\n>I can add and use vaccination locations that are not yet in NMFL or other interconnected systems" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ006> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ006" ]
+       ] ;
+       fhir:name [ fhir:v "Update/add new vaccination location" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-EIRstaff.html\">EIR staff</a>, I want:\n>The system to send a notification to the NMFL about a new vaccination location added to EIR\n\nso that\n\n>The NMFL can be aware of any potentially new vaccination locations" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ007> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ007" ]
+       ] ;
+       fhir:name [ fhir:v "Update/add new vaccination location" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-EIRstaff.html\">EIR staff</a>, I want:\n>To be able to include vaccination locations that may not be physical permanent facilities (such as temporary or pop-up clinics)\n\nso that\n\n>We will have the flexibility to accommodate temporary vaccination locations" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ009> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ009" ]
+       ] ;
+       fhir:name [ fhir:v "Update/add new vaccination location" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-EIRstaff.html\">EIR staff</a>, I want:\n>The system to allow conversion of a temporary vaccination location to a permanent vaccination location\n\nso that\n\n>The data from the temporary vaccination location is not lost" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ002> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ002" ]
+       ] ;
+       fhir:name [ fhir:v "Validate against national master facility list" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-EIRstaff.html\">EIR staff</a>, I want:\n>The system to interface with National Master Facility List (NMFL) database to validate the EIR master list of vaccination locations\n\nso that\n\n>I can ensure the lists are synchronized" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ003> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ003" ]
+       ] ;
+       fhir:name [ fhir:v "Validate against national master facility list" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-EIRstaff.html\">EIR staff</a>, I want:\n>The system to flag any vaccination location registered in the EIR that is not on the NMFL\n\nso that\n\n>I can identify vaccination locations that need further investigation" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ004> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ004" ]
+       ] ;
+       fhir:name [ fhir:v "Validate against national master facility list" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-EIRstaff.html\">EIR staff</a>, I want:\n>The system to be able to link a vaccination location’s NMFL identification (ID) with the corresponding EIR identifier\n\nso that\n\n>There will be a common understanding of what vaccination location is being referenced" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ050> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ050" ]
+       ] ;
+       fhir:name [ fhir:v "Validate client details" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>To select the place of birth from a standardized list of locations\n\nso that\n\n>Entry errors are prevented" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ051> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ051" ]
+       ] ;
+       fhir:name [ fhir:v "Validate client details" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>To select the vaccination location of the client from a list of locations\n\nso that\n\n>Entry errors are prevented" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ055> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ055" ]
+       ] ;
+       fhir:name [ fhir:v "Validate client details" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>The ability to generate a barcode label to affix to the paper record\n\nso that\n\n>The record can easily be uniquely identified by scanning the ID" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ056> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ056" ]
+       ] ;
+       fhir:name [ fhir:v "Validate client details" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>The ability to associate a unique ID generated by another authority (local or global) to the record\n\nso that\n\n>The record can be more easily shared or identified with other appropriate systems" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ057> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ057" ]
+       ] ;
+       fhir:name [ fhir:v "Validate client details" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>The system to display the information of the selected record\n\nso that\n\n>I can validate and update (if needed) client information" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ058> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ058" ]
+       ] ;
+       fhir:name [ fhir:v "Validate client details" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>To be able to modify appropriate client data as needed\n\nso that\n\n>the record contains up to date information" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ059> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ059" ]
+       ] ;
+       fhir:name [ fhir:v "Validate client details" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>The system to track that I have changed an existing record\n\nso that\n\n>accountability for data modification is ensured" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ060> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ060" ]
+       ] ;
+       fhir:name [ fhir:v "Validate client details" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>The system to identify changes made to the record for my confirmation before saving\n\nso that\n\n>I can have the opportunity to double check the data to prevent entry errors" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ010> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ010" ]
+       ] ;
+       fhir:name [ fhir:v "Verify information for additional data" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-EIRstaff.html\">EIR staff</a>, I want:\n>The system to automatically identify changes in vaccination locations information, retrieved from other interconnected systems, and prompt for validation\n\nso that\n\n>I will know what changes are being made and can validate them" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ011> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ011" ]
+       ] ;
+       fhir:name [ fhir:v "Verify information for additional data" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-EIRstaff.html\">EIR staff</a>, I want:\n>The system to verify all required vaccination location information is complete\n\nso that\n\n>Any missed fields can be identified" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Requirements"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ012> ;
+         fhir:reference [ fhir:v "Requirements/IMMZFXNREQ012" ]
+       ] ;
+       fhir:name [ fhir:v "Verify information for additional data" ] ;
+       fhir:description [ fhir:v "As a <a href=\"ActorDefinition-EIRstaff.html\">EIR staff</a>, I want:\n>The system to generate report of missing information\n\nso that\n\n>Missing information can be obtained" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] ) ;
+     fhir:page [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:url ;
+           fhir:v "toc.html"^^xsd:anyURI
+         ]
+       ] ) ;
+       fhir:name [
+         a fhir:url ;
+         fhir:v "toc.html"^^xsd:anyURI
+       ] ;
+       fhir:title [ fhir:v "Table of Contents" ] ;
+       fhir:generation [ fhir:v "html" ] ;
+       fhir:page ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:url ;
+             fhir:v "index.html"^^xsd:anyURI
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:url ;
+           fhir:v "index.html"^^xsd:anyURI
+         ] ;
+         fhir:title [ fhir:v "Home" ] ;
+         fhir:generation [ fhir:v "markdown" ] ;
+         fhir:page ( [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [
+               a fhir:url ;
+               fhir:v "changes.html"^^xsd:anyURI
+             ]
+           ] ) ;
+           fhir:name [
+             a fhir:url ;
+             fhir:v "changes.html"^^xsd:anyURI
+           ] ;
+           fhir:title [ fhir:v "Changes" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [
+               a fhir:url ;
+               fhir:v "dependencies.html"^^xsd:anyURI
+             ]
+           ] ) ;
+           fhir:name [
+             a fhir:url ;
+             fhir:v "dependencies.html"^^xsd:anyURI
+           ] ;
+           fhir:title [ fhir:v "Dependencies" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [
+               a fhir:url ;
+               fhir:v "references.html"^^xsd:anyURI
+             ]
+           ] ) ;
+           fhir:name [
+             a fhir:url ;
+             fhir:v "references.html"^^xsd:anyURI
+           ] ;
+           fhir:title [ fhir:v "References" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [
+               a fhir:url ;
+               fhir:v "adapting.html"^^xsd:anyURI
+             ]
+           ] ) ;
+           fhir:name [
+             a fhir:url ;
+             fhir:v "adapting.html"^^xsd:anyURI
+           ] ;
+           fhir:title [ fhir:v "Adapting Guidelines for Country use" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [
+               a fhir:url ;
+               fhir:v "license.html"^^xsd:anyURI
+             ]
+           ] ) ;
+           fhir:name [
+             a fhir:url ;
+             fhir:v "license.html"^^xsd:anyURI
+           ] ;
+           fhir:title [ fhir:v "License" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] )
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:url ;
+             fhir:v "business-requirements.html"^^xsd:anyURI
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:url ;
+           fhir:v "business-requirements.html"^^xsd:anyURI
+         ] ;
+         fhir:title [ fhir:v "Business Requirements" ] ;
+         fhir:generation [ fhir:v "markdown" ] ;
+         fhir:page ( [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [
+               a fhir:url ;
+               fhir:v "concepts.html"^^xsd:anyURI
+             ]
+           ] ) ;
+           fhir:name [
+             a fhir:url ;
+             fhir:v "concepts.html"^^xsd:anyURI
+           ] ;
+           fhir:title [ fhir:v "Concepts" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [
+               a fhir:url ;
+               fhir:v "personas.html"^^xsd:anyURI
+             ]
+           ] ) ;
+           fhir:name [
+             a fhir:url ;
+             fhir:v "personas.html"^^xsd:anyURI
+           ] ;
+           fhir:title [ fhir:v "Generic Personas" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [
+               a fhir:url ;
+               fhir:v "scenarios.html"^^xsd:anyURI
+             ]
+           ] ) ;
+           fhir:name [
+             a fhir:url ;
+             fhir:v "scenarios.html"^^xsd:anyURI
+           ] ;
+           fhir:title [ fhir:v "User Scenarios" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [
+               a fhir:url ;
+               fhir:v "business-processes.html"^^xsd:anyURI
+             ]
+           ] ) ;
+           fhir:name [
+             a fhir:url ;
+             fhir:v "business-processes.html"^^xsd:anyURI
+           ] ;
+           fhir:title [ fhir:v "Business Processes" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [
+               a fhir:url ;
+               fhir:v "dictionary.html"^^xsd:anyURI
+             ]
+           ] ) ;
+           fhir:name [
+             a fhir:url ;
+             fhir:v "dictionary.html"^^xsd:anyURI
+           ] ;
+           fhir:title [ fhir:v "Data Dictionary" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [
+               a fhir:url ;
+               fhir:v "decision-logic.html"^^xsd:anyURI
+             ]
+           ] ) ;
+           fhir:name [
+             a fhir:url ;
+             fhir:v "decision-logic.html"^^xsd:anyURI
+           ] ;
+           fhir:title [ fhir:v "Decision-support logic" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [
+               a fhir:url ;
+               fhir:v "indicators.html"^^xsd:anyURI
+             ]
+           ] ) ;
+           fhir:name [
+             a fhir:url ;
+             fhir:v "indicators.html"^^xsd:anyURI
+           ] ;
+           fhir:title [ fhir:v "Indicator and Performance Metrics" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [
+               a fhir:url ;
+               fhir:v "system-requirements.html"^^xsd:anyURI
+             ]
+           ] ) ;
+           fhir:name [
+             a fhir:url ;
+             fhir:v "system-requirements.html"^^xsd:anyURI
+           ] ;
+           fhir:title [ fhir:v "System Requirements" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [
+               a fhir:url ;
+               fhir:v "functional-requirements.html"^^xsd:anyURI
+             ]
+           ] ) ;
+           fhir:name [
+             a fhir:url ;
+             fhir:v "functional-requirements.html"^^xsd:anyURI
+           ] ;
+           fhir:title [ fhir:v "Functional Requirements" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [
+               a fhir:url ;
+               fhir:v "non-functional-requirements.html"^^xsd:anyURI
+             ]
+           ] ) ;
+           fhir:name [
+             a fhir:url ;
+             fhir:v "non-functional-requirements.html"^^xsd:anyURI
+           ] ;
+           fhir:title [ fhir:v "Non-functional Requirements" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] )
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:url ;
+             fhir:v "data-models-and-exchange.html"^^xsd:anyURI
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:url ;
+           fhir:v "data-models-and-exchange.html"^^xsd:anyURI
+         ] ;
+         fhir:title [ fhir:v "Data Models and Exchange" ] ;
+         fhir:generation [ fhir:v "markdown" ] ;
+         fhir:page ( [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [
+               a fhir:url ;
+               fhir:v "system-actors.html"^^xsd:anyURI
+             ]
+           ] ) ;
+           fhir:name [
+             a fhir:url ;
+             fhir:v "system-actors.html"^^xsd:anyURI
+           ] ;
+           fhir:title [ fhir:v "System Actors" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [
+               a fhir:url ;
+               fhir:v "sequence-diagrams.html"^^xsd:anyURI
+             ]
+           ] ) ;
+           fhir:name [
+             a fhir:url ;
+             fhir:v "sequence-diagrams.html"^^xsd:anyURI
+           ] ;
+           fhir:title [ fhir:v "Sequence Diagrams" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [
+               a fhir:url ;
+               fhir:v "transactions.html"^^xsd:anyURI
+             ]
+           ] ) ;
+           fhir:name [
+             a fhir:url ;
+             fhir:v "transactions.html"^^xsd:anyURI
+           ] ;
+           fhir:title [ fhir:v "Transactions" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [
+               a fhir:url ;
+               fhir:v "indicators-measures.html"^^xsd:anyURI
+             ]
+           ] ) ;
+           fhir:name [
+             a fhir:url ;
+             fhir:v "indicators-measures.html"^^xsd:anyURI
+           ] ;
+           fhir:title [ fhir:v "Indicators and Measures" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [
+               a fhir:url ;
+               fhir:v "codings.html"^^xsd:anyURI
+             ]
+           ] ) ;
+           fhir:name [
+             a fhir:url ;
+             fhir:v "codings.html"^^xsd:anyURI
+           ] ;
+           fhir:title [ fhir:v "Codings" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] )
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:url ;
+             fhir:v "deployment.html"^^xsd:anyURI
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:url ;
+           fhir:v "deployment.html"^^xsd:anyURI
+         ] ;
+         fhir:title [ fhir:v "Deployment" ] ;
+         fhir:generation [ fhir:v "markdown" ] ;
+         fhir:page ( [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [
+               a fhir:url ;
+               fhir:v "security-privacy.html"^^xsd:anyURI
+             ]
+           ] ) ;
+           fhir:name [
+             a fhir:url ;
+             fhir:v "security-privacy.html"^^xsd:anyURI
+           ] ;
+           fhir:title [ fhir:v "Security and Privacy Considerations" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [
+               a fhir:url ;
+               fhir:v "testing.html"^^xsd:anyURI
+             ]
+           ] ) ;
+           fhir:name [
+             a fhir:url ;
+             fhir:v "testing.html"^^xsd:anyURI
+           ] ;
+           fhir:title [ fhir:v "Testing" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [
+               a fhir:url ;
+               fhir:v "test-data.html"^^xsd:anyURI
+             ]
+           ] ) ;
+           fhir:name [
+             a fhir:url ;
+             fhir:v "test-data.html"^^xsd:anyURI
+           ] ;
+           fhir:title [ fhir:v "Test Data" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [
+               a fhir:url ;
+               fhir:v "reference-implementations.html"^^xsd:anyURI
+             ]
+           ] ) ;
+           fhir:name [
+             a fhir:url ;
+             fhir:v "reference-implementations.html"^^xsd:anyURI
+           ] ;
+           fhir:title [ fhir:v "Reference Implementations" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [
+               a fhir:url ;
+               fhir:v "trust_domain.html"^^xsd:anyURI
+             ]
+           ] ) ;
+           fhir:name [
+             a fhir:url ;
+             fhir:v "trust_domain.html"^^xsd:anyURI
+           ] ;
+           fhir:title [ fhir:v "Trust Domains" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [
+               a fhir:url ;
+               fhir:v "downloads.html"^^xsd:anyURI
+             ]
+           ] ) ;
+           fhir:name [
+             a fhir:url ;
+             fhir:v "downloads.html"^^xsd:anyURI
+           ] ;
+           fhir:title [ fhir:v "Downloads" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] )
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:url ;
+             fhir:v "indices.html"^^xsd:anyURI
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:url ;
+           fhir:v "indices.html"^^xsd:anyURI
+         ] ;
+         fhir:title [ fhir:v "Indices" ] ;
+         fhir:generation [ fhir:v "markdown" ] ;
+         fhir:page ( [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [
+               a fhir:url ;
+               fhir:v "artifacts.html"^^xsd:anyURI
+             ]
+           ] ) ;
+           fhir:name [
+             a fhir:url ;
+             fhir:v "artifacts.html"^^xsd:anyURI
+           ] ;
+           fhir:title [ fhir:v "Artifact Index" ] ;
+           fhir:generation [ fhir:v "html" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [
+               a fhir:url ;
+               fhir:v "maps.html"^^xsd:anyURI
+             ]
+           ] ) ;
+           fhir:name [
+             a fhir:url ;
+             fhir:v "maps.html"^^xsd:anyURI
+           ] ;
+           fhir:title [ fhir:v "Mappings" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] )
+       ] )
+     ] ;
+     fhir:parameter ( [
+       fhir:code [ fhir:v "path-pages" ] ;
+       fhir:value [ fhir:v "input/dictionary" ]
+     ] [
+       fhir:code [ fhir:v "path-pages" ] ;
+       fhir:value [ fhir:v "input/decision-logic" ]
+     ] [
+       fhir:code [ fhir:v "path-pages" ] ;
+       fhir:value [ fhir:v "input/business-processes" ]
+     ] [
+       fhir:code [ fhir:v "path-pages" ] ;
+       fhir:value [ fhir:v "input/scheduling-logic" ]
+     ] [
+       fhir:code [ fhir:v "path-pages" ] ;
+       fhir:value [ fhir:v "input/indicators" ]
+     ] [
+       fhir:code [ fhir:v "path-pages" ] ;
+       fhir:value [ fhir:v "input/system-requirements" ]
+     ] [
+       fhir:code [ fhir:v "path-pages" ] ;
+       fhir:value [ fhir:v "input/testing" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/capabilities" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/examples" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/extensions" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/models" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/operations" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/profiles" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/resources" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/vocabulary" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/maps" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/testing" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "input/history" ]
+     ] [
+       fhir:code [ fhir:v "path-resource" ] ;
+       fhir:value [ fhir:v "fsh-generated/resources" ]
+     ] [
+       fhir:code [ fhir:v "path-pages" ] ;
+       fhir:value [ fhir:v "template/config" ]
+     ] [
+       fhir:code [ fhir:v "path-pages" ] ;
+       fhir:value [ fhir:v "input/images" ]
+     ] [
+       fhir:code [ fhir:v "path-tx-cache" ] ;
+       fhir:value [ fhir:v "input-cache/txcache" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,55 @@
+{
+  "resourceType" : "Basic",
+  "id" : "IMMZFXNREQ090",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Requirements IMMZFXNREQ090</b></p><a name=\"IMMZFXNREQ090\"> </a><a name=\"hcIMMZFXNREQ090\"> </a><a name=\"IMMZFXNREQ090-en-US\"> </a><table class=\"grid\"/></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.url",
+    "valueUri" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ090"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.version",
+    "valueString" : "1.0.1"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.title",
+    "valueString" : "Generate list of clients"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.status",
+    "valueCode" : "active"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.date",
+    "valueDateTime" : "2025-03-13T13:11:43+00:00"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.publisher",
+    "valueString" : "WHO"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.contact",
+    "valueContactDetail" : {
+      "name" : "WHO",
+      "telecom" : [{
+        "system" : "url",
+        "value" : "http://who.int"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.description",
+    "valueMarkdown" : "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>The system to prevent all records given an inactive or deceased status from being included in the list of clients for reminder/recall\n\nso that\n\n>Notifications will not be inappropriately sent to clients"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.jurisdiction"
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/fhir-types",
+      "code" : "Requirements"
+    }]
+  }
+}

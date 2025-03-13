@@ -1,0 +1,873 @@
+[
+  {
+    "id" : "smart.who.int.dak-immz",
+    "type" : "ImplementationGuide",
+    "url" : "http://smart.who.int/dak-immz/ImplementationGuide/smart.who.int.dak-immz",
+    "version" : "1.0.1",
+    "name" : "DakImmz"
+  },
+  {
+    "id" : "IMMZFXNREQ001",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ001",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ002",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ002",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ003",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ003",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ004",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ004",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ005",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ005",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ006",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ006",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ007",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ007",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ008",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ008",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ009",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ009",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ010",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ010",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ011",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ011",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ012",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ012",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ013",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ013",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ014",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ014",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ015",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ015",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ016",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ016",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ017",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ017",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ018",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ018",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ019",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ019",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ020",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ020",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ021",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ021",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ022",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ022",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ023",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ023",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ030",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ030",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ031",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ031",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ032",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ032",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ033",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ033",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ034",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ034",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ035",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ035",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ036",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ036",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ037",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ037",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ038",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ038",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ039",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ039",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ040",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ040",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ041",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ041",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ042",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ042",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ043",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ043",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ044",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ044",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ045",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ045",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ046",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ046",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ047",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ047",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ048",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ048",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ049",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ049",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ050",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ050",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ051",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ051",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ052",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ052",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ053",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ053",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ054",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ054",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ055",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ055",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ056",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ056",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ057",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ057",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ058",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ058",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ059",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ059",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ060",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ060",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ061",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ061",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ062",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ062",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ063",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ063",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ064",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ064",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ065",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ065",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ066",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ066",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ067",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ067",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ068",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ068",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ069",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ069",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ070",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ070",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ071",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ071",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ072",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ072",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ073",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ073",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ074",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ074",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ075",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ075",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ076",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ076",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ077",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ077",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ078",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ078",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ080",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ080",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ081",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ081",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ082",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ082",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ083",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ083",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ084",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ084",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ085",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ085",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ086",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ086",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ087",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ087",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ088",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ088",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ089",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ089",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ090",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ090",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ091",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ091",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ092",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ092",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ093",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ093",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ094",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ094",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ095",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ095",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ096",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ096",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ097",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ097",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ098",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ098",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ099",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ099",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ100",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ100",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ101",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ101",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ102",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ102",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ103",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ103",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ104",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ104",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ105",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ105",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ106",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ106",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ107",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ107",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ108",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ108",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ109",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ109",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ110",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ110",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ111",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ111",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ112",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ112",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ113",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ113",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ114",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ114",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ115",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ115",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ116",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ116",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ117",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ117",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ118",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ118",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ119",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ119",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ120",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ120",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ121",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ121",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ122",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ122",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ123",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ123",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ124",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ124",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ125",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ125",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ126",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ126",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ127",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ127",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ128",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ128",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ129",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ129",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ130",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ130",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ131",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ131",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ132",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ132",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ133",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ133",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ134",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ134",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ135",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ135",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ136",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ136",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ137",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ137",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ138",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ138",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ139",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ139",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ140",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ140",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ141",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ141",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ142",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ142",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ143",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ143",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ144",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ144",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ145",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ145",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ146",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ146",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ147",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ147",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ148",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ148",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ149",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ149",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ150",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ150",
+    "version" : "1.0.1"
+  },
+  {
+    "id" : "IMMZFXNREQ151",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ151",
+    "version" : "1.0.1"
+  }
+]

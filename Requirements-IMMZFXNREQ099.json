@@ -1,0 +1,55 @@
+{
+  "resourceType" : "Basic",
+  "id" : "IMMZFXNREQ099",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Requirements IMMZFXNREQ099</b></p><a name=\"IMMZFXNREQ099\"> </a><a name=\"hcIMMZFXNREQ099\"> </a><a name=\"IMMZFXNREQ099-en-US\"> </a><table class=\"grid\"/></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.url",
+    "valueUri" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ099"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.version",
+    "valueString" : "1.0.1"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.title",
+    "valueString" : "Generate list of clients who are due or overdue for vaccination"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.status",
+    "valueCode" : "active"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.date",
+    "valueDateTime" : "2025-03-13T13:11:43+00:00"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.publisher",
+    "valueString" : "WHO"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.contact",
+    "valueContactDetail" : {
+      "name" : "WHO",
+      "telecom" : [{
+        "system" : "url",
+        "value" : "http://who.int"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.description",
+    "valueMarkdown" : "As a <a href=\"ActorDefinition-Healthworker.html\">Health worker</a>, I want:\n>To produce a list of clients who missed their vaccine for each antigen, along with their location and personal information\n\nso that\n\n>I can plan follow up activities\u00a0and contact the clients"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.jurisdiction"
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/fhir-types",
+      "code" : "Requirements"
+    }]
+  }
+}
