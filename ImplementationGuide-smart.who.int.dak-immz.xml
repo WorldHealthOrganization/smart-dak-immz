@@ -1,0 +1,2400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="smart.who.int.dak-immz"/>
+  <meta>
+    <profile value="http://smart.who.int/base/StructureDefinition/SGImplementationGuide"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide smart.who.int.dak-immz</b></p><a name="smart.who.int.dak-immz"> </a><a name="hcsmart.who.int.dak-immz"> </a><a name="smart.who.int.dak-immz-en-US"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="https://build.fhir.org/ig/WorldHealthOrganization/smart-base/StructureDefinition-SGImplementationGuide.html">SMART Guidelines ImplementationGuide</a></p></div><h2>DakImmz</h2><p>The official URL for this implementation guide is: </p><pre>http://smart.who.int/dak-immz/ImplementationGuide/smart.who.int.dak-immz</pre><div><p>SMART DAK for Immunizations</p>
+</div></div>
+  </text>
+  <url value="http://smart.who.int/dak-immz/ImplementationGuide/smart.who.int.dak-immz"/>
+  <version value="1.1.1"/>
+  <name value="DakImmz"/>
+  <title value="SMART DAK IMMZ"/>
+  <status value="draft"/>
+  <date value="2025-03-17T13:54:29+00:00"/>
+  <publisher value="WHO"/>
+  <contact>
+    <name value="WHO"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://who.int"/>
+    </telecom>
+  </contact>
+  <description value="SMART DAK for Immunizations"/>
+  <packageId value="smart.who.int.dak-immz"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="4.0.1"/>
+  <dependsOn id="hl7tx">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on HL7 Terminology"/>
+    </extension>
+    <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
+    <packageId value="hl7.terminology.r4"/>
+    <version value="6.2.0"/>
+  </dependsOn>
+  <dependsOn id="hl7ext">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"/>
+    </extension>
+    <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
+    <packageId value="hl7.fhir.uv.extensions.r4"/>
+    <version value="5.2.0"/>
+  </dependsOn>
+  <dependsOn id="smart_who_int_base">
+    <uri value="http://smart.who.int/base/ImplementationGuide/smart.who.int.base"/>
+    <packageId value="smart.who.int.base"/>
+    <version value="current"/>
+  </dependsOn>
+  <definition>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2023+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="ci-build"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://smart.who.int/dak-immz/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-wg"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="tabbed-snapshots"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
+      <valueCode value="hl7.fhir.uv.tools.r4#0.4.1"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2023+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="ci-build"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://smart.who.int/dak-immz/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-wg"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="tabbed-snapshots"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ042"/>
+      </reference>
+      <name value="The ability for searches to include results that look or sound similar to the search term (phonetic search)"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;The ability for searches to include results that look or sound similar to the search term (phonetic search)&#xA;&#xA;so that&#xA;&#xA;&gt;I can find something that may be spelt incorrectly"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ056"/>
+      </reference>
+      <name value="The ability to associate a unique ID generated by another authority (local or global) to the record"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;The ability to associate a unique ID generated by another authority (local or global) to the record&#xA;&#xA;so that&#xA;&#xA;&gt;The record can be more easily shared or identified with other appropriate systems"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ055"/>
+      </reference>
+      <name value="The ability to generate a barcode label to affix to the paper record"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;The ability to generate a barcode label to affix to the paper record&#xA;&#xA;so that&#xA;&#xA;&gt;The record can easily be uniquely identified by scanning the ID"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ001"/>
+      </reference>
+      <name value="The EIR system to be able to communicate with other systems (such as a national health management information system [HMIS] and Expanded Programme on Immunization [EPI]) to obtain vaccination locations information and other necessary information"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-ElectronicimmunizationregistryEIRstaff.html&quot;&gt;Electronic immunization registry (EIR) staff&lt;/a&gt;, I want:&#xA;&gt;The EIR system to be able to communicate with other systems (such as a national health management information system [HMIS] and Expanded Programme on Immunization [EPI]) to obtain vaccination locations information and other necessary information&#xA;&#xA;so that&#xA;&#xA;&gt;I will know about new vaccination locations and be informed about any updated information"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ096"/>
+      </reference>
+      <name value="The notification to include specific details about upcoming immunization session dates and times or outreach dates and times as appropriate"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;The notification to include specific details about upcoming immunization session dates and times or outreach dates and times as appropriate&#xA;&#xA;so that&#xA;&#xA;&gt;The client will know specifically when and where to go to receive a vaccination"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ038"/>
+      </reference>
+      <name value="The search to match on partial information (such as partial birthdates)"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;The search to match on partial information (such as partial birthdates)&#xA;&#xA;so that&#xA;&#xA;&gt;I have a better chance of finding a match"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ031"/>
+      </reference>
+      <name value="The system to allow barcode reading of stock taken"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;The system to allow barcode reading of stock taken&#xA;&#xA;so that&#xA;&#xA;&gt;the system can be automatically and accurately updated"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ009"/>
+      </reference>
+      <name value="The system to allow conversion of a temporary vaccination location to a permanent vaccination location"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-EIRstaff.html&quot;&gt;EIR staff&lt;/a&gt;, I want:&#xA;&gt;The system to allow conversion of a temporary vaccination location to a permanent vaccination location&#xA;&#xA;so that&#xA;&#xA;&gt;The data from the temporary vaccination location is not lost"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ005"/>
+      </reference>
+      <name value="The system to allow manual insertion of a new vaccination location not present in the NMFL in the EIR master list"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-EIRstaff.html&quot;&gt;EIR staff&lt;/a&gt;, I want:&#xA;&gt;The system to allow manual insertion of a new vaccination location not present in the NMFL in the EIR master list&#xA;&#xA;so that&#xA;&#xA;&gt;I can add and use vaccination locations that are not yet in NMFL or other interconnected systems"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ030"/>
+      </reference>
+      <name value="The system to allow me to print the stock order(s) to be fulfilled"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;The system to allow me to print the stock order(s) to be fulfilled&#xA;&#xA;so that&#xA;&#xA;&gt;I can use this as my pick up list, even when I am offline"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ039"/>
+      </reference>
+      <name value="The system to allow search parameters configuration: mandatory fields, when partial information is acceptable, etc."/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;The system to allow search parameters configuration: mandatory fields, when partial information is acceptable, etc.&#xA;&#xA;so that&#xA;&#xA;&gt;A search can be optimized without compromising confidentiality"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ083"/>
+      </reference>
+      <name value="The system to apply an authorised digital signature when necessary and appropriate"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;The system to apply an authorised digital signature when necessary and appropriate&#xA;&#xA;so that&#xA;&#xA;&gt;The identity of the issuing authority can be validated"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ074"/>
+      </reference>
+      <name value="The system to associate the context data for each entry (e.g. the vaccination location where the dose was given, the health worker administering it)"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;The system to associate the context data for each entry (e.g. the vaccination location where the dose was given, the health worker administering it)&#xA;&#xA;so that&#xA;&#xA;&gt;The client has a complete record and I can investigate if any issues arise"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ115"/>
+      </reference>
+      <name value="The system to automatically flag client records as possible duplicates by marking them as pending for review"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-EIRstaff.html&quot;&gt;EIR staff&lt;/a&gt;, I want:&#xA;&gt;The system to automatically flag client records as possible duplicates by marking them as pending for review&#xA;&#xA;so that&#xA;&#xA;&gt;The health worker or EIR staff is informed and aware of pending review"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ128"/>
+      </reference>
+      <name value="The system to automatically flag event records as possible duplicates by marking them as pending for review"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-EIRstaff.html&quot;&gt;EIR staff&lt;/a&gt;, I want:&#xA;&gt;The system to automatically flag event records as possible duplicates by marking them as pending for review&#xA;&#xA;so that&#xA;&#xA;&gt;The health worker or EIR staff is informed and aware of pending review"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ010"/>
+      </reference>
+      <name value="The system to automatically identify changes in vaccination locations information, retrieved from other interconnected systems, and prompt for validation"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-EIRstaff.html&quot;&gt;EIR staff&lt;/a&gt;, I want:&#xA;&gt;The system to automatically identify changes in vaccination locations information, retrieved from other interconnected systems, and prompt for validation&#xA;&#xA;so that&#xA;&#xA;&gt;I will know what changes are being made and can validate them"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ137"/>
+      </reference>
+      <name value="The system to automatically select the most accurate/suitable vaccination event to be used as the (primary or master) record"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-EIRstaffORhealthworker.html&quot;&gt;EIR staff OR health worker&lt;/a&gt;, I want:&#xA;&gt;The system to automatically select the most accurate/suitable vaccination event to be used as the (primary or master) record&#xA;&#xA;so that&#xA;&#xA;&gt;the manual review process is optimized"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ095"/>
+      </reference>
+      <name value="The system to automatically send reminder notification to client or designated health worker (i.e. community health worker) based on the configured reminder parameters"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;The system to automatically send reminder notification to client or designated health worker (i.e. community health worker) based on the configured reminder parameters&#xA;&#xA;so that&#xA;&#xA;&gt;they will be alerted of an upcoming or overdue appointment"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ141"/>
+      </reference>
+      <name value="The system to be able to generate a report of duplicate vaccine events including the resolutions"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-EIRstaff.html&quot;&gt;EIR staff&lt;/a&gt;, I want:&#xA;&gt;The system to be able to generate a report of duplicate vaccine events including the resolutions&#xA;&#xA;so that&#xA;&#xA;&gt;I can have a summary of the changes made"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ004"/>
+      </reference>
+      <name value="The system to be able to link a vaccination location’s NMFL identification (ID) with the corresponding EIR identifier"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-EIRstaff.html&quot;&gt;EIR staff&lt;/a&gt;, I want:&#xA;&gt;The system to be able to link a vaccination location’s NMFL identification (ID) with the corresponding EIR identifier&#xA;&#xA;so that&#xA;&#xA;&gt;There will be a common understanding of what vaccination location is being referenced"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ121"/>
+      </reference>
+      <name value="The system to be able to merge records confirmed to be duplicates"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-EIRstaff.html&quot;&gt;EIR staff&lt;/a&gt;, I want:&#xA;&gt;The system to be able to merge records confirmed to be duplicates&#xA;&#xA;so that&#xA;&#xA;&gt;Duplicate records can be merged"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ148"/>
+      </reference>
+      <name value="The system to be able to print reports on demand"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-EIRstaff.html&quot;&gt;EIR staff&lt;/a&gt;, I want:&#xA;&gt;The system to be able to print reports on demand&#xA;&#xA;so that&#xA;&#xA;&gt;I can have a paper version of the report"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ140"/>
+      </reference>
+      <name value="The system to be able to provide history of merged event records"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-EIRstaff.html&quot;&gt;EIR staff&lt;/a&gt;, I want:&#xA;&gt;The system to be able to provide history of merged event records&#xA;&#xA;so that&#xA;&#xA;&gt;I can double check if the merge was done appropriately"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ123"/>
+      </reference>
+      <name value="The system to be able to provide history of merged record for a given client"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-EIRstaff.html&quot;&gt;EIR staff&lt;/a&gt;, I want:&#xA;&gt;The system to be able to provide history of merged record for a given client&#xA;&#xA;so that&#xA;&#xA;&gt;I can double check if the merge was done appropriately"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ124"/>
+      </reference>
+      <name value="The system to be able to undo a merge"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-EIRstaff.html&quot;&gt;EIR staff&lt;/a&gt;, I want:&#xA;&gt;The system to be able to undo a merge&#xA;&#xA;so that&#xA;&#xA;&gt;I can restore records merged incorrectly"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ008"/>
+      </reference>
+      <name value="The system to be able to update vaccination location information"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-EIRstaff.html&quot;&gt;EIR staff&lt;/a&gt;, I want:&#xA;&gt;The system to be able to update vaccination location information&#xA;&#xA;so that&#xA;&#xA;&gt;We have a complete vaccination location record"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ023"/>
+      </reference>
+      <name value="The system to compare the list of needed antigens to the stock on hand and indicate if there is sufficient stock"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;The system to compare the list of needed antigens to the stock on hand and indicate if there is sufficient stock&#xA;&#xA;so that&#xA;&#xA;&gt;I do not have to make these calculations myself"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ064"/>
+      </reference>
+      <name value="The system to determine vaccines due for a given client by considering relevant information, such as the age of the client, vaccine products, vaccines already given and predefined vaccine protocol"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;The system to determine vaccines due for a given client by considering relevant information, such as the age of the client, vaccine products, vaccines already given and predefined vaccine protocol&#xA;&#xA;so that&#xA;&#xA;&gt;it helps me with selecting the appropriate vaccines for the client"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ134"/>
+      </reference>
+      <name value="The system to display a specific set of data related to the possible duplicated events (such as vaccine type, manufacturer, administration date, etc.) for manual review"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-EIRstaffORhealthworker.html&quot;&gt;EIR staff OR health worker&lt;/a&gt;, I want:&#xA;&gt;The system to display a specific set of data related to the possible duplicated events (such as vaccine type, manufacturer, administration date, etc.) for manual review&#xA;&#xA;so that&#xA;&#xA;&gt;I am able to perform the review"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ080"/>
+      </reference>
+      <name value="The system to display due date of the next vaccine"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;The system to display due date of the next vaccine&#xA;&#xA;so that&#xA;&#xA;&gt;I can inform the client when to return for their next vaccination"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ068"/>
+      </reference>
+      <name value="The system to display stock availability of recommended vaccines"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;The system to display stock availability of recommended vaccines&#xA;&#xA;so that&#xA;&#xA;&gt;I can check if the vaccines are available"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ094"/>
+      </reference>
+      <name value="The system to display the date the reminder/recall notice was sent to a client"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;The system to display the date the reminder/recall notice was sent to a client&#xA;&#xA;so that&#xA;&#xA;&gt;I will know when it was sent and can follow-up accordingly"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ070"/>
+      </reference>
+      <name value="The system to display the expiry date of stock to ensure expired vaccines are not administered"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;The system to display the expiry date of stock to ensure expired vaccines are not administered&#xA;&#xA;so that&#xA;&#xA;&gt;I give safe and effective doses only"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ057"/>
+      </reference>
+      <name value="The system to display the information of the selected record"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;The system to display the information of the selected record&#xA;&#xA;so that&#xA;&#xA;&gt;I can validate and update (if needed) client information"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ046"/>
+      </reference>
+      <name value="The system to display the most probable matches at the top of the list"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;The system to display the most probable matches at the top of the list&#xA;&#xA;so that&#xA;&#xA;&gt;I can review them first"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ063"/>
+      </reference>
+      <name value="The system to display vaccines due according to predefined vaccine protocol"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;The system to display vaccines due according to predefined vaccine protocol&#xA;&#xA;so that&#xA;&#xA;&gt;I can assess which vaccines need to be administered"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ049"/>
+      </reference>
+      <name value="The system to enforce a minimal required data set for new registrations"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;The system to enforce a minimal required data set for new registrations&#xA;&#xA;so that&#xA;&#xA;&gt;Sufficient data is entered to be able to identify the client"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ065"/>
+      </reference>
+      <name value="The system to ensure I have the most up-to-date vaccine protocols"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;The system to ensure I have the most up-to-date vaccine protocols&#xA;&#xA;so that&#xA;&#xA;&gt;It will recommend the correct schedule"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ097"/>
+      </reference>
+      <name value="The system to flag a client as a defaulter after a configured number of reminders are sent"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;The system to flag a client as a defaulter after a configured number of reminders are sent&#xA;&#xA;so that&#xA;&#xA;&gt;We can identify those who have not come and are overdue, requiring additional intervention"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ003"/>
+      </reference>
+      <name value="The system to flag any vaccination location registered in the EIR that is not on the NMFL"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-EIRstaff.html&quot;&gt;EIR staff&lt;/a&gt;, I want:&#xA;&gt;The system to flag any vaccination location registered in the EIR that is not on the NMFL&#xA;&#xA;so that&#xA;&#xA;&gt;I can identify vaccination locations that need further investigation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ015"/>
+      </reference>
+      <name value="The system to generate a unique EIR identifier which may be linked to national ID or health ID"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-EIRstaff.html&quot;&gt;EIR staff&lt;/a&gt;, I want:&#xA;&gt;The system to generate a unique EIR identifier which may be linked to national ID or health ID&#xA;&#xA;so that&#xA;&#xA;&gt;The vaccination location will have an unique identifier in the EIR system"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ053"/>
+      </reference>
+      <name value="The system to generate a unique identifier"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;The system to generate a unique identifier&#xA;&#xA;so that&#xA;&#xA;&gt;The client can be uniquely identified for vaccination activities across systems using the same ID"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ131"/>
+      </reference>
+      <name value="The system to generate automatically a list of possible duplicated vaccination events"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-EIRstaff.html&quot;&gt;EIR staff&lt;/a&gt;, I want:&#xA;&gt;The system to generate automatically a list of possible duplicated vaccination events&#xA;&#xA;so that&#xA;&#xA;&gt;The review process is optimized"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ012"/>
+      </reference>
+      <name value="The system to generate report of missing information"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-EIRstaff.html&quot;&gt;EIR staff&lt;/a&gt;, I want:&#xA;&gt;The system to generate report of missing information&#xA;&#xA;so that&#xA;&#xA;&gt;Missing information can be obtained"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ103"/>
+      </reference>
+      <name value="The system to group the defaulters by location and community health worker"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;The system to group the defaulters by location and community health worker&#xA;&#xA;so that&#xA;&#xA;&gt;I can send to the community health workers the appropriate list"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ043"/>
+      </reference>
+      <name value="the system to identify any records that may have been imported from another system"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;the system to identify any records that may have been imported from another system&#xA;&#xA;so that&#xA;&#xA;&gt;I can verify the quality of imported data"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ060"/>
+      </reference>
+      <name value="The system to identify changes made to the record for my confirmation before saving"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;The system to identify changes made to the record for my confirmation before saving&#xA;&#xA;so that&#xA;&#xA;&gt;I can have the opportunity to double check the data to prevent entry errors"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ017"/>
+      </reference>
+      <name value="The system to include instructions on how to use EIR identifier"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-EIRstaff.html&quot;&gt;EIR staff&lt;/a&gt;, I want:&#xA;&gt;The system to include instructions on how to use EIR identifier&#xA;&#xA;so that&#xA;&#xA;&gt;Other systems will know how to interact with the EIR"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ002"/>
+      </reference>
+      <name value="The system to interface with National Master Facility List (NMFL) database to validate the EIR master list of vaccination locations"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-EIRstaff.html&quot;&gt;EIR staff&lt;/a&gt;, I want:&#xA;&gt;The system to interface with National Master Facility List (NMFL) database to validate the EIR master list of vaccination locations&#xA;&#xA;so that&#xA;&#xA;&gt;I can ensure the lists are synchronized"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ093"/>
+      </reference>
+      <name value="The system to log each time a user prints a list of clients"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;The system to log each time a user prints a list of clients&#xA;&#xA;so that&#xA;&#xA;&gt;Printing needs can be monitored"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ150"/>
+      </reference>
+      <name value="The system to log the actions performed on the reports"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-EIRstaff.html&quot;&gt;EIR staff&lt;/a&gt;, I want:&#xA;&gt;The system to log the actions performed on the reports&#xA;&#xA;so that&#xA;&#xA;&gt;An audit can be performed when needed"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ076"/>
+      </reference>
+      <name value="The system to log updates of client information"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;The system to log updates of client information&#xA;&#xA;so that&#xA;&#xA;&gt;Users are accountable for the data they modify"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ033"/>
+      </reference>
+      <name value="The system to maintain a tally of stock available at each location (e.g. stock available in the cold fridge at vaccination location, stock that is out for immunization session)"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;The system to maintain a tally of stock available at each location (e.g. stock available in the cold fridge at vaccination location, stock that is out for immunization session)&#xA;&#xA;so that&#xA;&#xA;&gt;I can see where all stock is physically located in real time"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ013"/>
+      </reference>
+      <name value="The system to notify me of incomplete mandatory fields"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-EIRstaff.html&quot;&gt;EIR staff&lt;/a&gt;, I want:&#xA;&gt;The system to notify me of incomplete mandatory fields&#xA;&#xA;so that&#xA;&#xA;&gt;I can ensure all necessary data is entered"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ151"/>
+      </reference>
+      <name value="The system to offer the posibility of sending the generated report by email"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;The system to offer the posibility of sending the generated report by email&#xA;&#xA;so that&#xA;&#xA;&gt;I do not have to manually do that"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ090"/>
+      </reference>
+      <name value="The system to prevent all records given an inactive or deceased status from being included in the list of clients for reminder/recall"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;The system to prevent all records given an inactive or deceased status from being included in the list of clients for reminder/recall&#xA;&#xA;so that&#xA;&#xA;&gt;Notifications will not be inappropriately sent to clients"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ147"/>
+      </reference>
+      <name value="The system to produce and export reports in multiple formats (i.e. CSV, PDF) on demand"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-EIRstaff.html&quot;&gt;EIR staff&lt;/a&gt;, I want:&#xA;&gt;The system to produce and export reports in multiple formats (i.e. CSV, PDF) on demand&#xA;&#xA;so that&#xA;&#xA;&gt;I can select the most appropriate format for my needs"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ044"/>
+      </reference>
+      <name value="The system to prompt a search for the client (check if it is already in the system) prior to starting a new record"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;The system to prompt a search for the client (check if it is already in the system) prior to starting a new record&#xA;&#xA;so that&#xA;&#xA;&gt;Duplicates are prevented"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ130"/>
+      </reference>
+      <name value="The system to prompt the user that a new vaccination event might already exist"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-EIRstaff.html&quot;&gt;EIR staff&lt;/a&gt;, I want:&#xA;&gt;The system to prompt the user that a new vaccination event might already exist&#xA;&#xA;so that&#xA;&#xA;&gt;The user can decide if it is a duplicate and if so not save it"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ061"/>
+      </reference>
+      <name value="The system to provide a history of previous care (including previous vaccination records)"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;The system to provide a history of previous care (including previous vaccination records)&#xA;&#xA;so that&#xA;&#xA;&gt;I have access and review client's history"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ034"/>
+      </reference>
+      <name value="The system to provide a immunization session materials checklist, which is a list of materials I would need for immunization session"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;The system to provide a immunization session materials checklist, which is a list of materials I would need for immunization session&#xA;&#xA;so that&#xA;&#xA;&gt;I can make sure I have the materials I need for immunization session"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ020"/>
+      </reference>
+      <name value="The system to provide range estimates for needed vaccines based on historical data (high and low ranges)"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;The system to provide range estimates for needed vaccines based on historical data (high and low ranges)&#xA;&#xA;so that&#xA;&#xA;&gt;I can know how much vaccine has typically been used and adjust my specific list accordingly"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ077"/>
+      </reference>
+      <name value="The system to request confirmation if data is modified"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;The system to request confirmation if data is modified&#xA;&#xA;so that&#xA;&#xA;&gt;Accidental or erroneous changes will not be saved"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ045"/>
+      </reference>
+      <name value="The system to retrieve and display, as a search result, a specific set of data (demographic information/photo/unique ID, etc. )"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;The system to retrieve and display, as a search result, a specific set of data (demographic information/photo/unique ID, etc. )&#xA;&#xA;so that&#xA;&#xA;&gt;I can select the correct record"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ037"/>
+      </reference>
+      <name value="The system to return all potential matches based upon search criteria"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;The system to return all potential matches based upon search criteria&#xA;&#xA;so that&#xA;&#xA;&gt;I can find the best match"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ116"/>
+      </reference>
+      <name value="The system to schedule batching of duplicate record process"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-EIRstaff.html&quot;&gt;EIR staff&lt;/a&gt;, I want:&#xA;&gt;The system to schedule batching of duplicate record process&#xA;&#xA;so that&#xA;&#xA;&gt;They may be processed and assessed together when user is ready"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ006"/>
+      </reference>
+      <name value="The system to send a notification to the NMFL about a new vaccination location added to EIR"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-EIRstaff.html&quot;&gt;EIR staff&lt;/a&gt;, I want:&#xA;&gt;The system to send a notification to the NMFL about a new vaccination location added to EIR&#xA;&#xA;so that&#xA;&#xA;&gt;The NMFL can be aware of any potentially new vaccination locations"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ016"/>
+      </reference>
+      <name value="The system to send EIR registration notification with EIR identifer to other systems"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-EIRstaff.html&quot;&gt;EIR staff&lt;/a&gt;, I want:&#xA;&gt;The system to send EIR registration notification with EIR identifer to other systems&#xA;&#xA;so that&#xA;&#xA;&gt;Other systems will be informed of the new vaccination location"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ149"/>
+      </reference>
+      <name value="The system to show me a preview of the report before printing"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-EIRstaff.html&quot;&gt;EIR staff&lt;/a&gt;, I want:&#xA;&gt;The system to show me a preview of the report before printing&#xA;&#xA;so that&#xA;&#xA;&gt;I can review before printing"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ127"/>
+      </reference>
+      <name value="The system to support a rules-based algorithm to evaluate duplicate events"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-EIRstaff.html&quot;&gt;EIR staff&lt;/a&gt;, I want:&#xA;&gt;The system to support a rules-based algorithm to evaluate duplicate events&#xA;&#xA;so that&#xA;&#xA;&gt;Duplicates can be found by the system using pre-defined rules"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ113"/>
+      </reference>
+      <name value="The system to support a rules-based algorithm to evaluate duplicate records"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-EIRstaff.html&quot;&gt;EIR staff&lt;/a&gt;, I want:&#xA;&gt;The system to support a rules-based algorithm to evaluate duplicate records&#xA;&#xA;so that&#xA;&#xA;&gt;Duplicates can be found by the system using pre-defined rules"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ139"/>
+      </reference>
+      <name value="The system to support an audit trail when event records are merged"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-EIRstaff.html&quot;&gt;EIR staff&lt;/a&gt;, I want:&#xA;&gt;The system to support an audit trail when event records are merged&#xA;&#xA;so that&#xA;&#xA;&gt;Accountability can be maintained"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ122"/>
+      </reference>
+      <name value="The system to support an audit trail when records are merged"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-EIRstaff.html&quot;&gt;EIR staff&lt;/a&gt;, I want:&#xA;&gt;The system to support an audit trail when records are merged&#xA;&#xA;so that&#xA;&#xA;&gt;Accountability can be maintained"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ014"/>
+      </reference>
+      <name value="The system to support the process of sending a request for information"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-EIRstaff.html&quot;&gt;EIR staff&lt;/a&gt;, I want:&#xA;&gt;The system to support the process of sending a request for information&#xA;&#xA;so that&#xA;&#xA;&gt;I will not have to transcribe the request and send it manually"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ059"/>
+      </reference>
+      <name value="The system to track that I have changed an existing record"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;The system to track that I have changed an existing record&#xA;&#xA;so that&#xA;&#xA;&gt;accountability for data modification is ensured"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ089"/>
+      </reference>
+      <name value="The system to track the number of reminders attempts (i.e. per client and total)"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;The system to track the number of reminders attempts (i.e. per client and total)&#xA;&#xA;so that&#xA;&#xA;&gt;I can know if additional action may be required, or when to stop sending reminders"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ052"/>
+      </reference>
+      <name value="The system to uniquely identify every client using a system generated unique identifier or an existing identifier (e.g. health care, national ID, health unique ID)"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;The system to uniquely identify every client using a system generated unique identifier or an existing identifier (e.g. health care, national ID, health unique ID)&#xA;&#xA;so that&#xA;&#xA;&gt;The client can be definitively identified using that number"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ011"/>
+      </reference>
+      <name value="The system to verify all required vaccination location information is complete"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-EIRstaff.html&quot;&gt;EIR staff&lt;/a&gt;, I want:&#xA;&gt;The system to verify all required vaccination location information is complete&#xA;&#xA;so that&#xA;&#xA;&gt;Any missed fields can be identified"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ069"/>
+      </reference>
+      <name value="The system to warn if required vaccine is not in stock"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;The system to warn if required vaccine is not in stock&#xA;&#xA;so that&#xA;&#xA;&gt;I can alert the client if the vaccine is not available"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ062"/>
+      </reference>
+      <name value="To add client's health history (including previous vaccination records)"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;To add client's health history (including previous vaccination records)&#xA;&#xA;so that&#xA;&#xA;&gt;I can appropriately determine which vaccinations are required"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ102"/>
+      </reference>
+      <name value="To assign a community health worker to a client"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;To assign a community health worker to a client&#xA;&#xA;so that&#xA;&#xA;&gt;I can send client information to the correct community health worker"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ085"/>
+      </reference>
+      <name value="To associate a client with a vaccination location to generate a provider-based reminder/recall"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;To associate a client with a vaccination location to generate a provider-based reminder/recall&#xA;&#xA;so that&#xA;&#xA;&gt;Vaccination location specific lists of clients can be generated"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ119"/>
+      </reference>
+      <name value="To be able to access the client records while reviewing the duplicates"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-EIRstaffORhealthworker.html&quot;&gt;EIR staff OR health worker&lt;/a&gt;, I want:&#xA;&gt;To be able to access the client records while reviewing the duplicates&#xA;&#xA;so that&#xA;&#xA;&gt;I can review other fields, such as immunization history, to aid in my decision-making"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ136"/>
+      </reference>
+      <name value="To be able to access the vaccination events while reviewing the duplicates"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-EIRstaffORhealthworker.html&quot;&gt;EIR staff OR health worker&lt;/a&gt;, I want:&#xA;&gt;To be able to access the vaccination events while reviewing the duplicates&#xA;&#xA;so that&#xA;&#xA;&gt;I can review other fields to aid in my decision-making"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ022"/>
+      </reference>
+      <name value="To be able to check in the system the available stock at my vaccination location or at the local storage area/warehouse"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;To be able to check in the system the available stock at my vaccination location or at the local storage area/warehouse&#xA;&#xA;so that&#xA;&#xA;&gt;I can determine the stock available for use"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ142"/>
+      </reference>
+      <name value="To be able to configure report parameters when creating new reports (period of time, inactive versus active clients, client's age, vaccine type, vaccine manufacturer, etc.)"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;To be able to configure report parameters when creating new reports (period of time, inactive versus active clients, client's age, vaccine type, vaccine manufacturer, etc.)&#xA;&#xA;so that&#xA;&#xA;&gt;Appropriate reports can be generated"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ144"/>
+      </reference>
+      <name value="To be able to customize report parameters for error monitoring reports"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;To be able to customize report parameters for error monitoring reports&#xA;&#xA;so that&#xA;&#xA;&gt;I can generate reports specific to my needs and the nature of potential programmatic errors I want to monitor"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ120"/>
+      </reference>
+      <name value="To be able to decide what information to keep from the duplicates"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-EIRstaffORhealthworker.html&quot;&gt;EIR staff OR health worker&lt;/a&gt;, I want:&#xA;&gt;To be able to decide what information to keep from the duplicates&#xA;&#xA;so that&#xA;&#xA;&gt;I make sure the most appropriate information is kept in the consolidated record"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ126"/>
+      </reference>
+      <name value="To be able to enter comments for records marked as &quot;not a duplicate&quot;"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-EIRstaffORhealthworker.html&quot;&gt;EIR staff OR health worker&lt;/a&gt;, I want:&#xA;&gt;To be able to enter comments for records marked as \&quot;not a duplicate\&quot;&#xA;&#xA;so that&#xA;&#xA;&gt;I can add any additional information to let other users see why it was determined to not be a duplicate"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ047"/>
+      </reference>
+      <name value="To be able to extend the search to external systems (such as a birth registry or a scheduling system)"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;To be able to extend the search to external systems (such as a birth registry or a scheduling system)&#xA;&#xA;so that&#xA;&#xA;&gt;Duplicates of client record are prevented"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ125"/>
+      </reference>
+      <name value="To be able to flag records as &quot;not a duplicate&quot;"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-EIRstaffORhealthworker.html&quot;&gt;EIR staff OR health worker&lt;/a&gt;, I want:&#xA;&gt;To be able to flag records as \&quot;not a duplicate\&quot;&#xA;&#xA;so that&#xA;&#xA;&gt;It is not presented as a possible duplicates by the system"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ091"/>
+      </reference>
+      <name value="to be able to generate a list of clients according to defined parameters"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;to be able to generate a list of clients according to defined parameters&#xA;&#xA;so that&#xA;&#xA;&gt;I have a list according to my needs"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ112"/>
+      </reference>
+      <name value="To be able to generate a report of clients who are inactive and disaggregate by the reason they are inactive"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;To be able to generate a report of clients who are inactive and disaggregate by the reason they are inactive&#xA;&#xA;so that&#xA;&#xA;&gt;It can be used for reporting and planning"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ007"/>
+      </reference>
+      <name value="To be able to include vaccination locations that may not be physical permanent facilities (such as temporary or pop-up clinics)"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-EIRstaff.html&quot;&gt;EIR staff&lt;/a&gt;, I want:&#xA;&gt;To be able to include vaccination locations that may not be physical permanent facilities (such as temporary or pop-up clinics)&#xA;&#xA;so that&#xA;&#xA;&gt;We will have the flexibility to accommodate temporary vaccination locations"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ110"/>
+      </reference>
+      <name value="To be able to indicate if a client is inactive, identified as either permanently or temporarily, with a reason (e.g. death, moved, refuses vaccine)"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;To be able to indicate if a client is inactive, identified as either permanently or temporarily, with a reason (e.g. death, moved, refuses vaccine)&#xA;&#xA;so that&#xA;&#xA;&gt;No further follow up will be done, and they will not appear as defaulters"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ117"/>
+      </reference>
+      <name value="To be able to manually flag duplicate records"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-EIRstaffORhealthworker.html&quot;&gt;EIR staff OR health worker&lt;/a&gt;, I want:&#xA;&gt;To be able to manually flag duplicate records&#xA;&#xA;so that&#xA;&#xA;&gt;I can identify potential duplicates myself for resolution"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ133"/>
+      </reference>
+      <name value="To be able to manually flag duplicate vaccination events"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-EIRstaffORhealthworker.html&quot;&gt;EIR staff OR health worker&lt;/a&gt;, I want:&#xA;&gt;To be able to manually flag duplicate vaccination events&#xA;&#xA;so that&#xA;&#xA;&gt;I can report duplicates that the system was not able to identify"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ132"/>
+      </reference>
+      <name value="To be able to manually initiate duplicates identification process"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-EIRstaffORhealthworker.html&quot;&gt;EIR staff OR health worker&lt;/a&gt;, I want:&#xA;&gt;To be able to manually initiate duplicates identification process&#xA;&#xA;so that&#xA;&#xA;&gt;It can be done when the user is available to review"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ138"/>
+      </reference>
+      <name value="To be able to merge manually duplicate records and decide what information to keep from the duplicates into a consolidated event record"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-EIRstaffORhealthworker.html&quot;&gt;EIR staff OR health worker&lt;/a&gt;, I want:&#xA;&gt;To be able to merge manually duplicate records and decide what information to keep from the duplicates into a consolidated event record&#xA;&#xA;so that&#xA;&#xA;&gt;I make sure the most accurate consolidated record is kept"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ058"/>
+      </reference>
+      <name value="To be able to modify appropriate client data as needed"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;To be able to modify appropriate client data as needed&#xA;&#xA;so that&#xA;&#xA;&gt;the record contains up to date information"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ114"/>
+      </reference>
+      <name value="To be able to modify the business rules used for identifying duplicate client records"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-EIRstaff.html&quot;&gt;EIR staff&lt;/a&gt;, I want:&#xA;&gt;To be able to modify the business rules used for identifying duplicate client records&#xA;&#xA;so that&#xA;&#xA;&gt;The de-duplication process is optimized"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ129"/>
+      </reference>
+      <name value="to be able to modify the business rules used for identifying vaccination events duplicates"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-EIRstaff.html&quot;&gt;EIR staff&lt;/a&gt;, I want:&#xA;&gt;to be able to modify the business rules used for identifying vaccination events duplicates&#xA;&#xA;so that&#xA;&#xA;&gt;The de-duplication process can be optimized"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ067"/>
+      </reference>
+      <name value="To be able to quickly access information regarding any contraindications by antigen"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;To be able to quickly access information regarding any contraindications by antigen&#xA;&#xA;so that&#xA;&#xA;&gt;I can access all information on contraindications in one place"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ146"/>
+      </reference>
+      <name value="To be able to schedule routine reports (specific date/time, daily, weekly, etc.)"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;To be able to schedule routine reports (specific date/time, daily, weekly, etc.)&#xA;&#xA;so that&#xA;&#xA;&gt;The reports can be generated automatically and are available at the right time"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ143"/>
+      </reference>
+      <name value="To be able to select report parameters when creating vaccination coverage reports (i.e. by vaccine, by dose, by age, by area, by condition, by vaccine manufacturer, etc)"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;To be able to select report parameters when creating vaccination coverage reports (i.e. by vaccine, by dose, by age, by area, by condition, by vaccine manufacturer, etc)&#xA;&#xA;so that&#xA;&#xA;&gt;Appropriate vaccination coverage reports can be generated"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ145"/>
+      </reference>
+      <name value="To be able to select what information a report shows (i.e. display options, summary versus detail report, sort options)"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;To be able to select what information a report shows (i.e. display options, summary versus detail report, sort options)&#xA;&#xA;so that&#xA;&#xA;&gt;The report presentation can be customised"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ111"/>
+      </reference>
+      <name value="To be able to set a specific inactivity time frame for temporarily inactive clients (e.g. temporarily lost residence, crop harvest season)"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;To be able to set a specific inactivity time frame for temporarily inactive clients (e.g. temporarily lost residence, crop harvest season)&#xA;&#xA;so that&#xA;&#xA;&gt;I can distinguish between those who may require follow up at a specific time in future versus those which are inactive for a indeterminate period of time"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ118"/>
+      </reference>
+      <name value="To be able to view simultaneously potential duplicate records"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-EIRstaffORhealthworker.html&quot;&gt;EIR staff OR health worker&lt;/a&gt;, I want:&#xA;&gt;To be able to view simultaneously potential duplicate records&#xA;&#xA;so that&#xA;&#xA;&gt;I can easily compare the records and determine if they are duplicates"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ135"/>
+      </reference>
+      <name value="To be able to view simultaneously potential duplicate records"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-EIRstaffORhealthworker.html&quot;&gt;EIR staff OR health worker&lt;/a&gt;, I want:&#xA;&gt;To be able to view simultaneously potential duplicate records&#xA;&#xA;so that&#xA;&#xA;&gt;I can easily compare the records and to determine if they are duplicates"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ066"/>
+      </reference>
+      <name value="To be alerted of any relevant potential contraindications for the vaccine (e.g. based on age, previous allergic reactions, etc.)"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;To be alerted of any relevant potential contraindications for the vaccine (e.g. based on age, previous allergic reactions, etc.)&#xA;&#xA;so that&#xA;&#xA;&gt;I can withhold the vaccine, if contraindicated"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ081"/>
+      </reference>
+      <name value="To be prompted for any data required to produce a digital vaccine certificate"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;To be prompted for any data required to produce a digital vaccine certificate&#xA;&#xA;so that&#xA;&#xA;&gt;The record will have all relevant data to produce a certificate"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ082"/>
+      </reference>
+      <name value="To be prompted to ask client if they want a digital vaccination certificate where appropriate"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;To be prompted to ask client if they want a digital vaccination certificate where appropriate&#xA;&#xA;so that&#xA;&#xA;&gt;The digital vaccination certificate can be generated"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ104"/>
+      </reference>
+      <name value="To display a list of clients due for specific planned outreach and immunization sessions, based on area"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;To display a list of clients due for specific planned outreach and immunization sessions, based on area&#xA;&#xA;so that&#xA;&#xA;&gt;The immunization session or outreach will have a targeted list of clients, allowing for prioritization of tasks and workload"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ072"/>
+      </reference>
+      <name value="To document why a vaccine was not given"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;To document why a vaccine was not given&#xA;&#xA;so that&#xA;&#xA;&gt;The client has a complete record"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ048"/>
+      </reference>
+      <name value="To enter additional search criteria if there are multiple possible matches"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;To enter additional search criteria if there are multiple possible matches&#xA;&#xA;so that&#xA;&#xA;&gt;My list of matches is shorter and easier to review"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ101"/>
+      </reference>
+      <name value="To export a list of clients for follow-up"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;To export a list of clients for follow-up&#xA;&#xA;so that&#xA;&#xA;&gt;Information can be sent to another health worker or system as appropriate"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ041"/>
+      </reference>
+      <name value="To find client records using barcodes that contain the client ID"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;To find client records using barcodes that contain the client ID&#xA;&#xA;so that&#xA;&#xA;&gt;I can quickly pull up the correct record"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ109"/>
+      </reference>
+      <name value="To flag when there is a change of address and a new client has been added to another catchment area"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;To flag when there is a change of address and a new client has been added to another catchment area&#xA;&#xA;so that&#xA;&#xA;&gt;The client will appear on the correct list for follow up"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ018"/>
+      </reference>
+      <name value="To identify, by checking the information in the system, all clients that are due (or overdue) for vaccination by the next immunization session date"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;To identify, by checking the information in the system, all clients that are due (or overdue) for vaccination by the next immunization session date&#xA;&#xA;so that&#xA;&#xA;&gt;I can plan my immunization session"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ100"/>
+      </reference>
+      <name value="To print a list of clients requiring follow-up"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;To print a list of clients requiring follow-up&#xA;&#xA;so that&#xA;&#xA;&gt;I will have an offline version"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ092"/>
+      </reference>
+      <name value="To print the list of clients generated according to defined parameters"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;To print the list of clients generated according to defined parameters&#xA;&#xA;so that&#xA;&#xA;&gt;I can use it when I am offline"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ021"/>
+      </reference>
+      <name value="To print the list of necessary antigens and accessories (e.g. syringes, wipes) based on projected need"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;To print the list of necessary antigens and accessories (e.g. syringes, wipes) based on projected need&#xA;&#xA;so that&#xA;&#xA;&gt;I can make sure I have an offline list of all the things I need for my immunization session"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ099"/>
+      </reference>
+      <name value="To produce a list of clients who missed their vaccine for each antigen, along with their location and personal information"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;To produce a list of clients who missed their vaccine for each antigen, along with their location and personal information&#xA;&#xA;so that&#xA;&#xA;&gt;I can plan follow up activities and contact the clients"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ075"/>
+      </reference>
+      <name value="To record additional vaccinations, even those that are not included in the national vaccination schedule"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;To record additional vaccinations, even those that are not included in the national vaccination schedule&#xA;&#xA;so that&#xA;&#xA;&gt;The client has a complete record"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ078"/>
+      </reference>
+      <name value="To record any significant observations (such as reaction) that may be specific to that client"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;To record any significant observations (such as reaction) that may be specific to that client&#xA;&#xA;so that&#xA;&#xA;&gt;I can treat as appropriate"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ106"/>
+      </reference>
+      <name value="To record in the system the results of the follow-up"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Communityhealthworker.html&quot;&gt;Community health worker&lt;/a&gt;, I want:&#xA;&gt;To record in the system the results of the follow-up&#xA;&#xA;so that&#xA;&#xA;&gt;The information is available in the system and is available for review"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ107"/>
+      </reference>
+      <name value="To record reason vaccine was missed"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;To record reason vaccine was missed&#xA;&#xA;so that&#xA;&#xA;&gt;This information can be used for planning and reporting purposes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ032"/>
+      </reference>
+      <name value="To record stock removed from cold storage and taken to immunization session"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;To record stock removed from cold storage and taken to immunization session&#xA;&#xA;so that&#xA;&#xA;&gt;The count for the cold storage will be accurate, and the immunization session stock will be accounted for"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ035"/>
+      </reference>
+      <name value="To search for a client using at least two identifying information"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;To search for a client using at least two identifying information&#xA;&#xA;so that&#xA;&#xA;&gt;I improve my chances of finding a match and distinguishing between similar records"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ036"/>
+      </reference>
+      <name value="To search for the client record given some demographic information"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;To search for the client record given some demographic information&#xA;&#xA;so that&#xA;&#xA;&gt;I can find the client record if I do not have the unique ID"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ040"/>
+      </reference>
+      <name value="To search with wild cards (using a symbol to replace one or more characters)"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;To search with wild cards (using a symbol to replace one or more characters)&#xA;&#xA;so that&#xA;&#xA;&gt;I can find something without knowing the exact spelling"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ087"/>
+      </reference>
+      <name value="To select one or more notification methods (e.g. automated telephone calls [i.e. robocall], text message, letter, email, community health worker notification, home visits)"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;To select one or more notification methods (e.g. automated telephone calls [i.e. robocall], text message, letter, email, community health worker notification, home visits)&#xA;&#xA;so that&#xA;&#xA;&gt;The most appropriate notification method will be used"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ084"/>
+      </reference>
+      <name value="To select reminder parameters. May include but not limited to, age range, vaccine type(s), vaccine schedules, geographic area, number of days overdue, number of reminders, etc."/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;To select reminder parameters. May include but not limited to, age range, vaccine type(s), vaccine schedules, geographic area, number of days overdue, number of reminders, etc.&#xA;&#xA;so that&#xA;&#xA;&gt;Reminders can be optimized"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ050"/>
+      </reference>
+      <name value="To select the place of birth from a standardized list of locations"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;To select the place of birth from a standardized list of locations&#xA;&#xA;so that&#xA;&#xA;&gt;Entry errors are prevented"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ051"/>
+      </reference>
+      <name value="To select the vaccination location of the client from a list of locations"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;To select the vaccination location of the client from a list of locations&#xA;&#xA;so that&#xA;&#xA;&gt;Entry errors are prevented"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ105"/>
+      </reference>
+      <name value="To send list of clients who missed immunization sessions by email or SMS to the community health worker"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;To send list of clients who missed immunization sessions by email or SMS to the community health worker&#xA;&#xA;so that&#xA;&#xA;&gt;The community health worker will have a digital version"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ088"/>
+      </reference>
+      <name value="To set client's preferred contact method"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;To set client's preferred contact method&#xA;&#xA;so that&#xA;&#xA;&gt;Any notification will go through the client’s preferred method"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ019"/>
+      </reference>
+      <name value="To sort the list of needed vaccines by antigen"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;To sort the list of needed vaccines by antigen&#xA;&#xA;so that&#xA;&#xA;&gt;I know how much of each vaccine is needed"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ098"/>
+      </reference>
+      <name value="To specify thresholds for a client to qualify as requiring follow-up, based on the national immunization guidelines"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;To specify thresholds for a client to qualify as requiring follow-up, based on the national immunization guidelines&#xA;&#xA;so that&#xA;&#xA;&gt;Follow up is only done at the appropriate time"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ108"/>
+      </reference>
+      <name value="To update client information such as including change of address (moved permanently or temporarily)"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;To update client information such as including change of address (moved permanently or temporarily)&#xA;&#xA;so that&#xA;&#xA;&gt;To facilitate the client being contacted or being removed from a immunization session’s list"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ073"/>
+      </reference>
+      <name value="To update clients’ vaccination record with all relevant information (i.e. date, dose, batch number, lot number, vaccine type, vaccine vial monitor status)"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;To update clients’ vaccination record with all relevant information (i.e. date, dose, batch number, lot number, vaccine type, vaccine vial monitor status)&#xA;&#xA;so that&#xA;&#xA;&gt;The client has a complete record, and doses can be traced"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ071"/>
+      </reference>
+      <name value="To update stock record"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;To update stock record&#xA;&#xA;so that&#xA;&#xA;&gt;I know which stock adjustments have not been done automatically (such as in instances if something is wasted)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ086"/>
+      </reference>
+      <name value="To validate data against the vaccine schedule (Note: Can use the vaccine schedule to best schedule reminders/recall for series vaccinations)"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;To validate data against the vaccine schedule (Note: Can use the vaccine schedule to best schedule reminders/recall for series vaccinations)&#xA;&#xA;so that&#xA;&#xA;&gt;The generated list adheres to guidelines"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Requirements"/>
+      </extension>
+      <reference>
+        <reference value="Requirements/IMMZFXNREQ054"/>
+      </reference>
+      <name value="Validate a unique identifier when system is offline"/>
+      <description value="As a &lt;a href=&quot;ActorDefinition-Healthworker.html&quot;&gt;Health worker&lt;/a&gt;, I want:&#xA;&gt;Validate a unique identifier when system is offline&#xA;&#xA;so that&#xA;&#xA;&gt;Entry errors are prevented"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <page>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+        <valueUrl value="toc.html"/>
+      </extension>
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="index.html"/>
+        </extension>
+        <nameUrl value="index.html"/>
+        <title value="Home"/>
+        <generation value="markdown"/>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="changes.html"/>
+          </extension>
+          <nameUrl value="changes.html"/>
+          <title value="Changes"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="dependencies.html"/>
+          </extension>
+          <nameUrl value="dependencies.html"/>
+          <title value="Dependencies"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="references.html"/>
+          </extension>
+          <nameUrl value="references.html"/>
+          <title value="References"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="adapting.html"/>
+          </extension>
+          <nameUrl value="adapting.html"/>
+          <title value="Adapting Guidelines for Country use"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="license.html"/>
+          </extension>
+          <nameUrl value="license.html"/>
+          <title value="License"/>
+          <generation value="markdown"/>
+        </page>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="business-requirements.html"/>
+        </extension>
+        <nameUrl value="business-requirements.html"/>
+        <title value="Business Requirements"/>
+        <generation value="markdown"/>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="concepts.html"/>
+          </extension>
+          <nameUrl value="concepts.html"/>
+          <title value="Concepts"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="personas.html"/>
+          </extension>
+          <nameUrl value="personas.html"/>
+          <title value="Generic Personas"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="scenarios.html"/>
+          </extension>
+          <nameUrl value="scenarios.html"/>
+          <title value="User Scenarios"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="business-processes.html"/>
+          </extension>
+          <nameUrl value="business-processes.html"/>
+          <title value="Business Processes"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="dictionary.html"/>
+          </extension>
+          <nameUrl value="dictionary.html"/>
+          <title value="Data Dictionary"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="decision-logic.html"/>
+          </extension>
+          <nameUrl value="decision-logic.html"/>
+          <title value="Decision-support logic"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="indicators.html"/>
+          </extension>
+          <nameUrl value="indicators.html"/>
+          <title value="Indicator and Performance Metrics"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="system-requirements.html"/>
+          </extension>
+          <nameUrl value="system-requirements.html"/>
+          <title value="System Requirements"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="functional-requirements.html"/>
+          </extension>
+          <nameUrl value="functional-requirements.html"/>
+          <title value="Functional Requirements"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="non-functional-requirements.html"/>
+          </extension>
+          <nameUrl value="non-functional-requirements.html"/>
+          <title value="Non-functional Requirements"/>
+          <generation value="markdown"/>
+        </page>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="data-models-and-exchange.html"/>
+        </extension>
+        <nameUrl value="data-models-and-exchange.html"/>
+        <title value="Data Models and Exchange"/>
+        <generation value="markdown"/>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="system-actors.html"/>
+          </extension>
+          <nameUrl value="system-actors.html"/>
+          <title value="System Actors"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="sequence-diagrams.html"/>
+          </extension>
+          <nameUrl value="sequence-diagrams.html"/>
+          <title value="Sequence Diagrams"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="transactions.html"/>
+          </extension>
+          <nameUrl value="transactions.html"/>
+          <title value="Transactions"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="indicators-measures.html"/>
+          </extension>
+          <nameUrl value="indicators-measures.html"/>
+          <title value="Indicators and Measures"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="codings.html"/>
+          </extension>
+          <nameUrl value="codings.html"/>
+          <title value="Codings"/>
+          <generation value="markdown"/>
+        </page>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="deployment.html"/>
+        </extension>
+        <nameUrl value="deployment.html"/>
+        <title value="Deployment"/>
+        <generation value="markdown"/>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="security-privacy.html"/>
+          </extension>
+          <nameUrl value="security-privacy.html"/>
+          <title value="Security and Privacy Considerations"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="testing.html"/>
+          </extension>
+          <nameUrl value="testing.html"/>
+          <title value="Testing"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="test-data.html"/>
+          </extension>
+          <nameUrl value="test-data.html"/>
+          <title value="Test Data"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="reference-implementations.html"/>
+          </extension>
+          <nameUrl value="reference-implementations.html"/>
+          <title value="Reference Implementations"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="trust_domain.html"/>
+          </extension>
+          <nameUrl value="trust_domain.html"/>
+          <title value="Trust Domains"/>
+          <generation value="markdown"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="downloads.html"/>
+          </extension>
+          <nameUrl value="downloads.html"/>
+          <title value="Downloads"/>
+          <generation value="markdown"/>
+        </page>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="indices.html"/>
+        </extension>
+        <nameUrl value="indices.html"/>
+        <title value="Indices"/>
+        <generation value="markdown"/>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="artifacts.html"/>
+          </extension>
+          <nameUrl value="artifacts.html"/>
+          <title value="Artifact Index"/>
+          <generation value="html"/>
+        </page>
+        <page>
+          <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+            <valueUrl value="maps.html"/>
+          </extension>
+          <nameUrl value="maps.html"/>
+          <title value="Mappings"/>
+          <generation value="markdown"/>
+        </page>
+      </page>
+    </page>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/dictionary"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/decision-logic"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/business-processes"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/scheduling-logic"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/indicators"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/system-requirements"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/testing"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/capabilities"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/examples"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/extensions"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/models"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/operations"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/profiles"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/vocabulary"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/maps"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/testing"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/history"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="fsh-generated/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="template/config"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/images"/>
+    </parameter>
+    <parameter>
+      <code value="path-tx-cache"/>
+      <value value="input-cache/txcache"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>
