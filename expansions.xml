@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="d9894524-b5d6-486a-b35c-f3f4e57216ea"/>
+  <meta>
+    <lastUpdated value="2025-04-23T09:10:24.538+00:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="http://smart.who.int/dak-immz/ValueSet/FXREQBusinessProcesses"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-FXREQBusinessProcesses.html">codesystem Functional Requirements Business Processes v1.1.1 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 9 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (en-US)</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses-A"> </a>  
+                  <a href="CodeSystem-FXREQBusinessProcesses.html#FXREQBusinessProcesses-A">A</a>
+                </td>
+                <td>http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses</td>
+                <td>vaccination location registration</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses-B"> </a>  
+                  <a href="CodeSystem-FXREQBusinessProcesses.html#FXREQBusinessProcesses-B">B</a>
+                </td>
+                <td>http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses</td>
+                <td>plan service delivery</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses-C"> </a>  
+                  <a href="CodeSystem-FXREQBusinessProcesses.html#FXREQBusinessProcesses-C">C</a>
+                </td>
+                <td>http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses</td>
+                <td>client registration</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses-D"> </a>  
+                  <a href="CodeSystem-FXREQBusinessProcesses.html#FXREQBusinessProcesses-D">D</a>
+                </td>
+                <td>http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses</td>
+                <td>administer vaccine</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses-E"> </a>  
+                  <a href="CodeSystem-FXREQBusinessProcesses.html#FXREQBusinessProcesses-E">E</a>
+                </td>
+                <td>http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses</td>
+                <td>client reminder</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses-F"> </a>  
+                  <a href="CodeSystem-FXREQBusinessProcesses.html#FXREQBusinessProcesses-F">F</a>
+                </td>
+                <td>http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses</td>
+                <td>defaulter tracing</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses-G"> </a>  
+                  <a href="CodeSystem-FXREQBusinessProcesses.html#FXREQBusinessProcesses-G">G</a>
+                </td>
+                <td>http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses</td>
+                <td>resolve duplicate client records</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses-H"> </a>  
+                  <a href="CodeSystem-FXREQBusinessProcesses.html#FXREQBusinessProcesses-H">H</a>
+                </td>
+                <td>http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses</td>
+                <td>resolve duplicate vaccination events</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses-I"> </a>  
+                  <a href="CodeSystem-FXREQBusinessProcesses.html#FXREQBusinessProcesses-I">I</a>
+                </td>
+                <td>http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses</td>
+                <td>report generation</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://smart.who.int/dak-immz/ValueSet/FXREQBusinessProcesses"/>
+        <version value="1.1.1"/>
+        <name value="FXREQBusinessProcesses"/>
+        <title value="Functional Requirements Business Processes"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <date value="2025-04-23T09:09:02+00:00"/>
+        <expansion>
+          <identifier value="urn:uuid:3dc8a624-5125-4e5b-93df-c21858c5f958"/>
+          <timestamp value="2025-04-23T09:11:54+00:00"/>
+          <total value="9"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses|1.1.1"/>
+          </parameter>
+          <contains>
+            <system value="http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses"/>
+            <code value="A"/>
+            <display value="vaccination location registration"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses"/>
+            <code value="B"/>
+            <display value="plan service delivery"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses"/>
+            <code value="C"/>
+            <display value="client registration"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses"/>
+            <code value="D"/>
+            <display value="administer vaccine"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses"/>
+            <code value="E"/>
+            <display value="client reminder"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses"/>
+            <code value="F"/>
+            <display value="defaulter tracing"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses"/>
+            <code value="G"/>
+            <display value="resolve duplicate client records"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses"/>
+            <code value="H"/>
+            <display value="resolve duplicate vaccination events"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses"/>
+            <code value="I"/>
+            <display value="report generation"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://smart.who.int/dak-immz/ValueSet/FXREQCategories"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-FXREQCategories.html">codesystem Functional Requirement Categories v1.1.1 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 11 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display (en-US)</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://smart.who.int/dak-immz/CodeSystem/FXREQCategories-Performance"> </a>  
+                  <a href="CodeSystem-FXREQCategories.html#FXREQCategories-Performance">Performance</a>
+                </td>
+                <td>http://smart.who.int/dak-immz/CodeSystem/FXREQCategories</td>
+                <td>Performance</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://smart.who.int/dak-immz/CodeSystem/FXREQCategories-Compatibility"> </a>  
+                  <a href="CodeSystem-FXREQCategories.html#FXREQCategories-Compatibility">Compatibility</a>
+                </td>
+                <td>http://smart.who.int/dak-immz/CodeSystem/FXREQCategories</td>
+                <td>Compatibility</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://smart.who.int/dak-immz/CodeSystem/FXREQCategories-Interoperability"> </a>  
+                  <a href="CodeSystem-FXREQCategories.html#FXREQCategories-Interoperability">Interoperability</a>
+                </td>
+                <td>http://smart.who.int/dak-immz/CodeSystem/FXREQCategories</td>
+                <td>Interoperability</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://smart.who.int/dak-immz/CodeSystem/FXREQCategories-Configuration"> </a>  
+                  <a href="CodeSystem-FXREQCategories.html#FXREQCategories-Configuration">Configuration</a>
+                </td>
+                <td>http://smart.who.int/dak-immz/CodeSystem/FXREQCategories</td>
+                <td>Configuration</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://smart.who.int/dak-immz/CodeSystem/FXREQCategories-Usability"> </a>  
+                  <a href="CodeSystem-FXREQCategories.html#FXREQCategories-Usability">Usability</a>
+                </td>
+                <td>http://smart.who.int/dak-immz/CodeSystem/FXREQCategories</td>
+                <td>Usability</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://smart.who.int/dak-immz/CodeSystem/FXREQCategories-Reliability"> </a>  
+                  <a href="CodeSystem-FXREQCategories.html#FXREQCategories-Reliability">Reliability</a>
+                </td>
+                <td>http://smart.who.int/dak-immz/CodeSystem/FXREQCategories</td>
+                <td>Reliability</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://smart.who.int/dak-immz/CodeSystem/FXREQCategories-Confidentialityprivacyandsecurity"> </a>  
+                  <a href="CodeSystem-FXREQCategories.html#FXREQCategories-Confidentialityprivacyandsecurity">Confidentialityprivacyandsecurity</a>
+                </td>
+                <td>http://smart.who.int/dak-immz/CodeSystem/FXREQCategories</td>
+                <td>Confidentiality, privacy and security</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://smart.who.int/dak-immz/CodeSystem/FXREQCategories-Maintainability"> </a>  
+                  <a href="CodeSystem-FXREQCategories.html#FXREQCategories-Maintainability">Maintainability</a>
+                </td>
+                <td>http://smart.who.int/dak-immz/CodeSystem/FXREQCategories</td>
+                <td>Maintainability</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://smart.who.int/dak-immz/CodeSystem/FXREQCategories-Portability"> </a>  
+                  <a href="CodeSystem-FXREQCategories.html#FXREQCategories-Portability">Portability</a>
+                </td>
+                <td>http://smart.who.int/dak-immz/CodeSystem/FXREQCategories</td>
+                <td>Portability</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://smart.who.int/dak-immz/CodeSystem/FXREQCategories-General"> </a>  
+                  <a href="CodeSystem-FXREQCategories.html#FXREQCategories-General">General</a>
+                </td>
+                <td>http://smart.who.int/dak-immz/CodeSystem/FXREQCategories</td>
+                <td>General</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://smart.who.int/dak-immz/CodeSystem/FXREQCategories-Scalability"> </a>  
+                  <a href="CodeSystem-FXREQCategories.html#FXREQCategories-Scalability">Scalability</a>
+                </td>
+                <td>http://smart.who.int/dak-immz/CodeSystem/FXREQCategories</td>
+                <td>Scalability</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://smart.who.int/dak-immz/ValueSet/FXREQCategories"/>
+        <version value="1.1.1"/>
+        <name value="FXREQCategories"/>
+        <title value="Functional Requirement Categories"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <date value="2025-04-23T09:09:02+00:00"/>
+        <expansion>
+          <identifier value="urn:uuid:f47a2690-845f-4ff1-b522-9bae0cc56e64"/>
+          <timestamp value="2025-04-23T09:11:54+00:00"/>
+          <total value="11"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en-US"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://smart.who.int/dak-immz/CodeSystem/FXREQCategories|1.1.1"/>
+          </parameter>
+          <contains>
+            <system value="http://smart.who.int/dak-immz/CodeSystem/FXREQCategories"/>
+            <code value="Performance"/>
+            <display value="Performance"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/dak-immz/CodeSystem/FXREQCategories"/>
+            <code value="Compatibility"/>
+            <display value="Compatibility"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/dak-immz/CodeSystem/FXREQCategories"/>
+            <code value="Interoperability"/>
+            <display value="Interoperability"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/dak-immz/CodeSystem/FXREQCategories"/>
+            <code value="Configuration"/>
+            <display value="Configuration"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/dak-immz/CodeSystem/FXREQCategories"/>
+            <code value="Usability"/>
+            <display value="Usability"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/dak-immz/CodeSystem/FXREQCategories"/>
+            <code value="Reliability"/>
+            <display value="Reliability"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/dak-immz/CodeSystem/FXREQCategories"/>
+            <code value="Confidentialityprivacyandsecurity"/>
+            <display value="Confidentiality, privacy and security"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/dak-immz/CodeSystem/FXREQCategories"/>
+            <code value="Maintainability"/>
+            <display value="Maintainability"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/dak-immz/CodeSystem/FXREQCategories"/>
+            <code value="Portability"/>
+            <display value="Portability"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/dak-immz/CodeSystem/FXREQCategories"/>
+            <code value="General"/>
+            <display value="General"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/dak-immz/CodeSystem/FXREQCategories"/>
+            <code value="Scalability"/>
+            <display value="Scalability"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

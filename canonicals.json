@@ -1,0 +1,2907 @@
+[
+  {
+    "id" : "communityhealthworker",
+    "type" : "ActorDefinition",
+    "url" : "http://smart.who.int/dak-immz/ActorDefinition/communityhealthworker",
+    "version" : "1.1.1",
+    "name" : "Community health worker"
+  },
+  {
+    "id" : "eirstaff",
+    "type" : "ActorDefinition",
+    "url" : "http://smart.who.int/dak-immz/ActorDefinition/eirstaff",
+    "version" : "1.1.1",
+    "name" : "EIR staff"
+  },
+  {
+    "id" : "eirstafforhealthworker",
+    "type" : "ActorDefinition",
+    "url" : "http://smart.who.int/dak-immz/ActorDefinition/eirstafforhealthworker",
+    "version" : "1.1.1",
+    "name" : "EIR staff OR health worker"
+  },
+  {
+    "id" : "electronicimmunizationregistryeirstaff",
+    "type" : "ActorDefinition",
+    "url" : "http://smart.who.int/dak-immz/ActorDefinition/electronicimmunizationregistryeirstaff",
+    "version" : "1.1.1",
+    "name" : "Electronic immunization registry (EIR) staff"
+  },
+  {
+    "id" : "healthworker",
+    "type" : "ActorDefinition",
+    "url" : "http://smart.who.int/dak-immz/ActorDefinition/healthworker",
+    "version" : "1.1.1",
+    "name" : "Health worker"
+  },
+  {
+    "id" : "FXREQBusinessProcesses",
+    "type" : "CodeSystem",
+    "url" : "http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses",
+    "version" : "1.1.1",
+    "name" : "FXREQBusinessProcesses"
+  },
+  {
+    "id" : "FXREQCategories",
+    "type" : "CodeSystem",
+    "url" : "http://smart.who.int/dak-immz/CodeSystem/FXREQCategories",
+    "version" : "1.1.1",
+    "name" : "FXREQCategories"
+  },
+  {
+    "id" : "smart.who.int.dak-immz",
+    "type" : "ImplementationGuide",
+    "url" : "http://smart.who.int/dak-immz/ImplementationGuide/smart.who.int.dak-immz",
+    "version" : "1.1.1",
+    "name" : "DakImmz"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.001.A",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.001.A",
+    "version" : "1.1.1",
+    "name" : "Obtain vaccination location information"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.002.A",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.002.A",
+    "version" : "1.1.1",
+    "name" : "Validate against national master facility list"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.003.A",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.003.A",
+    "version" : "1.1.1",
+    "name" : "Validate against national master facility list"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.004.A",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.004.A",
+    "version" : "1.1.1",
+    "name" : "Validate against national master facility list"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.005.A",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.005.A",
+    "version" : "1.1.1",
+    "name" : "Update/add new vaccination location"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.006.A",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.006.A",
+    "version" : "1.1.1",
+    "name" : "Update/add new vaccination location"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.007.A",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.007.A",
+    "version" : "1.1.1",
+    "name" : "Update/add new vaccination location"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.008.A",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.008.A",
+    "version" : "1.1.1",
+    "name" : "Create/update vaccination location record"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.009.A",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.009.A",
+    "version" : "1.1.1",
+    "name" : "Update/add new vaccination location"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.010.A",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.010.A",
+    "version" : "1.1.1",
+    "name" : "Verify information for additional data"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.011.A",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.011.A",
+    "version" : "1.1.1",
+    "name" : "Verify information for additional data"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.012.A",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.012.A",
+    "version" : "1.1.1",
+    "name" : "Verify information for additional data"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.013.A",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.013.A",
+    "version" : "1.1.1",
+    "name" : "Request additional information"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.014.A",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.014.A",
+    "version" : "1.1.1",
+    "name" : "Request additional information"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.015.A",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.015.A",
+    "version" : "1.1.1",
+    "name" : "Generate unique location identifier"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.016.A",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.016.A",
+    "version" : "1.1.1",
+    "name" : "Send vaccination location registration notification"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.017.A",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.017.A",
+    "version" : "1.1.1",
+    "name" : "Send vaccination location registration notification"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.018.B",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.018.B",
+    "version" : "1.1.1",
+    "name" : "Review past vaccination records to estimate vaccines needed"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.019.B",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.019.B",
+    "version" : "1.1.1",
+    "name" : "Review past vaccination records to estimate vaccines needed"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.020.B",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.020.B",
+    "version" : "1.1.1",
+    "name" : "Review past vaccination records to estimate vaccines needed"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.021.B",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.021.B",
+    "version" : "1.1.1",
+    "name" : "Record details on planning sheet"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.022.B",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.022.B",
+    "version" : "1.1.1",
+    "name" : "Record details on planning sheet"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.023.B",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.023.B",
+    "version" : "1.1.1",
+    "name" : "Record details on planning sheet"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.030.B",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.030.B",
+    "version" : "1.1.1",
+    "name" : "Get needed stock"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.031.B",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.031.B",
+    "version" : "1.1.1",
+    "name" : "Record stock taken"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.032.B",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.032.B",
+    "version" : "1.1.1",
+    "name" : "Record stock taken"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.033.B",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.033.B",
+    "version" : "1.1.1",
+    "name" : "Record stock taken"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.034.B",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.034.B",
+    "version" : "1.1.1",
+    "name" : "Assemble all needed materials for immunization session"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.035.C",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.035.C",
+    "version" : "1.1.1",
+    "name" : "Query client record"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.036.C",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.036.C",
+    "version" : "1.1.1",
+    "name" : "Query client record"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.037.C",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.037.C",
+    "version" : "1.1.1",
+    "name" : "Query client record"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.038.C",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.038.C",
+    "version" : "1.1.1",
+    "name" : "Query client record"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.039.C",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.039.C",
+    "version" : "1.1.1",
+    "name" : "Query client record"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.040.C",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.040.C",
+    "version" : "1.1.1",
+    "name" : "Query client record"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.041.C",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.041.C",
+    "version" : "1.1.1",
+    "name" : "Query client record"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.042.C",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.042.C",
+    "version" : "1.1.1",
+    "name" : "Query client record"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.043.C",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.043.C",
+    "version" : "1.1.1",
+    "name" : "Query client record"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.044.C",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.044.C",
+    "version" : "1.1.1",
+    "name" : "Query client record"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.045.C",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.045.C",
+    "version" : "1.1.1",
+    "name" : "Query client record"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.046.C",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.046.C",
+    "version" : "1.1.1",
+    "name" : "Query client record"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.047.C",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.047.C",
+    "version" : "1.1.1",
+    "name" : "Query client record"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.048.C",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.048.C",
+    "version" : "1.1.1",
+    "name" : "Query client record"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.049.C",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.049.C",
+    "version" : "1.1.1",
+    "name" : "Create client record"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.050.C",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.050.C",
+    "version" : "1.1.1",
+    "name" : "Validate client details"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.051.C",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.051.C",
+    "version" : "1.1.1",
+    "name" : "Validate client details"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.052.C",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.052.C",
+    "version" : "1.1.1",
+    "name" : "Create client record"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.053.C",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.053.C",
+    "version" : "1.1.1",
+    "name" : "Create client record"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.054.C",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.054.C",
+    "version" : "1.1.1",
+    "name" : "Create client record"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.055.C",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.055.C",
+    "version" : "1.1.1",
+    "name" : "Validate client details"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.056.C",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.056.C",
+    "version" : "1.1.1",
+    "name" : "Validate client details"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.057.C",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.057.C",
+    "version" : "1.1.1",
+    "name" : "Validate client details"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.058.C",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.058.C",
+    "version" : "1.1.1",
+    "name" : "Validate client details"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.059.C",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.059.C",
+    "version" : "1.1.1",
+    "name" : "Validate client details"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.060.C",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.060.C",
+    "version" : "1.1.1",
+    "name" : "Validate client details"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.061.D",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.061.D",
+    "version" : "1.1.1",
+    "name" : "Capture or update client history"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.062.D",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.062.D",
+    "version" : "1.1.1",
+    "name" : "Capture or update client history"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.063.D",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.063.D",
+    "version" : "1.1.1",
+    "name" : "Determine required vaccination(s)"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.064.D",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.064.D",
+    "version" : "1.1.1",
+    "name" : "Determine required vaccination(s)"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.065.D",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.065.D",
+    "version" : "1.1.1",
+    "name" : "Determine required vaccination(s)"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.066.D",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.066.D",
+    "version" : "1.1.1",
+    "name" : "Determine vaccine(s) to be administered based on contraindications"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.067.D",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.067.D",
+    "version" : "1.1.1",
+    "name" : "Determine vaccine(s) to be administered based on contraindications"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.068.D",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.068.D",
+    "version" : "1.1.1",
+    "name" : "Check stock availability of recommended vaccines"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.069.D",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.069.D",
+    "version" : "1.1.1",
+    "name" : "Check stock availability of recommended vaccines"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.070.D",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.070.D",
+    "version" : "1.1.1",
+    "name" : "Check stock availability of recommended vaccines"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.071.D",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.071.D",
+    "version" : "1.1.1",
+    "name" : "Dispose of waste"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.072.D",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.072.D",
+    "version" : "1.1.1",
+    "name" : "Update client record"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.073.D",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.073.D",
+    "version" : "1.1.1",
+    "name" : "Update client record"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.074.D",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.074.D",
+    "version" : "1.1.1",
+    "name" : "Update client record"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.075.D",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.075.D",
+    "version" : "1.1.1",
+    "name" : "Update client record"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.076.D",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.076.D",
+    "version" : "1.1.1",
+    "name" : "Update client record"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.077.D",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.077.D",
+    "version" : "1.1.1",
+    "name" : "Update client record"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.078.D",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.078.D",
+    "version" : "1.1.1",
+    "name" : "Monitor the client for any adverse reactions"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.080.D",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.080.D",
+    "version" : "1.1.1",
+    "name" : "Determine time for next visit (as needed)"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.081.D",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.081.D",
+    "version" : "1.1.1",
+    "name" : "Provide vaccination record"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.082.D",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.082.D",
+    "version" : "1.1.1",
+    "name" : "Does client require a verifiable digital certificate?"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.083.D",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.083.D",
+    "version" : "1.1.1",
+    "name" : "Generate verifiable digital certificate"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.084.E",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.084.E",
+    "version" : "1.1.1",
+    "name" : "Define/evaluate criteria"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.085.E",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.085.E",
+    "version" : "1.1.1",
+    "name" : "Define/evaluate criteria"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.086.E",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.086.E",
+    "version" : "1.1.1",
+    "name" : "Define/evaluate criteria"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.087.E",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.087.E",
+    "version" : "1.1.1",
+    "name" : "Select notification method"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.088.E",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.088.E",
+    "version" : "1.1.1",
+    "name" : "Select notification method"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.089.E",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.089.E",
+    "version" : "1.1.1",
+    "name" : "Generate list of clients"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.090.E",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.090.E",
+    "version" : "1.1.1",
+    "name" : "Generate list of clients"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.091.E",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.091.E",
+    "version" : "1.1.1",
+    "name" : "Generate list of clients"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.092.E",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.092.E",
+    "version" : "1.1.1",
+    "name" : "Generate list of clients"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.093.E",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.093.E",
+    "version" : "1.1.1",
+    "name" : "Generate list of clients"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.094.E",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.094.E",
+    "version" : "1.1.1",
+    "name" : "Generate list of clients"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.095.E",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.095.E",
+    "version" : "1.1.1",
+    "name" : "Send notifications"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.096.E",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.096.E",
+    "version" : "1.1.1",
+    "name" : "Send notifications"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.097.F",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.097.F",
+    "version" : "1.1.1",
+    "name" : "Determine if vaccines were missed"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.098.F",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.098.F",
+    "version" : "1.1.1",
+    "name" : "Determine if vaccines were missed"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.099.F",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.099.F",
+    "version" : "1.1.1",
+    "name" : "Generate list of clients who are due or overdue for vaccination"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.100.F",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.100.F",
+    "version" : "1.1.1",
+    "name" : "Generate list of clients who are due or overdue for vaccination"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.101.F",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.101.F",
+    "version" : "1.1.1",
+    "name" : "Generate list of clients who are due or overdue for vaccination"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.102.F",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.102.F",
+    "version" : "1.1.1",
+    "name" : "Record the necessary information to follow-up"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.103.F",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.103.F",
+    "version" : "1.1.1",
+    "name" : "Record the necessary information to follow-up"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.104.F",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.104.F",
+    "version" : "1.1.1",
+    "name" : "Plan for follow-up directly or during outreach"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.105.F",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.105.F",
+    "version" : "1.1.1",
+    "name" : "Send client information to community health worker"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.106.F",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.106.F",
+    "version" : "1.1.1",
+    "name" : "Provide feedback"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.107.F",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.107.F",
+    "version" : "1.1.1",
+    "name" : "Update record to document reason/lost follow-up"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.108.F",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.108.F",
+    "version" : "1.1.1",
+    "name" : "Update record to document reason/lost follow-up"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.109.F",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.109.F",
+    "version" : "1.1.1",
+    "name" : "Update record to document reason/lost follow-up"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.110.F",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.110.F",
+    "version" : "1.1.1",
+    "name" : "Update record to document reason/lost follow-up"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.111.F",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.111.F",
+    "version" : "1.1.1",
+    "name" : "Update record to document reason/lost follow-up"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.112.F",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.112.F",
+    "version" : "1.1.1",
+    "name" : "Update record to document reason/lost follow-up"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.113.G",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.113.G",
+    "version" : "1.1.1",
+    "name" : "Flag client records for evaluation"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.114.G",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.114.G",
+    "version" : "1.1.1",
+    "name" : "Flag client records for evaluation"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.115.G",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.115.G",
+    "version" : "1.1.1",
+    "name" : "Flag client records for evaluation"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.116.G",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.116.G",
+    "version" : "1.1.1",
+    "name" : "Produce list of potential duplicate records"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.117.G",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.117.G",
+    "version" : "1.1.1",
+    "name" : "Perform manual review"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.118.G",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.118.G",
+    "version" : "1.1.1",
+    "name" : "Perform manual review"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.119.G",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.119.G",
+    "version" : "1.1.1",
+    "name" : "Perform manual review"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.120.G",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.120.G",
+    "version" : "1.1.1",
+    "name" : "Perform manual review"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.121.G",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.121.G",
+    "version" : "1.1.1",
+    "name" : "Merge records"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.122.G",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.122.G",
+    "version" : "1.1.1",
+    "name" : "Merge records"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.123.G",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.123.G",
+    "version" : "1.1.1",
+    "name" : "Merge records"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.124.G",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.124.G",
+    "version" : "1.1.1",
+    "name" : "Merge records"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.125.G",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.125.G",
+    "version" : "1.1.1",
+    "name" : "Mark as \"not a duplicate\" or \"pending\""
+  },
+  {
+    "id" : "IMMZ.FXNREQ.126.G",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.126.G",
+    "version" : "1.1.1",
+    "name" : "Mark as \"not a duplicate\" or \"pending\""
+  },
+  {
+    "id" : "IMMZ.FXNREQ.127.H",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.127.H",
+    "version" : "1.1.1",
+    "name" : "Identify groups of vaccination events for evaluation"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.128.H",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.128.H",
+    "version" : "1.1.1",
+    "name" : "Identify groups of vaccination events for evaluation"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.129.H",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.129.H",
+    "version" : "1.1.1",
+    "name" : "Identify groups of vaccination events for evaluation"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.130.H",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.130.H",
+    "version" : "1.1.1",
+    "name" : "Identify groups of vaccination events for evaluation"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.131.H",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.131.H",
+    "version" : "1.1.1",
+    "name" : "Identify groups of vaccination events for evaluation"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.132.H",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.132.H",
+    "version" : "1.1.1",
+    "name" : "Evaluate vaccine event records"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.133.H",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.133.H",
+    "version" : "1.1.1",
+    "name" : "Evaluate vaccine event records"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.134.H",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.134.H",
+    "version" : "1.1.1",
+    "name" : "Evaluate vaccine event records"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.135.H",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.135.H",
+    "version" : "1.1.1",
+    "name" : "Evaluate vaccine event records"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.136.H",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.136.H",
+    "version" : "1.1.1",
+    "name" : "Evaluate vaccine event records"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.137.H",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.137.H",
+    "version" : "1.1.1",
+    "name" : "Select the most accurate/suitable event record"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.138.H",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.138.H",
+    "version" : "1.1.1",
+    "name" : "Select the most accurate/suitable event record"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.139.H",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.139.H",
+    "version" : "1.1.1",
+    "name" : "Update vaccination event records"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.140.H",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.140.H",
+    "version" : "1.1.1",
+    "name" : "Update vaccination event records"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.141.H",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.141.H",
+    "version" : "1.1.1",
+    "name" : "Generate report of duplicate vaccine events"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.142.I",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.142.I",
+    "version" : "1.1.1",
+    "name" : "Define parameters for report"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.143.I",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.143.I",
+    "version" : "1.1.1",
+    "name" : "Define parameters for report"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.144.I",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.144.I",
+    "version" : "1.1.1",
+    "name" : "Define parameters for report"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.145.I",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.145.I",
+    "version" : "1.1.1",
+    "name" : "Define parameters for report"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.146.I",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.146.I",
+    "version" : "1.1.1",
+    "name" : "Define parameters for report"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.147.I",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.147.I",
+    "version" : "1.1.1",
+    "name" : "Generate report"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.148.I",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.148.I",
+    "version" : "1.1.1",
+    "name" : "Generate report"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.149.I",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.149.I",
+    "version" : "1.1.1",
+    "name" : "Generate report"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.150.I",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.150.I",
+    "version" : "1.1.1",
+    "name" : "Generate report"
+  },
+  {
+    "id" : "IMMZ.FXNREQ.151.I",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.151.I",
+    "version" : "1.1.1",
+    "name" : "Generate report"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.001",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.001",
+    "version" : "1.1.1",
+    "name" : "Make efficient use of data communication time"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.002",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.002",
+    "version" : "1.1.1",
+    "name" : "Make efficient use of capabilities of lower-cost mobile devices"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.003",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.003",
+    "version" : "1.1.1",
+    "name" : "Support data capacity considerations (including those for data transmission, storage and processing) for all users over the expected lifetime of the system"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.004",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.004",
+    "version" : "1.1.1",
+    "name" : "Use a database that can scale to support projected transaction volume"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.005",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.005",
+    "version" : "1.1.1",
+    "name" : "Provide real-time response to transactions submitted by connected devices up to the configured national volume level"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.006",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.006",
+    "version" : "1.1.1",
+    "name" : "Provide real-time messages such as \"report processing\" or \"in progress\" for transactions that affect the system performance"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.007",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.007",
+    "version" : "1.1.1",
+    "name" : "Use open standards to promote interoperability"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.008",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.008",
+    "version" : "1.1.1",
+    "name" : "Exchange actionable data between systems (need to enforce semantic interoperability)"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.009",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.009",
+    "version" : "1.1.1",
+    "name" : "Provide access from internet-enabled devices"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.010",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.010",
+    "version" : "1.1.1",
+    "name" : "Support flexible models for data collection (e.g. including paper forms, web forms, SMS, barcode, etc.)"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.011",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.011",
+    "version" : "1.1.1",
+    "name" : "Comply with industry standards for data exchange"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.012",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.012",
+    "version" : "1.1.1",
+    "name" : "Operate with open-source or third-party reporting tools"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.013",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.013",
+    "version" : "1.1.1",
+    "name" : "Comply with industry standards for tracking and tracing of supplies"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.014",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.014",
+    "version" : "1.1.1",
+    "name" : "Enable streamlined data collection, organization and dissemination"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.015",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.015",
+    "version" : "1.1.1",
+    "name" : "Provide access to data through application programming interfaces"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.016",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.016",
+    "version" : "1.1.1",
+    "name" : "Link with insurance systems to verify eligibility and submit claims"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.017",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.017",
+    "version" : "1.1.1",
+    "name" : "Allow for data exchange and efficient synchronization across multiple facilities and points of service when the internet is available, even when it is intermittent and slow"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.018",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.018",
+    "version" : "1.1.1",
+    "name" : "Configure the system centrally"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.019",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.019",
+    "version" : "1.1.1",
+    "name" : "Configure business rules in line with guidelines and standard operating procedures"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.020",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.020",
+    "version" : "1.1.1",
+    "name" : "Configure error messages"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.021",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.021",
+    "version" : "1.1.1",
+    "name" : "Enable configuration to any national or subnational administrative structure or number of levels"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.022",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.022",
+    "version" : "1.1.1",
+    "name" : "Allow for flexible configurations based on the context of use, including the physical, regulatory and social environment"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.023",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.023",
+    "version" : "1.1.1",
+    "name" : "Transmit information in a language (script or voice) that is understood by the user population"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.024",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.024",
+    "version" : "1.1.1",
+    "name" : "Emphasize ease of use and learnability to reduce training costs"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.025",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.025",
+    "version" : "1.1.1",
+    "name" : "Be able to be learned easily by end users and supervisors to meet specified goals of system effectiveness and efficiency"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.026",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.026",
+    "version" : "1.1.1",
+    "name" : "Enable easy data collection, organization (predefined drop-down menus or searchable lists, radio buttons, check boxes) and dissemination"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.027",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.027",
+    "version" : "1.1.1",
+    "name" : "Focus on the mobile-user experience with secondary use of a computer"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.028",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.028",
+    "version" : "1.1.1",
+    "name" : "Allow users to find features in two clicks or fewer"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.029",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.029",
+    "version" : "1.1.1",
+    "name" : "Provide a search interface to reduce data-entry burden and improve accuracy on mobile devices"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.030",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.030",
+    "version" : "1.1.1",
+    "name" : "Support real-time data-entry validation and feedback to prevent data-entry errors from being recorded"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.031",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.031",
+    "version" : "1.1.1",
+    "name" : "Support ability to calculate values on behalf of user (eliminating need to add, subtract, multiply or divide)"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.032",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.032",
+    "version" : "1.1.1",
+    "name" : "Provide an appropriate localized experience with both language and cultural translations"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.033",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.033",
+    "version" : "1.1.1",
+    "name" : "Support ability to recalculate the immunization scheduled or provide clinical decision support in the event that the client does not receive vaccines on time or has contraindications to their administration"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.034",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.034",
+    "version" : "1.1.1",
+    "name" : "Be user-friendly for people with low computer literacy"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.035",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.035",
+    "version" : "1.1.1",
+    "name" : "Provide informative error messages and tooltips"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.036",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.036",
+    "version" : "1.1.1",
+    "name" : "Alert the user when navigating away from a form without saving"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.037",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.037",
+    "version" : "1.1.1",
+    "name" : "Use industry-standard user interface practices and apply them consistently throughout the system"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.038",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.038",
+    "version" : "1.1.1",
+    "name" : "Provide guidance to users to better support clinical guidelines and best clinical practices"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.039",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.039",
+    "version" : "1.1.1",
+    "name" : "Be reliable and robust (minimize the number of system crashes)"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.040",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.040",
+    "version" : "1.1.1",
+    "name" : "Adjust display to fit small screens (e.g. mobile phones)"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.041",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.041",
+    "version" : "1.1.1",
+    "name" : "Enable a task to be cancelled and rolled back to previous state"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.042",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.042",
+    "version" : "1.1.1",
+    "name" : "Enable users to work offline and then synchronize data when data connection is available"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.043",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.043",
+    "version" : "1.1.1",
+    "name" : "Allow a task to be interrupted and resumed"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.044",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.044",
+    "version" : "1.1.1",
+    "name" : "Enable earlier versions of a record to be recoverable"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.045",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.045",
+    "version" : "1.1.1",
+    "name" : "Enable backup of data so that information is recoverable in the event of a system or hardware failure"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.046",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.046",
+    "version" : "1.1.1",
+    "name" : "Accommodate loss of connectivity to hosted application (network may become unavailable while a user is in the process of submitting a form)"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.047",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.047",
+    "version" : "1.1.1",
+    "name" : "Be able to reliably perform tasks within appropriate time with resistance to failures or deadlocks"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.048",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.048",
+    "version" : "1.1.1",
+    "name" : "Be deployed in an environment subject to power loss"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.049",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.049",
+    "version" : "1.1.1",
+    "name" : "Allow for client devices with low bandwidth or irregular connectivity"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.050",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.050",
+    "version" : "1.1.1",
+    "name" : "Prevent unauthorized access to clients' protected health information"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.051",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.051",
+    "version" : "1.1.1",
+    "name" : "Prevent updates to the database occurring only partially (atomicity), which can cause greater problems than rejecting an entire submission of a form"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.052",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.052",
+    "version" : "1.1.1",
+    "name" : "Trace and record changes to data taken by the system and by users (update/delete/add/access)"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.053",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.053",
+    "version" : "1.1.1",
+    "name" : "Allow the administrator to establish access privileges and priorities"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.054",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.054",
+    "version" : "1.1.1",
+    "name" : "Support definitions of unlimited roles and assigned levels of access, viewing, entry, editing and auditing"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.055",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.055",
+    "version" : "1.1.1",
+    "name" : "Require each user to authenticate by role before gaining access to the system"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.056",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.056",
+    "version" : "1.1.1",
+    "name" : "Provide flexible password control to align to national policy and standard operating procedures, including password format requirements"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.057",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.057",
+    "version" : "1.1.1",
+    "name" : "Protect system servers through the use of an internet firewall"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.058",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.058",
+    "version" : "1.1.1",
+    "name" : "Comply with country's existing health information storage policies"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.059",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.059",
+    "version" : "1.1.1",
+    "name" : "Protect against viruses and malware"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.060",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.060",
+    "version" : "1.1.1",
+    "name" : "Allow for maintenance of security updates"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.061",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.061",
+    "version" : "1.1.1",
+    "name" : "Have a source code audit against security threats"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.062",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.062",
+    "version" : "1.1.1",
+    "name" : "Log all activities performed by the user, including date and time stamp"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.063",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.063",
+    "version" : "1.1.1",
+    "name" : "Maintain a transaction log history (system logins and logouts)"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.064",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.064",
+    "version" : "1.1.1",
+    "name" : "Support privacy policies such as identifying who has access to the health data, and what data can be accessed"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.065",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.065",
+    "version" : "1.1.1",
+    "name" : "Design software security protections to ensure system availability"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.066",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.066",
+    "version" : "1.1.1",
+    "name" : "Provide a means to ensure confidentiality and privacy of personal health information"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.067",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.067",
+    "version" : "1.1.1",
+    "name" : "Provide the ability for allowed users to view confidential data"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.068",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.068",
+    "version" : "1.1.1",
+    "name" : "Anonymize data that are exported from the system"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.069",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.069",
+    "version" : "1.1.1",
+    "name" : "Prevent remembering username and password"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.070",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.070",
+    "version" : "1.1.1",
+    "name" : "Automatically log out the user after a specified time of inactivity"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.071",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.071",
+    "version" : "1.1.1",
+    "name" : "Provide encrypted communication between components"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.072",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.072",
+    "version" : "1.1.1",
+    "name" : "Provide secure data transmission methods to prevent others from seeing data sent from one computer to another by using data encryption and private networks across public networks"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.073",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.073",
+    "version" : "1.1.1",
+    "name" : "Notify the user to change their password the first time they log in"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.074",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.074",
+    "version" : "1.1.1",
+    "name" : "Provide a mechanism to securely change a user's password"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.075",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.075",
+    "version" : "1.1.1",
+    "name" : "Notify the user of a password change to their account"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.076",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.076",
+    "version" : "1.1.1",
+    "name" : "Reset a user's password in a secure manner"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.077",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.077",
+    "version" : "1.1.1",
+    "name" : "Lock a user out after a specified number of wrong password attempts"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.078",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.078",
+    "version" : "1.1.1",
+    "name" : "Notify a user if their account is locked due to wrong password attempts"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.079",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.079",
+    "version" : "1.1.1",
+    "name" : "Record all authentication violations"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.080",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.080",
+    "version" : "1.1.1",
+    "name" : "Log access to views of individual client records"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.081",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.081",
+    "version" : "1.1.1",
+    "name" : "Log access to data summaries, reports, analysis and visualization features"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.082",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.082",
+    "version" : "1.1.1",
+    "name" : "Log exchange of data with other systems"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.083",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.083",
+    "version" : "1.1.1",
+    "name" : "Generate analysis of the use of different system features and reports"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.084",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.084",
+    "version" : "1.1.1",
+    "name" : "Log all data and system errors"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.085",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.085",
+    "version" : "1.1.1",
+    "name" : "Allow user with permission to create a new user and temporary password"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.086",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.086",
+    "version" : "1.1.1",
+    "name" : "Allow roles to be associated with specific geographical areas or health-care facilities"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.087",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.087",
+    "version" : "1.1.1",
+    "name" : "Allow cascading user management and assignment of roles"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.088",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.088",
+    "version" : "1.1.1",
+    "name" : "Allow user to change their own password"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.089",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.089",
+    "version" : "1.1.1",
+    "name" : "Allow admin user to request password reset"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.090",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.090",
+    "version" : "1.1.1",
+    "name" : "Notify the user to regularly change their password"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.091",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.091",
+    "version" : "1.1.1",
+    "name" : "Allow each user to be assigned to one or more roles"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.092",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.092",
+    "version" : "1.1.1",
+    "name" : "Be built using technologies that enable local control, open competition and transparency of the code"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.093",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.093",
+    "version" : "1.1.1",
+    "name" : "Have adequate support resources to ensure reusability, scalability and sustainability"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.094",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.094",
+    "version" : "1.1.1",
+    "name" : "Support reusability of the system source code"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.095",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.095",
+    "version" : "1.1.1",
+    "name" : "Promote easier acquisition by supporting a range of devices and form factors"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.096",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.096",
+    "version" : "1.1.1",
+    "name" : "Able to access the system at all levels/stores"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.097",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.097",
+    "version" : "1.1.1",
+    "name" : "Enable local control of operations"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.098",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.098",
+    "version" : "1.1.1",
+    "name" : "Be well-documented, including known issues"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.099",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.099",
+    "version" : "1.1.1",
+    "name" : "Support repair or upgrade of a component in a running system"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.100",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.100",
+    "version" : "1.1.1",
+    "name" : "Provide a unique version number for each version (all future updates and releases)"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.101",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.101",
+    "version" : "1.1.1",
+    "name" : "Enable the system to detect incompatible versions of software running on different components"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.102",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.102",
+    "version" : "1.1.1",
+    "name" : "Have a support process that tracks and documents bugs from discovery to resolution"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.103",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.103",
+    "version" : "1.1.1",
+    "name" : "Enable access to the central system from all levels of the health system"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.104",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.104",
+    "version" : "1.1.1",
+    "name" : "Support changes to organizational alignment of facilities and personnel"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.105",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.105",
+    "version" : "1.1.1",
+    "name" : "Include an administrable content management system"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.106",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.106",
+    "version" : "1.1.1",
+    "name" : "Provide detailed architectural, operational and testing documentation"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.107",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.107",
+    "version" : "1.1.1",
+    "name" : "Be able to provide continuity and access to data throughout changes in infrastructure (e.g. telecommunication, power) at the health-post level"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.108",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.108",
+    "version" : "1.1.1",
+    "name" : "Support extensibility and/or the ability to accept new services or functionality"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.109",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.109",
+    "version" : "1.1.1",
+    "name" : "Generate IDs that are unique across different locations or sites"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.110",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.110",
+    "version" : "1.1.1",
+    "name" : "Report version number when saving data to the database"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.111",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.111",
+    "version" : "1.1.1",
+    "name" : "Show the number of records that are not yet synchronized"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.112",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.112",
+    "version" : "1.1.1",
+    "name" : "Have the ability to easily back up information"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.113",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.113",
+    "version" : "1.1.1",
+    "name" : "Warn user if no valid back-up for more than a predefined number of days"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.114",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.114",
+    "version" : "1.1.1",
+    "name" : "Support the ability to store images and other unstructured data"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.115",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.115",
+    "version" : "1.1.1",
+    "name" : "Scalable to accommodate new demands"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.116",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.116",
+    "version" : "1.1.1",
+    "name" : "Be able to accommodate at least [x number of] health-care facilities"
+  },
+  {
+    "id" : "IMMZ.NFXNREQ.117",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.117",
+    "version" : "1.1.1",
+    "name" : "Be able to accommodate at least [x number of] concurrent users"
+  },
+  {
+    "id" : "IMMZFXNREQ001",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ001",
+    "version" : "1.1.1",
+    "name" : "The EIR system to be able to communicate with other systems (such as a national health management information system [HMIS] and Expanded Programme on Immunization [EPI]) to obtain vaccination locations information and other necessary information"
+  },
+  {
+    "id" : "IMMZFXNREQ002",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ002",
+    "version" : "1.1.1",
+    "name" : "The system to interface with National Master Facility List (NMFL) database to validate the EIR master list of vaccination locations"
+  },
+  {
+    "id" : "IMMZFXNREQ003",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ003",
+    "version" : "1.1.1",
+    "name" : "The system to flag any vaccination location registered in the EIR that is not on the NMFL"
+  },
+  {
+    "id" : "IMMZFXNREQ004",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ004",
+    "version" : "1.1.1",
+    "name" : "The system to be able to link a vaccination location’s NMFL identification (ID) with the corresponding EIR identifier"
+  },
+  {
+    "id" : "IMMZFXNREQ005",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ005",
+    "version" : "1.1.1",
+    "name" : "The system to allow manual insertion of a new vaccination location not present in the NMFL in the EIR master list"
+  },
+  {
+    "id" : "IMMZFXNREQ006",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ006",
+    "version" : "1.1.1",
+    "name" : "The system to send a notification to the NMFL about a new vaccination location added to EIR"
+  },
+  {
+    "id" : "IMMZFXNREQ007",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ007",
+    "version" : "1.1.1",
+    "name" : "To be able to include vaccination locations that may not be physical permanent facilities (such as temporary or pop-up clinics)"
+  },
+  {
+    "id" : "IMMZFXNREQ008",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ008",
+    "version" : "1.1.1",
+    "name" : "The system to be able to update vaccination location information"
+  },
+  {
+    "id" : "IMMZFXNREQ009",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ009",
+    "version" : "1.1.1",
+    "name" : "The system to allow conversion of a temporary vaccination location to a permanent vaccination location"
+  },
+  {
+    "id" : "IMMZFXNREQ010",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ010",
+    "version" : "1.1.1",
+    "name" : "The system to automatically identify changes in vaccination locations information, retrieved from other interconnected systems, and prompt for validation"
+  },
+  {
+    "id" : "IMMZFXNREQ011",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ011",
+    "version" : "1.1.1",
+    "name" : "The system to verify all required vaccination location information is complete"
+  },
+  {
+    "id" : "IMMZFXNREQ012",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ012",
+    "version" : "1.1.1",
+    "name" : "The system to generate report of missing information"
+  },
+  {
+    "id" : "IMMZFXNREQ013",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ013",
+    "version" : "1.1.1",
+    "name" : "The system to notify me of incomplete mandatory fields"
+  },
+  {
+    "id" : "IMMZFXNREQ014",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ014",
+    "version" : "1.1.1",
+    "name" : "The system to support the process of sending a request for information"
+  },
+  {
+    "id" : "IMMZFXNREQ015",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ015",
+    "version" : "1.1.1",
+    "name" : "The system to generate a unique EIR identifier which may be linked to national ID or health ID"
+  },
+  {
+    "id" : "IMMZFXNREQ016",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ016",
+    "version" : "1.1.1",
+    "name" : "The system to send EIR registration notification with EIR identifer to other systems"
+  },
+  {
+    "id" : "IMMZFXNREQ017",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ017",
+    "version" : "1.1.1",
+    "name" : "The system to include instructions on how to use EIR identifier"
+  },
+  {
+    "id" : "IMMZFXNREQ018",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ018",
+    "version" : "1.1.1",
+    "name" : "To identify, by checking the information in the system, all clients that are due (or overdue) for vaccination by the next immunization session date"
+  },
+  {
+    "id" : "IMMZFXNREQ019",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ019",
+    "version" : "1.1.1",
+    "name" : "To sort the list of needed vaccines by antigen"
+  },
+  {
+    "id" : "IMMZFXNREQ020",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ020",
+    "version" : "1.1.1",
+    "name" : "The system to provide range estimates for needed vaccines based on historical data (high and low ranges)"
+  },
+  {
+    "id" : "IMMZFXNREQ021",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ021",
+    "version" : "1.1.1",
+    "name" : "To print the list of necessary antigens and accessories (e.g. syringes, wipes) based on projected need"
+  },
+  {
+    "id" : "IMMZFXNREQ022",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ022",
+    "version" : "1.1.1",
+    "name" : "To be able to check in the system the available stock at my vaccination location or at the local storage area/warehouse"
+  },
+  {
+    "id" : "IMMZFXNREQ023",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ023",
+    "version" : "1.1.1",
+    "name" : "The system to compare the list of needed antigens to the stock on hand and indicate if there is sufficient stock"
+  },
+  {
+    "id" : "IMMZFXNREQ030",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ030",
+    "version" : "1.1.1",
+    "name" : "The system to allow me to print the stock order(s) to be fulfilled"
+  },
+  {
+    "id" : "IMMZFXNREQ031",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ031",
+    "version" : "1.1.1",
+    "name" : "The system to allow barcode reading of stock taken"
+  },
+  {
+    "id" : "IMMZFXNREQ032",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ032",
+    "version" : "1.1.1",
+    "name" : "To record stock removed from cold storage and taken to immunization session"
+  },
+  {
+    "id" : "IMMZFXNREQ033",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ033",
+    "version" : "1.1.1",
+    "name" : "The system to maintain a tally of stock available at each location (e.g. stock available in the cold fridge at vaccination location, stock that is out for immunization session)"
+  },
+  {
+    "id" : "IMMZFXNREQ034",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ034",
+    "version" : "1.1.1",
+    "name" : "The system to provide a immunization session materials checklist, which is a list of materials I would need for immunization session"
+  },
+  {
+    "id" : "IMMZFXNREQ035",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ035",
+    "version" : "1.1.1",
+    "name" : "To search for a client using at least two identifying information"
+  },
+  {
+    "id" : "IMMZFXNREQ036",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ036",
+    "version" : "1.1.1",
+    "name" : "To search for the client record given some demographic information"
+  },
+  {
+    "id" : "IMMZFXNREQ037",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ037",
+    "version" : "1.1.1",
+    "name" : "The system to return all potential matches based upon search criteria"
+  },
+  {
+    "id" : "IMMZFXNREQ038",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ038",
+    "version" : "1.1.1",
+    "name" : "The search to match on partial information (such as partial birthdates)"
+  },
+  {
+    "id" : "IMMZFXNREQ039",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ039",
+    "version" : "1.1.1",
+    "name" : "The system to allow search parameters configuration: mandatory fields, when partial information is acceptable, etc."
+  },
+  {
+    "id" : "IMMZFXNREQ040",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ040",
+    "version" : "1.1.1",
+    "name" : "To search with wild cards (using a symbol to replace one or more characters)"
+  },
+  {
+    "id" : "IMMZFXNREQ041",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ041",
+    "version" : "1.1.1",
+    "name" : "To find client records using barcodes that contain the client ID"
+  },
+  {
+    "id" : "IMMZFXNREQ042",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ042",
+    "version" : "1.1.1",
+    "name" : "The ability for searches to include results that look or sound similar to the search term (phonetic search)"
+  },
+  {
+    "id" : "IMMZFXNREQ043",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ043",
+    "version" : "1.1.1",
+    "name" : "the system to identify any records that may have been imported from another system"
+  },
+  {
+    "id" : "IMMZFXNREQ044",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ044",
+    "version" : "1.1.1",
+    "name" : "The system to prompt a search for the client (check if it is already in the system) prior to starting a new record"
+  },
+  {
+    "id" : "IMMZFXNREQ045",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ045",
+    "version" : "1.1.1",
+    "name" : "The system to retrieve and display, as a search result, a specific set of data (demographic information/photo/unique ID, etc. )"
+  },
+  {
+    "id" : "IMMZFXNREQ046",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ046",
+    "version" : "1.1.1",
+    "name" : "The system to display the most probable matches at the top of the list"
+  },
+  {
+    "id" : "IMMZFXNREQ047",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ047",
+    "version" : "1.1.1",
+    "name" : "To be able to extend the search to external systems (such as a birth registry or a scheduling system)"
+  },
+  {
+    "id" : "IMMZFXNREQ048",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ048",
+    "version" : "1.1.1",
+    "name" : "To enter additional search criteria if there are multiple possible matches"
+  },
+  {
+    "id" : "IMMZFXNREQ049",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ049",
+    "version" : "1.1.1",
+    "name" : "The system to enforce a minimal required data set for new registrations"
+  },
+  {
+    "id" : "IMMZFXNREQ050",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ050",
+    "version" : "1.1.1",
+    "name" : "To select the place of birth from a standardized list of locations"
+  },
+  {
+    "id" : "IMMZFXNREQ051",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ051",
+    "version" : "1.1.1",
+    "name" : "To select the vaccination location of the client from a list of locations"
+  },
+  {
+    "id" : "IMMZFXNREQ052",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ052",
+    "version" : "1.1.1",
+    "name" : "The system to uniquely identify every client using a system generated unique identifier or an existing identifier (e.g. health care, national ID, health unique ID)"
+  },
+  {
+    "id" : "IMMZFXNREQ053",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ053",
+    "version" : "1.1.1",
+    "name" : "The system to generate a unique identifier"
+  },
+  {
+    "id" : "IMMZFXNREQ054",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ054",
+    "version" : "1.1.1",
+    "name" : "Validate a unique identifier when system is offline"
+  },
+  {
+    "id" : "IMMZFXNREQ055",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ055",
+    "version" : "1.1.1",
+    "name" : "The ability to generate a barcode label to affix to the paper record"
+  },
+  {
+    "id" : "IMMZFXNREQ056",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ056",
+    "version" : "1.1.1",
+    "name" : "The ability to associate a unique ID generated by another authority (local or global) to the record"
+  },
+  {
+    "id" : "IMMZFXNREQ057",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ057",
+    "version" : "1.1.1",
+    "name" : "The system to display the information of the selected record"
+  },
+  {
+    "id" : "IMMZFXNREQ058",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ058",
+    "version" : "1.1.1",
+    "name" : "To be able to modify appropriate client data as needed"
+  },
+  {
+    "id" : "IMMZFXNREQ059",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ059",
+    "version" : "1.1.1",
+    "name" : "The system to track that I have changed an existing record"
+  },
+  {
+    "id" : "IMMZFXNREQ060",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ060",
+    "version" : "1.1.1",
+    "name" : "The system to identify changes made to the record for my confirmation before saving"
+  },
+  {
+    "id" : "IMMZFXNREQ061",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ061",
+    "version" : "1.1.1",
+    "name" : "The system to provide a history of previous care (including previous vaccination records)"
+  },
+  {
+    "id" : "IMMZFXNREQ062",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ062",
+    "version" : "1.1.1",
+    "name" : "To add client's health history (including previous vaccination records)"
+  },
+  {
+    "id" : "IMMZFXNREQ063",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ063",
+    "version" : "1.1.1",
+    "name" : "The system to display vaccines due according to predefined vaccine protocol"
+  },
+  {
+    "id" : "IMMZFXNREQ064",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ064",
+    "version" : "1.1.1",
+    "name" : "The system to determine vaccines due for a given client by considering relevant information, such as the age of the client, vaccine products, vaccines already given and predefined vaccine protocol"
+  },
+  {
+    "id" : "IMMZFXNREQ065",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ065",
+    "version" : "1.1.1",
+    "name" : "The system to ensure I have the most up-to-date vaccine protocols"
+  },
+  {
+    "id" : "IMMZFXNREQ066",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ066",
+    "version" : "1.1.1",
+    "name" : "To be alerted of any relevant potential contraindications for the vaccine (e.g. based on age, previous allergic reactions, etc.)"
+  },
+  {
+    "id" : "IMMZFXNREQ067",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ067",
+    "version" : "1.1.1",
+    "name" : "To be able to quickly access information regarding any contraindications by antigen"
+  },
+  {
+    "id" : "IMMZFXNREQ068",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ068",
+    "version" : "1.1.1",
+    "name" : "The system to display stock availability of recommended vaccines"
+  },
+  {
+    "id" : "IMMZFXNREQ069",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ069",
+    "version" : "1.1.1",
+    "name" : "The system to warn if required vaccine is not in stock"
+  },
+  {
+    "id" : "IMMZFXNREQ070",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ070",
+    "version" : "1.1.1",
+    "name" : "The system to display the expiry date of stock to ensure expired vaccines are not administered"
+  },
+  {
+    "id" : "IMMZFXNREQ071",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ071",
+    "version" : "1.1.1",
+    "name" : "To update stock record"
+  },
+  {
+    "id" : "IMMZFXNREQ072",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ072",
+    "version" : "1.1.1",
+    "name" : "To document why a vaccine was not given"
+  },
+  {
+    "id" : "IMMZFXNREQ073",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ073",
+    "version" : "1.1.1",
+    "name" : "To update clients’ vaccination record with all relevant information (i.e. date, dose, batch number, lot number, vaccine type, vaccine vial monitor status)"
+  },
+  {
+    "id" : "IMMZFXNREQ074",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ074",
+    "version" : "1.1.1",
+    "name" : "The system to associate the context data for each entry (e.g. the vaccination location where the dose was given, the health worker administering it)"
+  },
+  {
+    "id" : "IMMZFXNREQ075",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ075",
+    "version" : "1.1.1",
+    "name" : "To record additional vaccinations, even those that are not included in the national vaccination schedule"
+  },
+  {
+    "id" : "IMMZFXNREQ076",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ076",
+    "version" : "1.1.1",
+    "name" : "The system to log updates of client information"
+  },
+  {
+    "id" : "IMMZFXNREQ077",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ077",
+    "version" : "1.1.1",
+    "name" : "The system to request confirmation if data is modified"
+  },
+  {
+    "id" : "IMMZFXNREQ078",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ078",
+    "version" : "1.1.1",
+    "name" : "To record any significant observations (such as reaction) that may be specific to that client"
+  },
+  {
+    "id" : "IMMZFXNREQ080",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ080",
+    "version" : "1.1.1",
+    "name" : "The system to display due date of the next vaccine"
+  },
+  {
+    "id" : "IMMZFXNREQ081",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ081",
+    "version" : "1.1.1",
+    "name" : "To be prompted for any data required to produce a digital vaccine certificate"
+  },
+  {
+    "id" : "IMMZFXNREQ082",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ082",
+    "version" : "1.1.1",
+    "name" : "To be prompted to ask client if they want a digital vaccination certificate where appropriate"
+  },
+  {
+    "id" : "IMMZFXNREQ083",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ083",
+    "version" : "1.1.1",
+    "name" : "The system to apply an authorised digital signature when necessary and appropriate"
+  },
+  {
+    "id" : "IMMZFXNREQ084",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ084",
+    "version" : "1.1.1",
+    "name" : "To select reminder parameters. May include but not limited to, age range, vaccine type(s), vaccine schedules, geographic area, number of days overdue, number of reminders, etc."
+  },
+  {
+    "id" : "IMMZFXNREQ085",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ085",
+    "version" : "1.1.1",
+    "name" : "To associate a client with a vaccination location to generate a provider-based reminder/recall"
+  },
+  {
+    "id" : "IMMZFXNREQ086",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ086",
+    "version" : "1.1.1",
+    "name" : "To validate data against the vaccine schedule (Note: Can use the vaccine schedule to best schedule reminders/recall for series vaccinations)"
+  },
+  {
+    "id" : "IMMZFXNREQ087",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ087",
+    "version" : "1.1.1",
+    "name" : "To select one or more notification methods (e.g. automated telephone calls [i.e. robocall], text message, letter, email, community health worker notification, home visits)"
+  },
+  {
+    "id" : "IMMZFXNREQ088",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ088",
+    "version" : "1.1.1",
+    "name" : "To set client's preferred contact method"
+  },
+  {
+    "id" : "IMMZFXNREQ089",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ089",
+    "version" : "1.1.1",
+    "name" : "The system to track the number of reminders attempts (i.e. per client and total)"
+  },
+  {
+    "id" : "IMMZFXNREQ090",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ090",
+    "version" : "1.1.1",
+    "name" : "The system to prevent all records given an inactive or deceased status from being included in the list of clients for reminder/recall"
+  },
+  {
+    "id" : "IMMZFXNREQ091",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ091",
+    "version" : "1.1.1",
+    "name" : "to be able to generate a list of clients according to defined parameters"
+  },
+  {
+    "id" : "IMMZFXNREQ092",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ092",
+    "version" : "1.1.1",
+    "name" : "To print the list of clients generated according to defined parameters"
+  },
+  {
+    "id" : "IMMZFXNREQ093",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ093",
+    "version" : "1.1.1",
+    "name" : "The system to log each time a user prints a list of clients"
+  },
+  {
+    "id" : "IMMZFXNREQ094",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ094",
+    "version" : "1.1.1",
+    "name" : "The system to display the date the reminder/recall notice was sent to a client"
+  },
+  {
+    "id" : "IMMZFXNREQ095",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ095",
+    "version" : "1.1.1",
+    "name" : "The system to automatically send reminder notification to client or designated health worker (i.e. community health worker) based on the configured reminder parameters"
+  },
+  {
+    "id" : "IMMZFXNREQ096",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ096",
+    "version" : "1.1.1",
+    "name" : "The notification to include specific details about upcoming immunization session dates and times or outreach dates and times as appropriate"
+  },
+  {
+    "id" : "IMMZFXNREQ097",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ097",
+    "version" : "1.1.1",
+    "name" : "The system to flag a client as a defaulter after a configured number of reminders are sent"
+  },
+  {
+    "id" : "IMMZFXNREQ098",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ098",
+    "version" : "1.1.1",
+    "name" : "To specify thresholds for a client to qualify as requiring follow-up, based on the national immunization guidelines"
+  },
+  {
+    "id" : "IMMZFXNREQ099",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ099",
+    "version" : "1.1.1",
+    "name" : "To produce a list of clients who missed their vaccine for each antigen, along with their location and personal information"
+  },
+  {
+    "id" : "IMMZFXNREQ100",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ100",
+    "version" : "1.1.1",
+    "name" : "To print a list of clients requiring follow-up"
+  },
+  {
+    "id" : "IMMZFXNREQ101",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ101",
+    "version" : "1.1.1",
+    "name" : "To export a list of clients for follow-up"
+  },
+  {
+    "id" : "IMMZFXNREQ102",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ102",
+    "version" : "1.1.1",
+    "name" : "To assign a community health worker to a client"
+  },
+  {
+    "id" : "IMMZFXNREQ103",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ103",
+    "version" : "1.1.1",
+    "name" : "The system to group the defaulters by location and community health worker"
+  },
+  {
+    "id" : "IMMZFXNREQ104",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ104",
+    "version" : "1.1.1",
+    "name" : "To display a list of clients due for specific planned outreach and immunization sessions, based on area"
+  },
+  {
+    "id" : "IMMZFXNREQ105",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ105",
+    "version" : "1.1.1",
+    "name" : "To send list of clients who missed immunization sessions by email or SMS to the community health worker"
+  },
+  {
+    "id" : "IMMZFXNREQ106",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ106",
+    "version" : "1.1.1",
+    "name" : "To record in the system the results of the follow-up"
+  },
+  {
+    "id" : "IMMZFXNREQ107",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ107",
+    "version" : "1.1.1",
+    "name" : "To record reason vaccine was missed"
+  },
+  {
+    "id" : "IMMZFXNREQ108",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ108",
+    "version" : "1.1.1",
+    "name" : "To update client information such as including change of address (moved permanently or temporarily)"
+  },
+  {
+    "id" : "IMMZFXNREQ109",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ109",
+    "version" : "1.1.1",
+    "name" : "To flag when there is a change of address and a new client has been added to another catchment area"
+  },
+  {
+    "id" : "IMMZFXNREQ110",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ110",
+    "version" : "1.1.1",
+    "name" : "To be able to indicate if a client is inactive, identified as either permanently or temporarily, with a reason (e.g. death, moved, refuses vaccine)"
+  },
+  {
+    "id" : "IMMZFXNREQ111",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ111",
+    "version" : "1.1.1",
+    "name" : "To be able to set a specific inactivity time frame for temporarily inactive clients (e.g. temporarily lost residence, crop harvest season)"
+  },
+  {
+    "id" : "IMMZFXNREQ112",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ112",
+    "version" : "1.1.1",
+    "name" : "To be able to generate a report of clients who are inactive and disaggregate by the reason they are inactive"
+  },
+  {
+    "id" : "IMMZFXNREQ113",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ113",
+    "version" : "1.1.1",
+    "name" : "The system to support a rules-based algorithm to evaluate duplicate records"
+  },
+  {
+    "id" : "IMMZFXNREQ114",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ114",
+    "version" : "1.1.1",
+    "name" : "To be able to modify the business rules used for identifying duplicate client records"
+  },
+  {
+    "id" : "IMMZFXNREQ115",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ115",
+    "version" : "1.1.1",
+    "name" : "The system to automatically flag client records as possible duplicates by marking them as pending for review"
+  },
+  {
+    "id" : "IMMZFXNREQ116",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ116",
+    "version" : "1.1.1",
+    "name" : "The system to schedule batching of duplicate record process"
+  },
+  {
+    "id" : "IMMZFXNREQ117",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ117",
+    "version" : "1.1.1",
+    "name" : "To be able to manually flag duplicate records"
+  },
+  {
+    "id" : "IMMZFXNREQ118",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ118",
+    "version" : "1.1.1",
+    "name" : "To be able to view simultaneously potential duplicate records"
+  },
+  {
+    "id" : "IMMZFXNREQ119",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ119",
+    "version" : "1.1.1",
+    "name" : "To be able to access the client records while reviewing the duplicates"
+  },
+  {
+    "id" : "IMMZFXNREQ120",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ120",
+    "version" : "1.1.1",
+    "name" : "To be able to decide what information to keep from the duplicates"
+  },
+  {
+    "id" : "IMMZFXNREQ121",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ121",
+    "version" : "1.1.1",
+    "name" : "The system to be able to merge records confirmed to be duplicates"
+  },
+  {
+    "id" : "IMMZFXNREQ122",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ122",
+    "version" : "1.1.1",
+    "name" : "The system to support an audit trail when records are merged"
+  },
+  {
+    "id" : "IMMZFXNREQ123",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ123",
+    "version" : "1.1.1",
+    "name" : "The system to be able to provide history of merged record for a given client"
+  },
+  {
+    "id" : "IMMZFXNREQ124",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ124",
+    "version" : "1.1.1",
+    "name" : "The system to be able to undo a merge"
+  },
+  {
+    "id" : "IMMZFXNREQ125",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ125",
+    "version" : "1.1.1",
+    "name" : "To be able to flag records as \"not a duplicate\""
+  },
+  {
+    "id" : "IMMZFXNREQ126",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ126",
+    "version" : "1.1.1",
+    "name" : "To be able to enter comments for records marked as \"not a duplicate\""
+  },
+  {
+    "id" : "IMMZFXNREQ127",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ127",
+    "version" : "1.1.1",
+    "name" : "The system to support a rules-based algorithm to evaluate duplicate events"
+  },
+  {
+    "id" : "IMMZFXNREQ128",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ128",
+    "version" : "1.1.1",
+    "name" : "The system to automatically flag event records as possible duplicates by marking them as pending for review"
+  },
+  {
+    "id" : "IMMZFXNREQ129",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ129",
+    "version" : "1.1.1",
+    "name" : "to be able to modify the business rules used for identifying vaccination events duplicates"
+  },
+  {
+    "id" : "IMMZFXNREQ130",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ130",
+    "version" : "1.1.1",
+    "name" : "The system to prompt the user that a new vaccination event might already exist"
+  },
+  {
+    "id" : "IMMZFXNREQ131",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ131",
+    "version" : "1.1.1",
+    "name" : "The system to generate automatically a list of possible duplicated vaccination events"
+  },
+  {
+    "id" : "IMMZFXNREQ132",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ132",
+    "version" : "1.1.1",
+    "name" : "To be able to manually initiate duplicates identification process"
+  },
+  {
+    "id" : "IMMZFXNREQ133",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ133",
+    "version" : "1.1.1",
+    "name" : "To be able to manually flag duplicate vaccination events"
+  },
+  {
+    "id" : "IMMZFXNREQ134",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ134",
+    "version" : "1.1.1",
+    "name" : "The system to display a specific set of data related to the possible duplicated events (such as vaccine type, manufacturer, administration date, etc.) for manual review"
+  },
+  {
+    "id" : "IMMZFXNREQ135",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ135",
+    "version" : "1.1.1",
+    "name" : "To be able to view simultaneously potential duplicate records"
+  },
+  {
+    "id" : "IMMZFXNREQ136",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ136",
+    "version" : "1.1.1",
+    "name" : "To be able to access the vaccination events while reviewing the duplicates"
+  },
+  {
+    "id" : "IMMZFXNREQ137",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ137",
+    "version" : "1.1.1",
+    "name" : "The system to automatically select the most accurate/suitable vaccination event to be used as the (primary or master) record"
+  },
+  {
+    "id" : "IMMZFXNREQ138",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ138",
+    "version" : "1.1.1",
+    "name" : "To be able to merge manually duplicate records and decide what information to keep from the duplicates into a consolidated event record"
+  },
+  {
+    "id" : "IMMZFXNREQ139",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ139",
+    "version" : "1.1.1",
+    "name" : "The system to support an audit trail when event records are merged"
+  },
+  {
+    "id" : "IMMZFXNREQ140",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ140",
+    "version" : "1.1.1",
+    "name" : "The system to be able to provide history of merged event records"
+  },
+  {
+    "id" : "IMMZFXNREQ141",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ141",
+    "version" : "1.1.1",
+    "name" : "The system to be able to generate a report of duplicate vaccine events including the resolutions"
+  },
+  {
+    "id" : "IMMZFXNREQ142",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ142",
+    "version" : "1.1.1",
+    "name" : "To be able to configure report parameters when creating new reports (period of time, inactive versus active clients, client's age, vaccine type, vaccine manufacturer, etc.)"
+  },
+  {
+    "id" : "IMMZFXNREQ143",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ143",
+    "version" : "1.1.1",
+    "name" : "To be able to select report parameters when creating vaccination coverage reports (i.e. by vaccine, by dose, by age, by area, by condition, by vaccine manufacturer, etc)"
+  },
+  {
+    "id" : "IMMZFXNREQ144",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ144",
+    "version" : "1.1.1",
+    "name" : "To be able to customize report parameters for error monitoring reports"
+  },
+  {
+    "id" : "IMMZFXNREQ145",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ145",
+    "version" : "1.1.1",
+    "name" : "To be able to select what information a report shows (i.e. display options, summary versus detail report, sort options)"
+  },
+  {
+    "id" : "IMMZFXNREQ146",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ146",
+    "version" : "1.1.1",
+    "name" : "To be able to schedule routine reports (specific date/time, daily, weekly, etc.)"
+  },
+  {
+    "id" : "IMMZFXNREQ147",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ147",
+    "version" : "1.1.1",
+    "name" : "The system to produce and export reports in multiple formats (i.e. CSV, PDF) on demand"
+  },
+  {
+    "id" : "IMMZFXNREQ148",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ148",
+    "version" : "1.1.1",
+    "name" : "The system to be able to print reports on demand"
+  },
+  {
+    "id" : "IMMZFXNREQ149",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ149",
+    "version" : "1.1.1",
+    "name" : "The system to show me a preview of the report before printing"
+  },
+  {
+    "id" : "IMMZFXNREQ150",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ150",
+    "version" : "1.1.1",
+    "name" : "The system to log the actions performed on the reports"
+  },
+  {
+    "id" : "IMMZFXNREQ151",
+    "type" : "Requirements",
+    "url" : "http://smart.who.int/dak-immz/Requirements/IMMZFXNREQ151",
+    "version" : "1.1.1",
+    "name" : "The system to offer the posibility of sending the generated report by email"
+  },
+  {
+    "id" : "FXREQBusinessProcesses",
+    "type" : "ValueSet",
+    "url" : "http://smart.who.int/dak-immz/ValueSet/FXREQBusinessProcesses",
+    "version" : "1.1.1",
+    "name" : "FXREQBusinessProcesses"
+  },
+  {
+    "id" : "FXREQCategories",
+    "type" : "ValueSet",
+    "url" : "http://smart.who.int/dak-immz/ValueSet/FXREQCategories",
+    "version" : "1.1.1",
+    "name" : "FXREQCategories"
+  }
+]
