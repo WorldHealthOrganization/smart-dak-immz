@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:bioc="http://bpmn.io/schema/bpmn/biocolor/1.0" xmlns:color="http://www.omg.org/spec/BPMN/non-normative/color/1.0" xmlns:modeler="http://camunda.org/schema/modeler/1.0" id="Definitions_WHO_PlanServiceDelivery" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Web Modeler" exporterVersion="047cf72" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.7.0">
+  <bpmn:collaboration id="Collaboration_PlanService" name="IMMZ.B.Plan Service Delivery">
+    <bpmn:participant id="Participant_VaccinationLocation" name="Vaccination Location - Health worker" processRef="WHO_PlanServiceDeliveryProcess" />
+  </bpmn:collaboration>
+  <bpmn:process id="WHO_PlanServiceDeliveryProcess" name="WHO Plan Service Delivery Business Process" isExecutable="true">
+    <bpmn:startEvent id="StartEvent_1" name="Start">
+      <bpmn:outgoing>Flow_Start_to_1</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:task id="IMMZ.B1" name="1. Review past vaccination records to estimate vaccines needed">
+      <bpmn:incoming>Flow_Start_to_1</bpmn:incoming>
+      <bpmn:outgoing>Flow_1_to_2</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="IMMZ.B2" name="2. Record details on planning sheet">
+      <bpmn:incoming>Flow_1_to_2</bpmn:incoming>
+      <bpmn:outgoing>Flow_2_to_3</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:exclusiveGateway id="IMMZ.B3" name="3. Sufficient stock in immediate proximity?">
+      <bpmn:incoming>Flow_2_to_3</bpmn:incoming>
+      <bpmn:outgoing>Flow_3_Yes_to_5</bpmn:outgoing>
+      <bpmn:outgoing>Flow_3_No_to_4</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:subProcess id="IMMZ.B4" name="4. Order additional stock">
+      <bpmn:incoming>Flow_3_No_to_4</bpmn:incoming>
+      <bpmn:outgoing>Flow_4_to_5</bpmn:outgoing>
+    </bpmn:subProcess>
+    <bpmn:task id="IMMZ.B5" name="5. Get needed stock">
+      <bpmn:incoming>Flow_3_Yes_to_5</bpmn:incoming>
+      <bpmn:incoming>Flow_4_to_5</bpmn:incoming>
+      <bpmn:outgoing>Flow_5_to_6</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="IMMZ.B6" name="6. Record stock taken">
+      <bpmn:incoming>Flow_5_to_6</bpmn:incoming>
+      <bpmn:outgoing>Flow_6_to_7</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="IMMZ.B7" name="7. Assemble all needed materials for immunization sessions">
+      <bpmn:incoming>Flow_6_to_7</bpmn:incoming>
+      <bpmn:outgoing>Flow_7_to_End</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:endEvent id="EndEvent_1" name="End">
+      <bpmn:incoming>Flow_7_to_End</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_Start_to_1" sourceRef="StartEvent_1" targetRef="IMMZ.B1" />
+    <bpmn:sequenceFlow id="Flow_1_to_2" sourceRef="IMMZ.B1" targetRef="IMMZ.B2" />
+    <bpmn:sequenceFlow id="Flow_2_to_3" sourceRef="IMMZ.B2" targetRef="IMMZ.B3" />
+    <bpmn:sequenceFlow id="Flow_3_Yes_to_5" name="Yes" sourceRef="IMMZ.B3" targetRef="IMMZ.B5" />
+    <bpmn:sequenceFlow id="Flow_3_No_to_4" name="No" sourceRef="IMMZ.B3" targetRef="IMMZ.B4" />
+    <bpmn:sequenceFlow id="Flow_4_to_5" sourceRef="IMMZ.B4" targetRef="IMMZ.B5" />
+    <bpmn:sequenceFlow id="Flow_5_to_6" sourceRef="IMMZ.B5" targetRef="IMMZ.B6" />
+    <bpmn:sequenceFlow id="Flow_6_to_7" sourceRef="IMMZ.B6" targetRef="IMMZ.B7" />
+    <bpmn:sequenceFlow id="Flow_7_to_End" sourceRef="IMMZ.B7" targetRef="EndEvent_1" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_WHO_PlanService">
+    <bpmndi:BPMNPlane id="BPMNPlane_WHO_PlanService" bpmnElement="Collaboration_PlanService">
+      <bpmndi:BPMNShape id="Participant_VaccinationLocation_di" bpmnElement="Participant_VaccinationLocation" isHorizontal="true">
+        <dc:Bounds x="160" y="80" width="1400" height="300" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="StartEvent_1_di" bpmnElement="StartEvent_1">
+        <dc:Bounds x="212" y="202" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="220" y="245" width="25" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="IMMZ_B1_di" bpmnElement="IMMZ.B1">
+        <dc:Bounds x="300" y="180" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="IMMZ_B2_di" bpmnElement="IMMZ.B2">
+        <dc:Bounds x="450" y="180" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="IMMZ_B3_di" bpmnElement="IMMZ.B3" isMarkerVisible="true">
+        <dc:Bounds x="605" y="195" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="587" y="150" width="85" height="40" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="IMMZ_B4_di" bpmnElement="IMMZ.B4" bioc:stroke="#831311" bioc:fill="#ffcdd2" color:background-color="#ffcdd2" color:border-color="#831311">
+        <dc:Bounds x="580" y="300" width="100" height="60" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="IMMZ_B5_di" bpmnElement="IMMZ.B5">
+        <dc:Bounds x="750" y="180" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="IMMZ_B6_di" bpmnElement="IMMZ.B6">
+        <dc:Bounds x="900" y="180" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="IMMZ_B7_di" bpmnElement="IMMZ.B7">
+        <dc:Bounds x="1050" y="180" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="EndEvent_1_di" bpmnElement="EndEvent_1">
+        <dc:Bounds x="1202" y="202" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1210" y="245" width="20" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_Start_to_1_di" bpmnElement="Flow_Start_to_1">
+        <di:waypoint x="248" y="220" />
+        <di:waypoint x="300" y="220" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1_to_2_di" bpmnElement="Flow_1_to_2">
+        <di:waypoint x="400" y="220" />
+        <di:waypoint x="450" y="220" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_2_to_3_di" bpmnElement="Flow_2_to_3">
+        <di:waypoint x="550" y="220" />
+        <di:waypoint x="605" y="220" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_3_Yes_to_5_di" bpmnElement="Flow_3_Yes_to_5">
+        <di:waypoint x="655" y="220" />
+        <di:waypoint x="750" y="220" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="694" y="202" width="18" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_3_No_to_4_di" bpmnElement="Flow_3_No_to_4">
+        <di:waypoint x="630" y="245" />
+        <di:waypoint x="630" y="300" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="638" y="270" width="15" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_4_to_5_di" bpmnElement="Flow_4_to_5">
+        <di:waypoint x="680" y="330" />
+        <di:waypoint x="800" y="330" />
+        <di:waypoint x="800" y="260" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_5_to_6_di" bpmnElement="Flow_5_to_6">
+        <di:waypoint x="850" y="220" />
+        <di:waypoint x="900" y="220" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_6_to_7_di" bpmnElement="Flow_6_to_7">
+        <di:waypoint x="1000" y="220" />
+        <di:waypoint x="1050" y="220" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_7_to_End_di" bpmnElement="Flow_7_to_End">
+        <di:waypoint x="1150" y="220" />
+        <di:waypoint x="1202" y="220" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+  <bpmndi:BPMNDiagram>
+    <bpmndi:BPMNPlane bpmnElement="IMMZ.B4" />
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>
