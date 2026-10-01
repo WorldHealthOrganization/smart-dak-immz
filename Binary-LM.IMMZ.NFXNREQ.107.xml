@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Binary xmlns="http://hl7.org/fhir">
+  <id value="LM.IMMZ.NFXNREQ.107"/>
+  <contentType value="application/fhir+json"/>
+  <data value="ewogICJyZXNvdXJjZVR5cGUiOiAiaHR0cDovL3NtYXJ0Lndoby5pbnQvYmFzZS9TdHJ1Y3R1cmVEZWZpbml0aW9uL05vbkZ1bmN0aW9uYWxSZXF1aXJlbWVudCIsCiAgImlkIjogIkxNLklNTVouTkZYTlJFUS4xMDciLAogICJyZXF1aXJlbWVudCI6ICJCZSBhYmxlIHRvIHByb3ZpZGUgY29udGludWl0eSBhbmQgYWNjZXNzIHRvIGRhdGEgdGhyb3VnaG91dCBjaGFuZ2VzIGluIGluZnJhc3RydWN0dXJlIChlLmcuIHRlbGVjb21tdW5pY2F0aW9uLCBwb3dlcikgYXQgdGhlIGhlYWx0aC1wb3N0IGxldmVsIiwKICAiY2F0ZWdvcnkiOiB7CiAgICAiY29kZSI6ICJQb3J0YWJpbGl0eSIsCiAgICAic3lzdGVtIjogImh0dHA6Ly9zbWFydC53aG8uaW50L2Rhay1pbW16L0NvZGVTeXN0ZW0vRlhSRVFDYXRlZ29yaWVzIgogIH0KfQo="/>
+</Binary>

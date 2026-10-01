@@ -1,0 +1,88 @@
+{
+  "resourceType" : "Basic",
+  "id" : "IMMZ.FXNREQ.054.C",
+  "meta" : {
+    "profile" : ["http://smart.who.int/base/StructureDefinition/SGRequirements"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Requirements IMMZ.FXNREQ.054.C</b></p><a name=\"IMMZ.FXNREQ.054.C\"> </a><a name=\"hcIMMZ.FXNREQ.054.C\"> </a><a name=\"IMMZ.FXNREQ.054.C-en-US\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/WorldHealthOrganization/smart-base/StructureDefinition-SGRequirements.html\">SGRequirements</a></p></div><p>These requirements apply to the actor <a href=\"ActorDefinition-healthworker.html\">Health worker</a></p><table class=\"grid\"/></div>"
+  },
+  "extension" : [{
+    "url" : "http://smart.who.int/base/StructureDefinition/SGcode",
+    "valueCoding" : {
+      "system" : "http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses",
+      "code" : "C"
+    }
+  },
+  {
+    "extension" : [{
+      "url" : "http://smart.who.int/base/StructureDefinition/SGString",
+      "valueString" : "Validate a unique identifier when system is offline"
+    },
+    {
+      "url" : "http://smart.who.int/base/StructureDefinition/SGString",
+      "valueString" : "Entry errors are prevented"
+    }],
+    "url" : "http://smart.who.int/base/StructureDefinition/SGUserStory"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.url",
+    "valueUri" : "http://smart.who.int/dak-immz/Requirements/IMMZ.FXNREQ.054.C"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.version",
+    "valueString" : "1.1.1"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.name",
+    "valueString" : "Create client record"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.title",
+    "valueString" : "Create client record"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.status",
+    "valueCode" : "active"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.experimental",
+    "valueBoolean" : true
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.date",
+    "valueDateTime" : "2025-04-23T09:09:02+00:00"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.publisher",
+    "valueString" : "WHO"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.contact",
+    "valueContactDetail" : {
+      "name" : "WHO",
+      "telecom" : [{
+        "system" : "url",
+        "value" : "http://who.int"
+      }]
+    }
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.description",
+    "valueMarkdown" : "*Business process* (C) client registration:\nActivity: Create client record:\nAs a <a href=\"ActorDefinition-healthworker.html\">Health worker</a>, I want to:\n>Validate a unique identifier when system is offline\n\nso that\n\n>Entry errors are prevented"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.jurisdiction"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.actor",
+    "valueCanonical" : "http://smart.who.int/dak-immz/ActorDefinition/healthworker"
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/fhir-types",
+      "code" : "Requirements"
+    }]
+  }
+}

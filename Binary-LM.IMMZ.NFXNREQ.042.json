@@ -1,0 +1,6 @@
+{
+  "resourceType" : "Binary",
+  "id" : "LM.IMMZ.NFXNREQ.042",
+  "contentType" : "application/fhir+json",
+  "data" : "ewogICJyZXNvdXJjZVR5cGUiOiAiaHR0cDovL3NtYXJ0Lndoby5pbnQvYmFzZS9TdHJ1Y3R1cmVEZWZpbml0aW9uL05vbkZ1bmN0aW9uYWxSZXF1aXJlbWVudCIsCiAgImlkIjogIkxNLklNTVouTkZYTlJFUS4wNDIiLAogICJyZXF1aXJlbWVudCI6ICJFbmFibGUgdXNlcnMgdG8gd29yayBvZmZsaW5lIGFuZCB0aGVuIHN5bmNocm9uaXplIGRhdGEgd2hlbiBkYXRhIGNvbm5lY3Rpb24gaXMgYXZhaWxhYmxlIiwKICAiY2F0ZWdvcnkiOiB7CiAgICAiY29kZSI6ICJSZWxpYWJpbGl0eSIsCiAgICAic3lzdGVtIjogImh0dHA6Ly9zbWFydC53aG8uaW50L2Rhay1pbW16L0NvZGVTeXN0ZW0vRlhSRVFDYXRlZ29yaWVzIgogIH0KfQo="
+}
