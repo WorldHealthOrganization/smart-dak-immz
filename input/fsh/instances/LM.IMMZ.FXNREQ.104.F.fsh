@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.104.F"
 * activity = "Plan for follow-up directly or during outreach"
 * actor[+] = Reference(healthworker)
-* capabilityString = "To display a list of clients due for specific planned outreach and immunization sessions, based on area"
-* benefitString = "The immunization session or outreach will have a targeted list of clients, allowing for prioritization of tasks and workload"
+* capabilityMarkdown = "To display a list of clients due for specific planned outreach and immunization sessions, based on area"
+* benefitMarkdown = "The immunization session or outreach will have a targeted list of clients, allowing for prioritization of tasks and workload"
 * classification[+] = FXREQBusinessProcesses#F
 

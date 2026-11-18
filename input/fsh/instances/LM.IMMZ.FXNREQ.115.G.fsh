@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.115.G"
 * activity = "Flag client records for evaluation"
 * actor[+] = Reference(eirstaff)
-* capabilityString = "The system to automatically flag client records as possible duplicates by marking them as pending for review"
-* benefitString = "The health worker or EIR staff is informed and aware of pending review"
+* capabilityMarkdown = "The system to automatically flag client records as possible duplicates by marking them as pending for review"
+* benefitMarkdown = "The health worker or EIR staff is informed and aware of pending review"
 * classification[+] = FXREQBusinessProcesses#G
 

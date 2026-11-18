@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.089.E"
 * activity = "Generate list of clients"
 * actor[+] = Reference(healthworker)
-* capabilityString = "The system to track the number of reminders attempts (i.e. per client and total)"
-* benefitString = "I can know if additional action may be required, or when to stop sending reminders"
+* capabilityMarkdown = "The system to track the number of reminders attempts (i.e. per client and total)"
+* benefitMarkdown = "I can know if additional action may be required, or when to stop sending reminders"
 * classification[+] = FXREQBusinessProcesses#E
 

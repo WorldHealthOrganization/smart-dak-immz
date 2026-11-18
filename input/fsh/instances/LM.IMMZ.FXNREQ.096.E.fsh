@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.096.E"
 * activity = "Send notifications"
 * actor[+] = Reference(healthworker)
-* capabilityString = "The notification to include specific details about upcoming immunization session dates and times or outreach dates and times as appropriate"
-* benefitString = "The client will know specifically when and where to go to receive a vaccination"
+* capabilityMarkdown = "The notification to include specific details about upcoming immunization session dates and times or outreach dates and times as appropriate"
+* benefitMarkdown = "The client will know specifically when and where to go to receive a vaccination"
 * classification[+] = FXREQBusinessProcesses#E
 

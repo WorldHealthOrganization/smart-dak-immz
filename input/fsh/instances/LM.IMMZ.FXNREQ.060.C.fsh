@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.060.C"
 * activity = "Validate client details"
 * actor[+] = Reference(healthworker)
-* capabilityString = "The system to identify changes made to the record for my confirmation before saving"
-* benefitString = "I can have the opportunity to double check the data to prevent entry errors"
+* capabilityMarkdown = "The system to identify changes made to the record for my confirmation before saving"
+* benefitMarkdown = "I can have the opportunity to double check the data to prevent entry errors"
 * classification[+] = FXREQBusinessProcesses#C
 

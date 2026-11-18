@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.065.D"
 * activity = "Determine required vaccination(s)"
 * actor[+] = Reference(healthworker)
-* capabilityString = "The system to ensure I have the most up-to-date vaccine protocols"
-* benefitString = "It will recommend the correct schedule"
+* capabilityMarkdown = "The system to ensure I have the most up-to-date vaccine protocols"
+* benefitMarkdown = "It will recommend the correct schedule"
 * classification[+] = FXREQBusinessProcesses#D
 

@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.120.G"
 * activity = "Perform manual review"
 * actor[+] = Reference(eirstafforhealthworker)
-* capabilityString = "To be able to decide what information to keep from the duplicates"
-* benefitString = "I make sure the most appropriate information is kept in the consolidated record"
+* capabilityMarkdown = "To be able to decide what information to keep from the duplicates"
+* benefitMarkdown = "I make sure the most appropriate information is kept in the consolidated record"
 * classification[+] = FXREQBusinessProcesses#G
 

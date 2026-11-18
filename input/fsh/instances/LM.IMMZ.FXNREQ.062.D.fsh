@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.062.D"
 * activity = "Capture or update client history"
 * actor[+] = Reference(healthworker)
-* capabilityString = "To add client's health history (including previous vaccination records)"
-* benefitString = "I can appropriately determine which vaccinations are required"
+* capabilityMarkdown = "To add client's health history (including previous vaccination records)"
+* benefitMarkdown = "I can appropriately determine which vaccinations are required"
 * classification[+] = FXREQBusinessProcesses#D
 

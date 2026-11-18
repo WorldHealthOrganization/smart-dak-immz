@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.091.E"
 * activity = "Generate list of clients"
 * actor[+] = Reference(healthworker)
-* capabilityString = "to be able to generate a list of clients according to defined parameters"
-* benefitString = "I have a list according to my needs"
+* capabilityMarkdown = "to be able to generate a list of clients according to defined parameters"
+* benefitMarkdown = "I have a list according to my needs"
 * classification[+] = FXREQBusinessProcesses#E
 

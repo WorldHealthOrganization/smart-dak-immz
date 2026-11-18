@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.113.G"
 * activity = "Flag client records for evaluation"
 * actor[+] = Reference(eirstaff)
-* capabilityString = "The system to support a rules-based algorithm to evaluate duplicate records"
-* benefitString = "Duplicates can be found by the system using pre-defined rules"
+* capabilityMarkdown = "The system to support a rules-based algorithm to evaluate duplicate records"
+* benefitMarkdown = "Duplicates can be found by the system using pre-defined rules"
 * classification[+] = FXREQBusinessProcesses#G
 

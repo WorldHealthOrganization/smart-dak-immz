@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.081.D"
 * activity = "Provide vaccination record"
 * actor[+] = Reference(healthworker)
-* capabilityString = "To be prompted for any data required to produce a digital vaccine certificate"
-* benefitString = "The record will have all relevant data to produce a certificate"
+* capabilityMarkdown = "To be prompted for any data required to produce a digital vaccine certificate"
+* benefitMarkdown = "The record will have all relevant data to produce a certificate"
 * classification[+] = FXREQBusinessProcesses#D
 

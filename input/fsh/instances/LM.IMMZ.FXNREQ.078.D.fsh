@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.078.D"
 * activity = "Monitor the client for any adverse reactions"
 * actor[+] = Reference(healthworker)
-* capabilityString = "To record any significant observations (such as reaction) that may be specific to that client"
-* benefitString = "I can treat as appropriate"
+* capabilityMarkdown = "To record any significant observations (such as reaction) that may be specific to that client"
+* benefitMarkdown = "I can treat as appropriate"
 * classification[+] = FXREQBusinessProcesses#D
 

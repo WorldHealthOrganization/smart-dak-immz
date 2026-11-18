@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.107.F"
 * activity = "Update record to document reason/lost follow-up"
 * actor[+] = Reference(healthworker)
-* capabilityString = "To record reason vaccine was missed"
-* benefitString = "This information can be used for planning and reporting purposes"
+* capabilityMarkdown = "To record reason vaccine was missed"
+* benefitMarkdown = "This information can be used for planning and reporting purposes"
 * classification[+] = FXREQBusinessProcesses#F
 

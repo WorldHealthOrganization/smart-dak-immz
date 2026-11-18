@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.116.G"
 * activity = "Produce list of potential duplicate records"
 * actor[+] = Reference(eirstaff)
-* capabilityString = "The system to schedule batching of duplicate record process"
-* benefitString = "They may be processed and assessed together when user is ready"
+* capabilityMarkdown = "The system to schedule batching of duplicate record process"
+* benefitMarkdown = "They may be processed and assessed together when user is ready"
 * classification[+] = FXREQBusinessProcesses#G
 

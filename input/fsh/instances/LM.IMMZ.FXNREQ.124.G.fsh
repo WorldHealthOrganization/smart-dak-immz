@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.124.G"
 * activity = "Merge records"
 * actor[+] = Reference(eirstaff)
-* capabilityString = "The system to be able to undo a merge"
-* benefitString = "I can restore records merged incorrectly"
+* capabilityMarkdown = "The system to be able to undo a merge"
+* benefitMarkdown = "I can restore records merged incorrectly"
 * classification[+] = FXREQBusinessProcesses#G
 

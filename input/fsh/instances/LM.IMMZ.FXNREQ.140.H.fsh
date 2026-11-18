@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.140.H"
 * activity = "Update vaccination event records"
 * actor[+] = Reference(eirstaff)
-* capabilityString = "The system to be able to provide history of merged event records"
-* benefitString = "I can double check if the merge was done appropriately"
+* capabilityMarkdown = "The system to be able to provide history of merged event records"
+* benefitMarkdown = "I can double check if the merge was done appropriately"
 * classification[+] = FXREQBusinessProcesses#H
 

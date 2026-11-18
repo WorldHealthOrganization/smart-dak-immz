@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.042.C"
 * activity = "Query client record"
 * actor[+] = Reference(healthworker)
-* capabilityString = "The ability for searches to include results that look or sound similar to the search term (phonetic search)"
-* benefitString = "I can find something that may be spelt incorrectly"
+* capabilityMarkdown = "The ability for searches to include results that look or sound similar to the search term (phonetic search)"
+* benefitMarkdown = "I can find something that may be spelt incorrectly"
 * classification[+] = FXREQBusinessProcesses#C
 

@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.039.C"
 * activity = "Query client record"
 * actor[+] = Reference(healthworker)
-* capabilityString = "The system to allow search parameters configuration: mandatory fields, when partial information is acceptable, etc."
-* benefitString = "A search can be optimized without compromising confidentiality"
+* capabilityMarkdown = "The system to allow search parameters configuration: mandatory fields, when partial information is acceptable, etc."
+* benefitMarkdown = "A search can be optimized without compromising confidentiality"
 * classification[+] = FXREQBusinessProcesses#C
 

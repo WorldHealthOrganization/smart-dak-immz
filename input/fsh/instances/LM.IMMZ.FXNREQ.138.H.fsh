@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.138.H"
 * activity = "Select the most accurate/suitable event record"
 * actor[+] = Reference(eirstafforhealthworker)
-* capabilityString = "To be able to merge manually duplicate records and decide what information to keep from the duplicates into a consolidated event record"
-* benefitString = "I make sure the most accurate consolidated record is kept"
+* capabilityMarkdown = "To be able to merge manually duplicate records and decide what information to keep from the duplicates into a consolidated event record"
+* benefitMarkdown = "I make sure the most accurate consolidated record is kept"
 * classification[+] = FXREQBusinessProcesses#H
 

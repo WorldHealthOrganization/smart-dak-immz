@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.108.F"
 * activity = "Update record to document reason/lost follow-up"
 * actor[+] = Reference(healthworker)
-* capabilityString = "To update client information such as including change of address (moved permanently or temporarily)"
-* benefitString = "To facilitate the client being contacted or being removed from a immunization session’s list"
+* capabilityMarkdown = "To update client information such as including change of address (moved permanently or temporarily)"
+* benefitMarkdown = "To facilitate the client being contacted or being removed from a immunization session’s list"
 * classification[+] = FXREQBusinessProcesses#F
 

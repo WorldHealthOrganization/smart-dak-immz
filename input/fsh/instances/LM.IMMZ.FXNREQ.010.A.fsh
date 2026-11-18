@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.010.A"
 * activity = "Verify information for additional data"
 * actor[+] = Reference(eirstaff)
-* capabilityString = "The system to automatically identify changes in vaccination locations information, retrieved from other interconnected systems, and prompt for validation"
-* benefitString = "I will know what changes are being made and can validate them"
+* capabilityMarkdown = "The system to automatically identify changes in vaccination locations information, retrieved from other interconnected systems, and prompt for validation"
+* benefitMarkdown = "I will know what changes are being made and can validate them"
 * classification[+] = FXREQBusinessProcesses#A
 

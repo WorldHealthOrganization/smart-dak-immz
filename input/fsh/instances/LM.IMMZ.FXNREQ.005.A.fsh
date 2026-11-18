@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.005.A"
 * activity = "Update/add new vaccination location"
 * actor[+] = Reference(eirstaff)
-* capabilityString = "The system to allow manual insertion of a new vaccination location not present in the NMFL in the EIR master list"
-* benefitString = "I can add and use vaccination locations that are not yet in NMFL or other interconnected systems"
+* capabilityMarkdown = "The system to allow manual insertion of a new vaccination location not present in the NMFL in the EIR master list"
+* benefitMarkdown = "I can add and use vaccination locations that are not yet in NMFL or other interconnected systems"
 * classification[+] = FXREQBusinessProcesses#A
 

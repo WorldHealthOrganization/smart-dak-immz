@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.015.A"
 * activity = "Generate unique location identifier"
 * actor[+] = Reference(eirstaff)
-* capabilityString = "The system to generate a unique EIR identifier which may be linked to national ID or health ID"
-* benefitString = "The vaccination location will have an unique identifier in the EIR system"
+* capabilityMarkdown = "The system to generate a unique EIR identifier which may be linked to national ID or health ID"
+* benefitMarkdown = "The vaccination location will have an unique identifier in the EIR system"
 * classification[+] = FXREQBusinessProcesses#A
 

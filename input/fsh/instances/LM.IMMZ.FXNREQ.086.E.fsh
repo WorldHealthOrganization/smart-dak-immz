@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.086.E"
 * activity = "Define/evaluate criteria"
 * actor[+] = Reference(healthworker)
-* capabilityString = "To validate data against the vaccine schedule (Note: Can use the vaccine schedule to best schedule reminders/recall for series vaccinations)"
-* benefitString = "The generated list adheres to guidelines"
+* capabilityMarkdown = "To validate data against the vaccine schedule (Note: Can use the vaccine schedule to best schedule reminders/recall for series vaccinations)"
+* benefitMarkdown = "The generated list adheres to guidelines"
 * classification[+] = FXREQBusinessProcesses#E
 

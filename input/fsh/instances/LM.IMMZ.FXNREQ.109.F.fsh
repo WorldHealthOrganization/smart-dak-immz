@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.109.F"
 * activity = "Update record to document reason/lost follow-up"
 * actor[+] = Reference(healthworker)
-* capabilityString = "To flag when there is a change of address and a new client has been added to another catchment area"
-* benefitString = "The client will appear on the correct list for follow up"
+* capabilityMarkdown = "To flag when there is a change of address and a new client has been added to another catchment area"
+* benefitMarkdown = "The client will appear on the correct list for follow up"
 * classification[+] = FXREQBusinessProcesses#F
 

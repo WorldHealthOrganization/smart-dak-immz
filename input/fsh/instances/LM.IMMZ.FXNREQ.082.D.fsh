@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.082.D"
 * activity = "Does client require a verifiable digital certificate?"
 * actor[+] = Reference(healthworker)
-* capabilityString = "To be prompted to ask client if they want a digital vaccination certificate where appropriate"
-* benefitString = "The digital vaccination certificate can be generated"
+* capabilityMarkdown = "To be prompted to ask client if they want a digital vaccination certificate where appropriate"
+* benefitMarkdown = "The digital vaccination certificate can be generated"
 * classification[+] = FXREQBusinessProcesses#D
 

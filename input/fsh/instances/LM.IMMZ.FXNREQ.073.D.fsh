@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.073.D"
 * activity = "Update client record"
 * actor[+] = Reference(healthworker)
-* capabilityString = "To update clients’ vaccination record with all relevant information (i.e. date, dose, batch number, lot number, vaccine type, vaccine vial monitor status)"
-* benefitString = "The client has a complete record, and doses can be traced"
+* capabilityMarkdown = "To update clients’ vaccination record with all relevant information (i.e. date, dose, batch number, lot number, vaccine type, vaccine vial monitor status)"
+* benefitMarkdown = "The client has a complete record, and doses can be traced"
 * classification[+] = FXREQBusinessProcesses#D
 
