@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Accommodate loss of connectivity to hosted application (network may become unavailable while a user is in the process of submitting a form)"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Reliability
 * description = """
 *Category*: Reliability
 Accommodate loss of connectivity to hosted application (network may become unavailable while a user is in the process of submitting a form)

@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.048.C"
 * activity = "Query client record"
 * actor[+] = Reference(healthworker)
-* capabilityString = "To enter additional search criteria if there are multiple possible matches"
-* benefitString = "My list of matches is shorter and easier to review"
+* capabilityMarkdown = "To enter additional search criteria if there are multiple possible matches"
+* benefitMarkdown = "My list of matches is shorter and easier to review"
 * classification[+] = FXREQBusinessProcesses#C
 

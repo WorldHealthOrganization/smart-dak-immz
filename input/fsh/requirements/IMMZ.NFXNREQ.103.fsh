@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Enable access to the central system from all levels of the health system"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Maintainability
 * description = """
 *Category*: Maintainability
 Enable access to the central system from all levels of the health system

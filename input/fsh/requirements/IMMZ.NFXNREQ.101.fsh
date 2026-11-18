@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Enable the system to detect incompatible versions of software running on different components"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Maintainability
 * description = """
 *Category*: Maintainability
 Enable the system to detect incompatible versions of software running on different components

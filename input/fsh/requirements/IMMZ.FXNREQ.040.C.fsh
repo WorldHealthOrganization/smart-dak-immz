@@ -8,7 +8,6 @@ Usage: #definition
 * publisher = "WHO"
 * experimental = true
 * actor[+] = Canonical(healthworker)
-* extension[classification][+].valueCoding = FXREQBusinessProcesses#C
 * extension[userstory].extension[capability].valueString = "To search with wild cards (using a symbol to replace one or more characters)"
 * extension[userstory].extension[benefit].valueString = "I can find something without knowing the exact spelling"
 * description = """

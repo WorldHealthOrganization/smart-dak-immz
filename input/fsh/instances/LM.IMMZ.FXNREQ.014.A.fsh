@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.014.A"
 * activity = "Request additional information"
 * actor[+] = Reference(eirstaff)
-* capabilityString = "The system to support the process of sending a request for information"
-* benefitString = "I will not have to transcribe the request and send it manually"
+* capabilityMarkdown = "The system to support the process of sending a request for information"
+* benefitMarkdown = "I will not have to transcribe the request and send it manually"
 * classification[+] = FXREQBusinessProcesses#A
 

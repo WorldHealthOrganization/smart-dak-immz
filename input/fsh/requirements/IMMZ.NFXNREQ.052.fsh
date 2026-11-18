@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Trace and record changes to data taken by the system and by users (update/delete/add/access)"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Confidentialityprivacyandsecurity
 * description = """
 *Category*: Confidentiality, privacy and security
 Trace and record changes to data taken by the system and by users (update/delete/add/access)

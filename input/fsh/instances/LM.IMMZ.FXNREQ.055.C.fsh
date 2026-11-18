@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.055.C"
 * activity = "Validate client details"
 * actor[+] = Reference(healthworker)
-* capabilityString = "The ability to generate a barcode label to affix to the paper record"
-* benefitString = "The record can easily be uniquely identified by scanning the ID"
+* capabilityMarkdown = "The ability to generate a barcode label to affix to the paper record"
+* benefitMarkdown = "The record can easily be uniquely identified by scanning the ID"
 * classification[+] = FXREQBusinessProcesses#C
 

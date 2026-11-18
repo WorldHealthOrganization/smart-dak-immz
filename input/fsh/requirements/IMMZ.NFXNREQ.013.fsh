@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Comply with industry standards for tracking and tracing of supplies"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Compatibility
 * description = """
 *Category*: Compatibility
 Comply with industry standards for tracking and tracing of supplies

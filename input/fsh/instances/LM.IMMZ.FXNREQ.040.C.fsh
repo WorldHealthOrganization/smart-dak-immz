@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.040.C"
 * activity = "Query client record"
 * actor[+] = Reference(healthworker)
-* capabilityString = "To search with wild cards (using a symbol to replace one or more characters)"
-* benefitString = "I can find something without knowing the exact spelling"
+* capabilityMarkdown = "To search with wild cards (using a symbol to replace one or more characters)"
+* benefitMarkdown = "I can find something without knowing the exact spelling"
 * classification[+] = FXREQBusinessProcesses#C
 

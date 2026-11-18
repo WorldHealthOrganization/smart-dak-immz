@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.053.C"
 * activity = "Create client record"
 * actor[+] = Reference(healthworker)
-* capabilityString = "The system to generate a unique identifier"
-* benefitString = "The client can be uniquely identified for vaccination activities across systems using the same ID"
+* capabilityMarkdown = "The system to generate a unique identifier"
+* benefitMarkdown = "The client can be uniquely identified for vaccination activities across systems using the same ID"
 * classification[+] = FXREQBusinessProcesses#C
 

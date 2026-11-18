@@ -8,7 +8,6 @@ Usage: #definition
 * publisher = "WHO"
 * experimental = true
 * actor[+] = Canonical(healthworker)
-* extension[classification][+].valueCoding = FXREQBusinessProcesses#C
 * extension[userstory].extension[capability].valueString = "The system to allow search parameters configuration: mandatory fields, when partial information is acceptable, etc."
 * extension[userstory].extension[benefit].valueString = "A search can be optimized without compromising confidentiality"
 * description = """

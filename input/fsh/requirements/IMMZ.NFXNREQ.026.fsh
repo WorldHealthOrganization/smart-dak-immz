@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Enable easy data collection, organization (predefined drop-down menus or searchable lists, radio buttons, check boxes) and dissemination"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Usability
 * description = """
 *Category*: Usability
 Enable easy data collection, organization (predefined drop-down menus or searchable lists, radio buttons, check boxes) and dissemination

@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Transmit information in a language (script or voice) that is understood by the user population"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Usability
 * description = """
 *Category*: Usability
 Transmit information in a language (script or voice) that is understood by the user population

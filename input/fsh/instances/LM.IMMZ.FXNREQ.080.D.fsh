@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.080.D"
 * activity = "Determine time for next visit (as needed)"
 * actor[+] = Reference(healthworker)
-* capabilityString = "The system to display due date of the next vaccine"
-* benefitString = "I can inform the client when to return for their next vaccination"
+* capabilityMarkdown = "The system to display due date of the next vaccine"
+* benefitMarkdown = "I can inform the client when to return for their next vaccination"
 * classification[+] = FXREQBusinessProcesses#D
 

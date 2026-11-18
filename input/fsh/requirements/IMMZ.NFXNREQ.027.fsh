@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Focus on the mobile-user experience with secondary use of a computer"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Usability
 * description = """
 *Category*: Usability
 Focus on the mobile-user experience with secondary use of a computer

@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.100.F"
 * activity = "Generate list of clients who are due or overdue for vaccination"
 * actor[+] = Reference(healthworker)
-* capabilityString = "To print a list of clients requiring follow-up"
-* benefitString = "I will have an offline version"
+* capabilityMarkdown = "To print a list of clients requiring follow-up"
+* benefitMarkdown = "I will have an offline version"
 * classification[+] = FXREQBusinessProcesses#F
 

@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.097.F"
 * activity = "Determine if vaccines were missed"
 * actor[+] = Reference(healthworker)
-* capabilityString = "The system to flag a client as a defaulter after a configured number of reminders are sent"
-* benefitString = "We can identify those who have not come and are overdue, requiring additional intervention"
+* capabilityMarkdown = "The system to flag a client as a defaulter after a configured number of reminders are sent"
+* benefitMarkdown = "We can identify those who have not come and are overdue, requiring additional intervention"
 * classification[+] = FXREQBusinessProcesses#F
 

@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Operate with open-source or third-party reporting tools"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Compatibility
 * description = """
 *Category*: Compatibility
 Operate with open-source or third-party reporting tools

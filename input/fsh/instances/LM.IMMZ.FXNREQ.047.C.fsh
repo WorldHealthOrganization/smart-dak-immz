@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.047.C"
 * activity = "Query client record"
 * actor[+] = Reference(healthworker)
-* capabilityString = "To be able to extend the search to external systems (such as a birth registry or a scheduling system)"
-* benefitString = "Duplicates of client record are prevented"
+* capabilityMarkdown = "To be able to extend the search to external systems (such as a birth registry or a scheduling system)"
+* benefitMarkdown = "Duplicates of client record are prevented"
 * classification[+] = FXREQBusinessProcesses#C
 

@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.008.A"
 * activity = "Create/update vaccination location record"
 * actor[+] = Reference(eirstaff)
-* capabilityString = "The system to be able to update vaccination location information"
-* benefitString = "We have a complete vaccination location record"
+* capabilityMarkdown = "The system to be able to update vaccination location information"
+* benefitMarkdown = "We have a complete vaccination location record"
 * classification[+] = FXREQBusinessProcesses#A
 

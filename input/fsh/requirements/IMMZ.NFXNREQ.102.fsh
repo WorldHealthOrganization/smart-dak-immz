@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Have a support process that tracks and documents bugs from discovery to resolution"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Maintainability
 * description = """
 *Category*: Maintainability
 Have a support process that tracks and documents bugs from discovery to resolution

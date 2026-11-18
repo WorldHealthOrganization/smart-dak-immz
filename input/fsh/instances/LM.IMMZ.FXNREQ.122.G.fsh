@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.122.G"
 * activity = "Merge records"
 * actor[+] = Reference(eirstaff)
-* capabilityString = "The system to support an audit trail when records are merged"
-* benefitString = "Accountability can be maintained"
+* capabilityMarkdown = "The system to support an audit trail when records are merged"
+* benefitMarkdown = "Accountability can be maintained"
 * classification[+] = FXREQBusinessProcesses#G
 

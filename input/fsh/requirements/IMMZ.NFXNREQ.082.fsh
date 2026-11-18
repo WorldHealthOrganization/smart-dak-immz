@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Log exchange of data with other systems"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Confidentialityprivacyandsecurity
 * description = """
 *Category*: Confidentiality, privacy and security
 Log exchange of data with other systems

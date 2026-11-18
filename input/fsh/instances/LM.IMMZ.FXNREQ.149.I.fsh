@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.149.I"
 * activity = "Generate report"
 * actor[+] = Reference(eirstaff)
-* capabilityString = "The system to show me a preview of the report before printing"
-* benefitString = "I can review before printing"
+* capabilityMarkdown = "The system to show me a preview of the report before printing"
+* benefitMarkdown = "I can review before printing"
 * classification[+] = FXREQBusinessProcesses#I
 

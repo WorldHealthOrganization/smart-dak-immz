@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.066.D"
 * activity = "Determine vaccine(s) to be administered based on contraindications"
 * actor[+] = Reference(healthworker)
-* capabilityString = "To be alerted of any relevant potential contraindications for the vaccine (e.g. based on age, previous allergic reactions, etc.)"
-* benefitString = "I can withhold the vaccine, if contraindicated"
+* capabilityMarkdown = "To be alerted of any relevant potential contraindications for the vaccine (e.g. based on age, previous allergic reactions, etc.)"
+* benefitMarkdown = "I can withhold the vaccine, if contraindicated"
 * classification[+] = FXREQBusinessProcesses#D
 

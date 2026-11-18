@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.143.I"
 * activity = "Define parameters for report"
 * actor[+] = Reference(healthworker)
-* capabilityString = "To be able to select report parameters when creating vaccination coverage reports (i.e. by vaccine, by dose, by age, by area, by condition, by vaccine manufacturer, etc)"
-* benefitString = "Appropriate vaccination coverage reports can be generated"
+* capabilityMarkdown = "To be able to select report parameters when creating vaccination coverage reports (i.e. by vaccine, by dose, by age, by area, by condition, by vaccine manufacturer, etc)"
+* benefitMarkdown = "Appropriate vaccination coverage reports can be generated"
 * classification[+] = FXREQBusinessProcesses#I
 

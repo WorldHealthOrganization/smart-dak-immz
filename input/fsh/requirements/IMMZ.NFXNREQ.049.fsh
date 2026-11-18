@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Allow for client devices with low bandwidth or irregular connectivity"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Reliability
 * description = """
 *Category*: Reliability
 Allow for client devices with low bandwidth or irregular connectivity

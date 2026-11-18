@@ -8,7 +8,6 @@ Usage: #definition
 * publisher = "WHO"
 * experimental = true
 * actor[+] = Canonical(eirstaff)
-* extension[classification][+].valueCoding = FXREQBusinessProcesses#I
 * extension[userstory].extension[capability].valueString = "The system to produce and export reports in multiple formats (i.e. CSV, PDF) on demand"
 * extension[userstory].extension[benefit].valueString = "I can select the most appropriate format for my needs"
 * description = """

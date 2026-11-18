@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Allow each user to be assigned to one or more roles"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Confidentialityprivacyandsecurity
 * description = """
 *Category*: Confidentiality, privacy and security
 Allow each user to be assigned to one or more roles

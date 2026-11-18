@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.012.A"
 * activity = "Verify information for additional data"
 * actor[+] = Reference(eirstaff)
-* capabilityString = "The system to generate report of missing information"
-* benefitString = "Missing information can be obtained"
+* capabilityMarkdown = "The system to generate report of missing information"
+* benefitMarkdown = "Missing information can be obtained"
 * classification[+] = FXREQBusinessProcesses#A
 

@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.105.F"
 * activity = "Send client information to community health worker"
 * actor[+] = Reference(healthworker)
-* capabilityString = "To send list of clients who missed immunization sessions by email or SMS to the community health worker"
-* benefitString = "The community health worker will have a digital version"
+* capabilityMarkdown = "To send list of clients who missed immunization sessions by email or SMS to the community health worker"
+* benefitMarkdown = "The community health worker will have a digital version"
 * classification[+] = FXREQBusinessProcesses#F
 

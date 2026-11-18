@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Enable users to work offline and then synchronize data when data connection is available"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Reliability
 * description = """
 *Category*: Reliability
 Enable users to work offline and then synchronize data when data connection is available

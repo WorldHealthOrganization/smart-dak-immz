@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Be able to be learned easily by end users and supervisors to meet specified goals of system effectiveness and efficiency"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Usability
 * description = """
 *Category*: Usability
 Be able to be learned easily by end users and supervisors to meet specified goals of system effectiveness and efficiency

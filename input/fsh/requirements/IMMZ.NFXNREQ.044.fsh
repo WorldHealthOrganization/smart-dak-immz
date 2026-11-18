@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Enable earlier versions of a record to be recoverable"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Reliability
 * description = """
 *Category*: Reliability
 Enable earlier versions of a record to be recoverable

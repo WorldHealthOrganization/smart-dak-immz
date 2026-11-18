@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Support extensibility and/or the ability to accept new services or functionality"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Portability
 * description = """
 *Category*: Portability
 Support extensibility and/or the ability to accept new services or functionality

@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.088.E"
 * activity = "Select notification method"
 * actor[+] = Reference(healthworker)
-* capabilityString = "To set client's preferred contact method"
-* benefitString = "Any notification will go through the client’s preferred method"
+* capabilityMarkdown = "To set client's preferred contact method"
+* benefitMarkdown = "Any notification will go through the client’s preferred method"
 * classification[+] = FXREQBusinessProcesses#E
 

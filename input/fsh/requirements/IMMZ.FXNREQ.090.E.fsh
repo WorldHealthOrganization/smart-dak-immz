@@ -8,7 +8,6 @@ Usage: #definition
 * publisher = "WHO"
 * experimental = true
 * actor[+] = Canonical(healthworker)
-* extension[classification][+].valueCoding = FXREQBusinessProcesses#E
 * extension[userstory].extension[capability].valueString = "The system to prevent all records given an inactive or deceased status from being included in the list of clients for reminder/recall"
 * extension[userstory].extension[benefit].valueString = "Notifications will not be inappropriately sent to clients"
 * description = """

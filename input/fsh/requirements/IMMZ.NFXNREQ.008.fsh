@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Exchange actionable data between systems (need to enforce semantic interoperability)"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Compatibility
 * description = """
 *Category*: Compatibility
 Exchange actionable data between systems (need to enforce semantic interoperability)

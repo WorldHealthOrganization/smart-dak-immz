@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.002.A"
 * activity = "Validate against national master facility list"
 * actor[+] = Reference(eirstaff)
-* capabilityString = "The system to interface with National Master Facility List (NMFL) database to validate the EIR master list of vaccination locations"
-* benefitString = "I can ensure the lists are synchronized"
+* capabilityMarkdown = "The system to interface with National Master Facility List (NMFL) database to validate the EIR master list of vaccination locations"
+* benefitMarkdown = "I can ensure the lists are synchronized"
 * classification[+] = FXREQBusinessProcesses#A
 

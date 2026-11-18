@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Support repair or upgrade of a component in a running system"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Maintainability
 * description = """
 *Category*: Maintainability
 Support repair or upgrade of a component in a running system

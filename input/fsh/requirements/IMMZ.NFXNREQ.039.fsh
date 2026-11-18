@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Be reliable and robust (minimize the number of system crashes)"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Usability
 * description = """
 *Category*: Usability
 Be reliable and robust (minimize the number of system crashes)

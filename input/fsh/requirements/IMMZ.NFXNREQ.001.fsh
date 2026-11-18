@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Make efficient use of data communication time"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Performance
 * description = """
 *Category*: Performance
 Make efficient use of data communication time

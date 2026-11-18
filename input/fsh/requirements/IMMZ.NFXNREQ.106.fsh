@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Provide detailed architectural, operational and testing documentation"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Maintainability
 * description = """
 *Category*: Maintainability
 Provide detailed architectural, operational and testing documentation

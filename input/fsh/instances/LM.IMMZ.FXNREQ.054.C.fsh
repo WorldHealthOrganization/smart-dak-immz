@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.054.C"
 * activity = "Create client record"
 * actor[+] = Reference(healthworker)
-* capabilityString = "Validate a unique identifier when system is offline"
-* benefitString = "Entry errors are prevented"
+* capabilityMarkdown = "Validate a unique identifier when system is offline"
+* benefitMarkdown = "Entry errors are prevented"
 * classification[+] = FXREQBusinessProcesses#C
 

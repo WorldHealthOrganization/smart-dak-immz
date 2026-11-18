@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.121.G"
 * activity = "Merge records"
 * actor[+] = Reference(eirstaff)
-* capabilityString = "The system to be able to merge records confirmed to be duplicates"
-* benefitString = "Duplicate records can be merged"
+* capabilityMarkdown = "The system to be able to merge records confirmed to be duplicates"
+* benefitMarkdown = "Duplicate records can be merged"
 * classification[+] = FXREQBusinessProcesses#G
 

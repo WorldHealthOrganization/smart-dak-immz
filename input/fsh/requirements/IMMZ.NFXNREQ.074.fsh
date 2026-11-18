@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Provide a mechanism to securely change a user's password"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Confidentialityprivacyandsecurity
 * description = """
 *Category*: Confidentiality, privacy and security
 Provide a mechanism to securely change a user's password

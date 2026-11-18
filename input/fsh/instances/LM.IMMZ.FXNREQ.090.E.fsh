@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.090.E"
 * activity = "Generate list of clients"
 * actor[+] = Reference(healthworker)
-* capabilityString = "The system to prevent all records given an inactive or deceased status from being included in the list of clients for reminder/recall"
-* benefitString = "Notifications will not be inappropriately sent to clients"
+* capabilityMarkdown = "The system to prevent all records given an inactive or deceased status from being included in the list of clients for reminder/recall"
+* benefitMarkdown = "Notifications will not be inappropriately sent to clients"
 * classification[+] = FXREQBusinessProcesses#E
 

@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.030.B"
 * activity = "Get needed stock"
 * actor[+] = Reference(healthworker)
-* capabilityString = "The system to allow me to print the stock order(s) to be fulfilled"
-* benefitString = "I can use this as my pick up list, even when I am offline"
+* capabilityMarkdown = "The system to allow me to print the stock order(s) to be fulfilled"
+* benefitMarkdown = "I can use this as my pick up list, even when I am offline"
 * classification[+] = FXREQBusinessProcesses#B
 

@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Enable a task to be cancelled and rolled back to previous state"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Reliability
 * description = """
 *Category*: Reliability
 Enable a task to be cancelled and rolled back to previous state

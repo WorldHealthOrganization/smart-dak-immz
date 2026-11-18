@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Configure error messages"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Configuration
 * description = """
 *Category*: Configuration
 Configure error messages

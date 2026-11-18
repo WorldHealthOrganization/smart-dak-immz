@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Enable backup of data so that information is recoverable in the event of a system or hardware failure"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Reliability
 * description = """
 *Category*: Reliability
 Enable backup of data so that information is recoverable in the event of a system or hardware failure

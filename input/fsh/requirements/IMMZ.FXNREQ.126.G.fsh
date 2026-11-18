@@ -8,7 +8,6 @@ Usage: #definition
 * publisher = "WHO"
 * experimental = true
 * actor[+] = Canonical(eirstafforhealthworker)
-* extension[classification][+].valueCoding = FXREQBusinessProcesses#G
 * extension[userstory].extension[capability].valueString = "To be able to enter comments for records marked as \"not a duplicate\""
 * extension[userstory].extension[benefit].valueString = "I can add any additional information to let other users see why it was determined to not be a duplicate"
 * description = """

@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Use a database that can scale to support projected transaction volume"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Performance
 * description = """
 *Category*: Performance
 Use a database that can scale to support projected transaction volume

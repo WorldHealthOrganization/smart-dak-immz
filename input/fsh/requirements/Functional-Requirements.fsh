@@ -11,7 +11,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The EIR system to be able to communicate with other systems (such as a national health management information system [HMIS] and Expanded Programme on Immunization [EPI]) to obtain vaccination locations information and other necessary information"
 * extension[userstory].extension[benefit].valueString = "I will know about new vaccination locations and be informed about any updated information"
 * description = """
-As a <a href="ActorDefinition-ElectronicimmunizationregistryEIRstaff.html">Electronic immunization registry (EIR) staff</a>, I want:
+As a <a href="ActorDefinition-electronicimmunizationregistryeirstaff.html">Electronic immunization registry (EIR) staff</a>, I want:
 >The EIR system to be able to communicate with other systems (such as a national health management information system [HMIS] and Expanded Programme on Immunization [EPI]) to obtain vaccination locations information and other necessary information
 
 so that
@@ -34,7 +34,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to interface with National Master Facility List (NMFL) database to validate the EIR master list of vaccination locations"
 * extension[userstory].extension[benefit].valueString = "I can ensure the lists are synchronized"
 * description = """
-As a <a href="ActorDefinition-EIRstaff.html">EIR staff</a>, I want:
+As a <a href="ActorDefinition-eirstaff.html">EIR staff</a>, I want:
 >The system to interface with National Master Facility List (NMFL) database to validate the EIR master list of vaccination locations
 
 so that
@@ -57,7 +57,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to flag any vaccination location registered in the EIR that is not on the NMFL"
 * extension[userstory].extension[benefit].valueString = "I can identify vaccination locations that need further investigation"
 * description = """
-As a <a href="ActorDefinition-EIRstaff.html">EIR staff</a>, I want:
+As a <a href="ActorDefinition-eirstaff.html">EIR staff</a>, I want:
 >The system to flag any vaccination location registered in the EIR that is not on the NMFL
 
 so that
@@ -80,7 +80,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to be able to link a vaccination location’s NMFL identification (ID) with the corresponding EIR identifier"
 * extension[userstory].extension[benefit].valueString = "There will be a common understanding of what vaccination location is being referenced"
 * description = """
-As a <a href="ActorDefinition-EIRstaff.html">EIR staff</a>, I want:
+As a <a href="ActorDefinition-eirstaff.html">EIR staff</a>, I want:
 >The system to be able to link a vaccination location’s NMFL identification (ID) with the corresponding EIR identifier
 
 so that
@@ -103,7 +103,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to allow manual insertion of a new vaccination location not present in the NMFL in the EIR master list"
 * extension[userstory].extension[benefit].valueString = "I can add and use vaccination locations that are not yet in NMFL or other interconnected systems"
 * description = """
-As a <a href="ActorDefinition-EIRstaff.html">EIR staff</a>, I want:
+As a <a href="ActorDefinition-eirstaff.html">EIR staff</a>, I want:
 >The system to allow manual insertion of a new vaccination location not present in the NMFL in the EIR master list
 
 so that
@@ -126,7 +126,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to send a notification to the NMFL about a new vaccination location added to EIR"
 * extension[userstory].extension[benefit].valueString = "The NMFL can be aware of any potentially new vaccination locations"
 * description = """
-As a <a href="ActorDefinition-EIRstaff.html">EIR staff</a>, I want:
+As a <a href="ActorDefinition-eirstaff.html">EIR staff</a>, I want:
 >The system to send a notification to the NMFL about a new vaccination location added to EIR
 
 so that
@@ -149,7 +149,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To be able to include vaccination locations that may not be physical permanent facilities (such as temporary or pop-up clinics)"
 * extension[userstory].extension[benefit].valueString = "We will have the flexibility to accommodate temporary vaccination locations"
 * description = """
-As a <a href="ActorDefinition-EIRstaff.html">EIR staff</a>, I want:
+As a <a href="ActorDefinition-eirstaff.html">EIR staff</a>, I want:
 >To be able to include vaccination locations that may not be physical permanent facilities (such as temporary or pop-up clinics)
 
 so that
@@ -172,7 +172,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to be able to update vaccination location information"
 * extension[userstory].extension[benefit].valueString = "We have a complete vaccination location record"
 * description = """
-As a <a href="ActorDefinition-EIRstaff.html">EIR staff</a>, I want:
+As a <a href="ActorDefinition-eirstaff.html">EIR staff</a>, I want:
 >The system to be able to update vaccination location information
 
 so that
@@ -195,7 +195,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to allow conversion of a temporary vaccination location to a permanent vaccination location"
 * extension[userstory].extension[benefit].valueString = "The data from the temporary vaccination location is not lost"
 * description = """
-As a <a href="ActorDefinition-EIRstaff.html">EIR staff</a>, I want:
+As a <a href="ActorDefinition-eirstaff.html">EIR staff</a>, I want:
 >The system to allow conversion of a temporary vaccination location to a permanent vaccination location
 
 so that
@@ -218,7 +218,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to automatically identify changes in vaccination locations information, retrieved from other interconnected systems, and prompt for validation"
 * extension[userstory].extension[benefit].valueString = "I will know what changes are being made and can validate them"
 * description = """
-As a <a href="ActorDefinition-EIRstaff.html">EIR staff</a>, I want:
+As a <a href="ActorDefinition-eirstaff.html">EIR staff</a>, I want:
 >The system to automatically identify changes in vaccination locations information, retrieved from other interconnected systems, and prompt for validation
 
 so that
@@ -241,7 +241,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to verify all required vaccination location information is complete"
 * extension[userstory].extension[benefit].valueString = "Any missed fields can be identified"
 * description = """
-As a <a href="ActorDefinition-EIRstaff.html">EIR staff</a>, I want:
+As a <a href="ActorDefinition-eirstaff.html">EIR staff</a>, I want:
 >The system to verify all required vaccination location information is complete
 
 so that
@@ -264,7 +264,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to generate report of missing information"
 * extension[userstory].extension[benefit].valueString = "Missing information can be obtained"
 * description = """
-As a <a href="ActorDefinition-EIRstaff.html">EIR staff</a>, I want:
+As a <a href="ActorDefinition-eirstaff.html">EIR staff</a>, I want:
 >The system to generate report of missing information
 
 so that
@@ -287,7 +287,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to notify me of incomplete mandatory fields"
 * extension[userstory].extension[benefit].valueString = "I can ensure all necessary data is entered"
 * description = """
-As a <a href="ActorDefinition-EIRstaff.html">EIR staff</a>, I want:
+As a <a href="ActorDefinition-eirstaff.html">EIR staff</a>, I want:
 >The system to notify me of incomplete mandatory fields
 
 so that
@@ -310,7 +310,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to support the process of sending a request for information"
 * extension[userstory].extension[benefit].valueString = "I will not have to transcribe the request and send it manually"
 * description = """
-As a <a href="ActorDefinition-EIRstaff.html">EIR staff</a>, I want:
+As a <a href="ActorDefinition-eirstaff.html">EIR staff</a>, I want:
 >The system to support the process of sending a request for information
 
 so that
@@ -333,7 +333,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to generate a unique EIR identifier which may be linked to national ID or health ID"
 * extension[userstory].extension[benefit].valueString = "The vaccination location will have an unique identifier in the EIR system"
 * description = """
-As a <a href="ActorDefinition-EIRstaff.html">EIR staff</a>, I want:
+As a <a href="ActorDefinition-eirstaff.html">EIR staff</a>, I want:
 >The system to generate a unique EIR identifier which may be linked to national ID or health ID
 
 so that
@@ -356,7 +356,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to send EIR registration notification with EIR identifer to other systems"
 * extension[userstory].extension[benefit].valueString = "Other systems will be informed of the new vaccination location"
 * description = """
-As a <a href="ActorDefinition-EIRstaff.html">EIR staff</a>, I want:
+As a <a href="ActorDefinition-eirstaff.html">EIR staff</a>, I want:
 >The system to send EIR registration notification with EIR identifer to other systems
 
 so that
@@ -379,7 +379,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to include instructions on how to use EIR identifier"
 * extension[userstory].extension[benefit].valueString = "Other systems will know how to interact with the EIR"
 * description = """
-As a <a href="ActorDefinition-EIRstaff.html">EIR staff</a>, I want:
+As a <a href="ActorDefinition-eirstaff.html">EIR staff</a>, I want:
 >The system to include instructions on how to use EIR identifier
 
 so that
@@ -403,7 +403,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To identify, by checking the information in the system, all clients that are due (or overdue) for vaccination by the next immunization session date"
 * extension[userstory].extension[benefit].valueString = "I can plan my immunization session"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >To identify, by checking the information in the system, all clients that are due (or overdue) for vaccination by the next immunization session date
 
 so that
@@ -426,7 +426,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To sort the list of needed vaccines by antigen"
 * extension[userstory].extension[benefit].valueString = "I know how much of each vaccine is needed"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >To sort the list of needed vaccines by antigen
 
 so that
@@ -449,7 +449,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to provide range estimates for needed vaccines based on historical data (high and low ranges)"
 * extension[userstory].extension[benefit].valueString = "I can know how much vaccine has typically been used and adjust my specific list accordingly"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >The system to provide range estimates for needed vaccines based on historical data (high and low ranges)
 
 so that
@@ -472,7 +472,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To print the list of necessary antigens and accessories (e.g. syringes, wipes) based on projected need"
 * extension[userstory].extension[benefit].valueString = "I can make sure I have an offline list of all the things I need for my immunization session"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >To print the list of necessary antigens and accessories (e.g. syringes, wipes) based on projected need
 
 so that
@@ -495,7 +495,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To be able to check in the system the available stock at my vaccination location or at the local storage area/warehouse"
 * extension[userstory].extension[benefit].valueString = "I can determine the stock available for use"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >To be able to check in the system the available stock at my vaccination location or at the local storage area/warehouse
 
 so that
@@ -518,7 +518,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to compare the list of needed antigens to the stock on hand and indicate if there is sufficient stock"
 * extension[userstory].extension[benefit].valueString = "I do not have to make these calculations myself"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >The system to compare the list of needed antigens to the stock on hand and indicate if there is sufficient stock
 
 so that
@@ -541,7 +541,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to allow me to print the stock order(s) to be fulfilled"
 * extension[userstory].extension[benefit].valueString = "I can use this as my pick up list, even when I am offline"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >The system to allow me to print the stock order(s) to be fulfilled
 
 so that
@@ -564,7 +564,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to allow barcode reading of stock taken"
 * extension[userstory].extension[benefit].valueString = "the system can be automatically and accurately updated"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >The system to allow barcode reading of stock taken
 
 so that
@@ -587,7 +587,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To record stock removed from cold storage and taken to immunization session"
 * extension[userstory].extension[benefit].valueString = "The count for the cold storage will be accurate, and the immunization session stock will be accounted for"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >To record stock removed from cold storage and taken to immunization session
 
 so that
@@ -610,7 +610,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to maintain a tally of stock available at each location (e.g. stock available in the cold fridge at vaccination location, stock that is out for immunization session)"
 * extension[userstory].extension[benefit].valueString = "I can see where all stock is physically located in real time"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >The system to maintain a tally of stock available at each location (e.g. stock available in the cold fridge at vaccination location, stock that is out for immunization session)
 
 so that
@@ -633,7 +633,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to provide a immunization session materials checklist, which is a list of materials I would need for immunization session"
 * extension[userstory].extension[benefit].valueString = "I can make sure I have the materials I need for immunization session"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >The system to provide a immunization session materials checklist, which is a list of materials I would need for immunization session
 
 so that
@@ -657,7 +657,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To search for a client using at least two identifying information"
 * extension[userstory].extension[benefit].valueString = "I improve my chances of finding a match and distinguishing between similar records"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >To search for a client using at least two identifying information
 
 so that
@@ -680,7 +680,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To search for the client record given some demographic information"
 * extension[userstory].extension[benefit].valueString = "I can find the client record if I do not have the unique ID"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >To search for the client record given some demographic information
 
 so that
@@ -703,7 +703,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to return all potential matches based upon search criteria"
 * extension[userstory].extension[benefit].valueString = "I can find the best match"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >The system to return all potential matches based upon search criteria
 
 so that
@@ -726,7 +726,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The search to match on partial information (such as partial birthdates)"
 * extension[userstory].extension[benefit].valueString = "I have a better chance of finding a match"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >The search to match on partial information (such as partial birthdates)
 
 so that
@@ -749,7 +749,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to allow search parameters configuration: mandatory fields, when partial information is acceptable, etc."
 * extension[userstory].extension[benefit].valueString = "A search can be optimized without compromising confidentiality"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >The system to allow search parameters configuration: mandatory fields, when partial information is acceptable, etc.
 
 so that
@@ -772,7 +772,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To search with wild cards (using a symbol to replace one or more characters)"
 * extension[userstory].extension[benefit].valueString = "I can find something without knowing the exact spelling"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >To search with wild cards (using a symbol to replace one or more characters)
 
 so that
@@ -795,7 +795,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To find client records using barcodes that contain the client ID"
 * extension[userstory].extension[benefit].valueString = "I can quickly pull up the correct record"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >To find client records using barcodes that contain the client ID
 
 so that
@@ -818,7 +818,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The ability for searches to include results that look or sound similar to the search term (phonetic search)"
 * extension[userstory].extension[benefit].valueString = "I can find something that may be spelt incorrectly"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >The ability for searches to include results that look or sound similar to the search term (phonetic search)
 
 so that
@@ -841,7 +841,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "the system to identify any records that may have been imported from another system"
 * extension[userstory].extension[benefit].valueString = "I can verify the quality of imported data"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >the system to identify any records that may have been imported from another system
 
 so that
@@ -864,7 +864,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to prompt a search for the client (check if it is already in the system) prior to starting a new record"
 * extension[userstory].extension[benefit].valueString = "Duplicates are prevented"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >The system to prompt a search for the client (check if it is already in the system) prior to starting a new record
 
 so that
@@ -887,7 +887,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to retrieve and display, as a search result, a specific set of data (demographic information/photo/unique ID, etc. )"
 * extension[userstory].extension[benefit].valueString = "I can select the correct record"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >The system to retrieve and display, as a search result, a specific set of data (demographic information/photo/unique ID, etc. )
 
 so that
@@ -910,7 +910,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to display the most probable matches at the top of the list"
 * extension[userstory].extension[benefit].valueString = "I can review them first"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >The system to display the most probable matches at the top of the list
 
 so that
@@ -933,7 +933,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To be able to extend the search to external systems (such as a birth registry or a scheduling system)"
 * extension[userstory].extension[benefit].valueString = "Duplicates of client record are prevented"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >To be able to extend the search to external systems (such as a birth registry or a scheduling system)
 
 so that
@@ -956,7 +956,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To enter additional search criteria if there are multiple possible matches"
 * extension[userstory].extension[benefit].valueString = "My list of matches is shorter and easier to review"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >To enter additional search criteria if there are multiple possible matches
 
 so that
@@ -979,7 +979,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to enforce a minimal required data set for new registrations"
 * extension[userstory].extension[benefit].valueString = "Sufficient data is entered to be able to identify the client"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >The system to enforce a minimal required data set for new registrations
 
 so that
@@ -1002,7 +1002,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To select the place of birth from a standardized list of locations"
 * extension[userstory].extension[benefit].valueString = "Entry errors are prevented"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >To select the place of birth from a standardized list of locations
 
 so that
@@ -1025,7 +1025,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To select the vaccination location of the client from a list of locations"
 * extension[userstory].extension[benefit].valueString = "Entry errors are prevented"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >To select the vaccination location of the client from a list of locations
 
 so that
@@ -1048,7 +1048,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to uniquely identify every client using a system generated unique identifier or an existing identifier (e.g. health care, national ID, health unique ID)"
 * extension[userstory].extension[benefit].valueString = "The client can be definitively identified using that number"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >The system to uniquely identify every client using a system generated unique identifier or an existing identifier (e.g. health care, national ID, health unique ID)
 
 so that
@@ -1071,7 +1071,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to generate a unique identifier"
 * extension[userstory].extension[benefit].valueString = "The client can be uniquely identified for vaccination activities across systems using the same ID"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >The system to generate a unique identifier
 
 so that
@@ -1094,7 +1094,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "Validate a unique identifier when system is offline"
 * extension[userstory].extension[benefit].valueString = "Entry errors are prevented"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >Validate a unique identifier when system is offline
 
 so that
@@ -1117,7 +1117,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The ability to generate a barcode label to affix to the paper record"
 * extension[userstory].extension[benefit].valueString = "The record can easily be uniquely identified by scanning the ID"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >The ability to generate a barcode label to affix to the paper record
 
 so that
@@ -1140,7 +1140,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The ability to associate a unique ID generated by another authority (local or global) to the record"
 * extension[userstory].extension[benefit].valueString = "The record can be more easily shared or identified with other appropriate systems"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >The ability to associate a unique ID generated by another authority (local or global) to the record
 
 so that
@@ -1163,7 +1163,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to display the information of the selected record"
 * extension[userstory].extension[benefit].valueString = "I can validate and update (if needed) client information"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >The system to display the information of the selected record
 
 so that
@@ -1186,7 +1186,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To be able to modify appropriate client data as needed"
 * extension[userstory].extension[benefit].valueString = "the record contains up to date information"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >To be able to modify appropriate client data as needed
 
 so that
@@ -1209,7 +1209,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to track that I have changed an existing record"
 * extension[userstory].extension[benefit].valueString = "accountability for data modification is ensured"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >The system to track that I have changed an existing record
 
 so that
@@ -1232,7 +1232,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to identify changes made to the record for my confirmation before saving"
 * extension[userstory].extension[benefit].valueString = "I can have the opportunity to double check the data to prevent entry errors"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >The system to identify changes made to the record for my confirmation before saving
 
 so that
@@ -1256,7 +1256,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to provide a history of previous care (including previous vaccination records)"
 * extension[userstory].extension[benefit].valueString = "I have access and review client's history"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >The system to provide a history of previous care (including previous vaccination records)
 
 so that
@@ -1279,7 +1279,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To add client's health history (including previous vaccination records)"
 * extension[userstory].extension[benefit].valueString = "I can appropriately determine which vaccinations are required"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >To add client's health history (including previous vaccination records)
 
 so that
@@ -1302,7 +1302,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to display vaccines due according to predefined vaccine protocol"
 * extension[userstory].extension[benefit].valueString = "I can assess which vaccines need to be administered"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >The system to display vaccines due according to predefined vaccine protocol
 
 so that
@@ -1325,7 +1325,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to determine vaccines due for a given client by considering relevant information, such as the age of the client, vaccine products, vaccines already given and predefined vaccine protocol"
 * extension[userstory].extension[benefit].valueString = "it helps me with selecting the appropriate vaccines for the client"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >The system to determine vaccines due for a given client by considering relevant information, such as the age of the client, vaccine products, vaccines already given and predefined vaccine protocol
 
 so that
@@ -1348,7 +1348,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to ensure I have the most up-to-date vaccine protocols"
 * extension[userstory].extension[benefit].valueString = "It will recommend the correct schedule"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >The system to ensure I have the most up-to-date vaccine protocols
 
 so that
@@ -1371,7 +1371,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To be alerted of any relevant potential contraindications for the vaccine (e.g. based on age, previous allergic reactions, etc.)"
 * extension[userstory].extension[benefit].valueString = "I can withhold the vaccine, if contraindicated"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >To be alerted of any relevant potential contraindications for the vaccine (e.g. based on age, previous allergic reactions, etc.)
 
 so that
@@ -1394,7 +1394,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To be able to quickly access information regarding any contraindications by antigen"
 * extension[userstory].extension[benefit].valueString = "I can access all information on contraindications in one place"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >To be able to quickly access information regarding any contraindications by antigen
 
 so that
@@ -1417,7 +1417,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to display stock availability of recommended vaccines"
 * extension[userstory].extension[benefit].valueString = "I can check if the vaccines are available"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >The system to display stock availability of recommended vaccines
 
 so that
@@ -1440,7 +1440,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to warn if required vaccine is not in stock"
 * extension[userstory].extension[benefit].valueString = "I can alert the client if the vaccine is not available"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >The system to warn if required vaccine is not in stock
 
 so that
@@ -1463,7 +1463,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to display the expiry date of stock to ensure expired vaccines are not administered"
 * extension[userstory].extension[benefit].valueString = "I give safe and effective doses only"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >The system to display the expiry date of stock to ensure expired vaccines are not administered
 
 so that
@@ -1486,7 +1486,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To update stock record"
 * extension[userstory].extension[benefit].valueString = "I know which stock adjustments have not been done automatically (such as in instances if something is wasted)"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >To update stock record
 
 so that
@@ -1509,7 +1509,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To document why a vaccine was not given"
 * extension[userstory].extension[benefit].valueString = "The client has a complete record"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >To document why a vaccine was not given
 
 so that
@@ -1532,7 +1532,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To update clients’ vaccination record with all relevant information (i.e. date, dose, batch number, lot number, vaccine type, vaccine vial monitor status)"
 * extension[userstory].extension[benefit].valueString = "The client has a complete record, and doses can be traced"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >To update clients’ vaccination record with all relevant information (i.e. date, dose, batch number, lot number, vaccine type, vaccine vial monitor status)
 
 so that
@@ -1555,7 +1555,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to associate the context data for each entry (e.g. the vaccination location where the dose was given, the health worker administering it)"
 * extension[userstory].extension[benefit].valueString = "The client has a complete record and I can investigate if any issues arise"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >The system to associate the context data for each entry (e.g. the vaccination location where the dose was given, the health worker administering it)
 
 so that
@@ -1578,7 +1578,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To record additional vaccinations, even those that are not included in the national vaccination schedule"
 * extension[userstory].extension[benefit].valueString = "The client has a complete record"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >To record additional vaccinations, even those that are not included in the national vaccination schedule
 
 so that
@@ -1601,7 +1601,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to log updates of client information"
 * extension[userstory].extension[benefit].valueString = "Users are accountable for the data they modify"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >The system to log updates of client information
 
 so that
@@ -1624,7 +1624,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to request confirmation if data is modified"
 * extension[userstory].extension[benefit].valueString = "Accidental or erroneous changes will not be saved"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >The system to request confirmation if data is modified
 
 so that
@@ -1647,7 +1647,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To record any significant observations (such as reaction) that may be specific to that client"
 * extension[userstory].extension[benefit].valueString = "I can treat as appropriate"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >To record any significant observations (such as reaction) that may be specific to that client
 
 so that
@@ -1670,7 +1670,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to display due date of the next vaccine"
 * extension[userstory].extension[benefit].valueString = "I can inform the client when to return for their next vaccination"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >The system to display due date of the next vaccine
 
 so that
@@ -1693,7 +1693,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To be prompted for any data required to produce a digital vaccine certificate"
 * extension[userstory].extension[benefit].valueString = "The record will have all relevant data to produce a certificate"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >To be prompted for any data required to produce a digital vaccine certificate
 
 so that
@@ -1716,7 +1716,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To be prompted to ask client if they want a digital vaccination certificate where appropriate"
 * extension[userstory].extension[benefit].valueString = "The digital vaccination certificate can be generated"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >To be prompted to ask client if they want a digital vaccination certificate where appropriate
 
 so that
@@ -1739,7 +1739,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to apply an authorised digital signature when necessary and appropriate"
 * extension[userstory].extension[benefit].valueString = "The identity of the issuing authority can be validated"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >The system to apply an authorised digital signature when necessary and appropriate
 
 so that
@@ -1763,7 +1763,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To select reminder parameters. May include but not limited to, age range, vaccine type(s), vaccine schedules, geographic area, number of days overdue, number of reminders, etc."
 * extension[userstory].extension[benefit].valueString = "Reminders can be optimized"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >To select reminder parameters. May include but not limited to, age range, vaccine type(s), vaccine schedules, geographic area, number of days overdue, number of reminders, etc.
 
 so that
@@ -1786,7 +1786,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To associate a client with a vaccination location to generate a provider-based reminder/recall"
 * extension[userstory].extension[benefit].valueString = "Vaccination location specific lists of clients can be generated"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >To associate a client with a vaccination location to generate a provider-based reminder/recall
 
 so that
@@ -1809,7 +1809,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To validate data against the vaccine schedule (Note: Can use the vaccine schedule to best schedule reminders/recall for series vaccinations)"
 * extension[userstory].extension[benefit].valueString = "The generated list adheres to guidelines"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >To validate data against the vaccine schedule (Note: Can use the vaccine schedule to best schedule reminders/recall for series vaccinations)
 
 so that
@@ -1832,7 +1832,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To select one or more notification methods (e.g. automated telephone calls [i.e. robocall], text message, letter, email, community health worker notification, home visits)"
 * extension[userstory].extension[benefit].valueString = "The most appropriate notification method will be used"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >To select one or more notification methods (e.g. automated telephone calls [i.e. robocall], text message, letter, email, community health worker notification, home visits)
 
 so that
@@ -1855,7 +1855,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To set client's preferred contact method"
 * extension[userstory].extension[benefit].valueString = "Any notification will go through the client’s preferred method"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >To set client's preferred contact method
 
 so that
@@ -1878,7 +1878,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to track the number of reminders attempts (i.e. per client and total)"
 * extension[userstory].extension[benefit].valueString = "I can know if additional action may be required, or when to stop sending reminders"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >The system to track the number of reminders attempts (i.e. per client and total)
 
 so that
@@ -1901,7 +1901,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to prevent all records given an inactive or deceased status from being included in the list of clients for reminder/recall"
 * extension[userstory].extension[benefit].valueString = "Notifications will not be inappropriately sent to clients"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >The system to prevent all records given an inactive or deceased status from being included in the list of clients for reminder/recall
 
 so that
@@ -1924,7 +1924,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "to be able to generate a list of clients according to defined parameters"
 * extension[userstory].extension[benefit].valueString = "I have a list according to my needs"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >to be able to generate a list of clients according to defined parameters
 
 so that
@@ -1947,7 +1947,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To print the list of clients generated according to defined parameters"
 * extension[userstory].extension[benefit].valueString = "I can use it when I am offline"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >To print the list of clients generated according to defined parameters
 
 so that
@@ -1970,7 +1970,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to log each time a user prints a list of clients"
 * extension[userstory].extension[benefit].valueString = "Printing needs can be monitored"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >The system to log each time a user prints a list of clients
 
 so that
@@ -1993,7 +1993,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to display the date the reminder/recall notice was sent to a client"
 * extension[userstory].extension[benefit].valueString = "I will know when it was sent and can follow-up accordingly"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >The system to display the date the reminder/recall notice was sent to a client
 
 so that
@@ -2016,7 +2016,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to automatically send reminder notification to client or designated health worker (i.e. community health worker) based on the configured reminder parameters"
 * extension[userstory].extension[benefit].valueString = "they will be alerted of an upcoming or overdue appointment"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >The system to automatically send reminder notification to client or designated health worker (i.e. community health worker) based on the configured reminder parameters
 
 so that
@@ -2039,7 +2039,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The notification to include specific details about upcoming immunization session dates and times or outreach dates and times as appropriate"
 * extension[userstory].extension[benefit].valueString = "The client will know specifically when and where to go to receive a vaccination"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >The notification to include specific details about upcoming immunization session dates and times or outreach dates and times as appropriate
 
 so that
@@ -2063,7 +2063,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to flag a client as a defaulter after a configured number of reminders are sent"
 * extension[userstory].extension[benefit].valueString = "We can identify those who have not come and are overdue, requiring additional intervention"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >The system to flag a client as a defaulter after a configured number of reminders are sent
 
 so that
@@ -2086,7 +2086,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To specify thresholds for a client to qualify as requiring follow-up, based on the national immunization guidelines"
 * extension[userstory].extension[benefit].valueString = "Follow up is only done at the appropriate time"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >To specify thresholds for a client to qualify as requiring follow-up, based on the national immunization guidelines
 
 so that
@@ -2109,7 +2109,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To produce a list of clients who missed their vaccine for each antigen, along with their location and personal information"
 * extension[userstory].extension[benefit].valueString = "I can plan follow up activities and contact the clients"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >To produce a list of clients who missed their vaccine for each antigen, along with their location and personal information
 
 so that
@@ -2132,7 +2132,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To print a list of clients requiring follow-up"
 * extension[userstory].extension[benefit].valueString = "I will have an offline version"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >To print a list of clients requiring follow-up
 
 so that
@@ -2155,7 +2155,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To export a list of clients for follow-up"
 * extension[userstory].extension[benefit].valueString = "Information can be sent to another health worker or system as appropriate"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >To export a list of clients for follow-up
 
 so that
@@ -2178,7 +2178,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To assign a community health worker to a client"
 * extension[userstory].extension[benefit].valueString = "I can send client information to the correct community health worker"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >To assign a community health worker to a client
 
 so that
@@ -2201,7 +2201,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to group the defaulters by location and community health worker"
 * extension[userstory].extension[benefit].valueString = "I can send to the community health workers the appropriate list"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >The system to group the defaulters by location and community health worker
 
 so that
@@ -2224,7 +2224,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To display a list of clients due for specific planned outreach and immunization sessions, based on area"
 * extension[userstory].extension[benefit].valueString = "The immunization session or outreach will have a targeted list of clients, allowing for prioritization of tasks and workload"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >To display a list of clients due for specific planned outreach and immunization sessions, based on area
 
 so that
@@ -2247,7 +2247,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To send list of clients who missed immunization sessions by email or SMS to the community health worker"
 * extension[userstory].extension[benefit].valueString = "The community health worker will have a digital version"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >To send list of clients who missed immunization sessions by email or SMS to the community health worker
 
 so that
@@ -2270,7 +2270,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To record in the system the results of the follow-up"
 * extension[userstory].extension[benefit].valueString = "The information is available in the system and is available for review"
 * description = """
-As a <a href="ActorDefinition-Communityhealthworker.html">Community health worker</a>, I want:
+As a <a href="ActorDefinition-communityhealthworker.html">Community health worker</a>, I want:
 >To record in the system the results of the follow-up
 
 so that
@@ -2293,7 +2293,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To record reason vaccine was missed"
 * extension[userstory].extension[benefit].valueString = "This information can be used for planning and reporting purposes"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >To record reason vaccine was missed
 
 so that
@@ -2316,7 +2316,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To update client information such as including change of address (moved permanently or temporarily)"
 * extension[userstory].extension[benefit].valueString = "To facilitate the client being contacted or being removed from a immunization session’s list"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >To update client information such as including change of address (moved permanently or temporarily)
 
 so that
@@ -2339,7 +2339,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To flag when there is a change of address and a new client has been added to another catchment area"
 * extension[userstory].extension[benefit].valueString = "The client will appear on the correct list for follow up"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >To flag when there is a change of address and a new client has been added to another catchment area
 
 so that
@@ -2362,7 +2362,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To be able to indicate if a client is inactive, identified as either permanently or temporarily, with a reason (e.g. death, moved, refuses vaccine)"
 * extension[userstory].extension[benefit].valueString = "No further follow up will be done, and they will not appear as defaulters"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >To be able to indicate if a client is inactive, identified as either permanently or temporarily, with a reason (e.g. death, moved, refuses vaccine)
 
 so that
@@ -2385,7 +2385,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To be able to set a specific inactivity time frame for temporarily inactive clients (e.g. temporarily lost residence, crop harvest season)"
 * extension[userstory].extension[benefit].valueString = "I can distinguish between those who may require follow up at a specific time in future versus those which are inactive for a indeterminate period of time"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >To be able to set a specific inactivity time frame for temporarily inactive clients (e.g. temporarily lost residence, crop harvest season)
 
 so that
@@ -2408,7 +2408,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To be able to generate a report of clients who are inactive and disaggregate by the reason they are inactive"
 * extension[userstory].extension[benefit].valueString = "It can be used for reporting and planning"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >To be able to generate a report of clients who are inactive and disaggregate by the reason they are inactive
 
 so that
@@ -2432,7 +2432,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to support a rules-based algorithm to evaluate duplicate records"
 * extension[userstory].extension[benefit].valueString = "Duplicates can be found by the system using pre-defined rules"
 * description = """
-As a <a href="ActorDefinition-EIRstaff.html">EIR staff</a>, I want:
+As a <a href="ActorDefinition-eirstaff.html">EIR staff</a>, I want:
 >The system to support a rules-based algorithm to evaluate duplicate records
 
 so that
@@ -2455,7 +2455,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To be able to modify the business rules used for identifying duplicate client records"
 * extension[userstory].extension[benefit].valueString = "The de-duplication process is optimized"
 * description = """
-As a <a href="ActorDefinition-EIRstaff.html">EIR staff</a>, I want:
+As a <a href="ActorDefinition-eirstaff.html">EIR staff</a>, I want:
 >To be able to modify the business rules used for identifying duplicate client records
 
 so that
@@ -2478,7 +2478,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to automatically flag client records as possible duplicates by marking them as pending for review"
 * extension[userstory].extension[benefit].valueString = "The health worker or EIR staff is informed and aware of pending review"
 * description = """
-As a <a href="ActorDefinition-EIRstaff.html">EIR staff</a>, I want:
+As a <a href="ActorDefinition-eirstaff.html">EIR staff</a>, I want:
 >The system to automatically flag client records as possible duplicates by marking them as pending for review
 
 so that
@@ -2501,7 +2501,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to schedule batching of duplicate record process"
 * extension[userstory].extension[benefit].valueString = "They may be processed and assessed together when user is ready"
 * description = """
-As a <a href="ActorDefinition-EIRstaff.html">EIR staff</a>, I want:
+As a <a href="ActorDefinition-eirstaff.html">EIR staff</a>, I want:
 >The system to schedule batching of duplicate record process
 
 so that
@@ -2524,7 +2524,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To be able to manually flag duplicate records"
 * extension[userstory].extension[benefit].valueString = "I can identify potential duplicates myself for resolution"
 * description = """
-As a <a href="ActorDefinition-EIRstaffORhealthworker.html">EIR staff OR health worker</a>, I want:
+As a <a href="ActorDefinition-eirstafforhealthworker.html">EIR staff OR health worker</a>, I want:
 >To be able to manually flag duplicate records
 
 so that
@@ -2547,7 +2547,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To be able to view simultaneously potential duplicate records"
 * extension[userstory].extension[benefit].valueString = "I can easily compare the records and determine if they are duplicates"
 * description = """
-As a <a href="ActorDefinition-EIRstaffORhealthworker.html">EIR staff OR health worker</a>, I want:
+As a <a href="ActorDefinition-eirstafforhealthworker.html">EIR staff OR health worker</a>, I want:
 >To be able to view simultaneously potential duplicate records
 
 so that
@@ -2570,7 +2570,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To be able to access the client records while reviewing the duplicates"
 * extension[userstory].extension[benefit].valueString = "I can review other fields, such as immunization history, to aid in my decision-making"
 * description = """
-As a <a href="ActorDefinition-EIRstaffORhealthworker.html">EIR staff OR health worker</a>, I want:
+As a <a href="ActorDefinition-eirstafforhealthworker.html">EIR staff OR health worker</a>, I want:
 >To be able to access the client records while reviewing the duplicates
 
 so that
@@ -2593,7 +2593,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To be able to decide what information to keep from the duplicates"
 * extension[userstory].extension[benefit].valueString = "I make sure the most appropriate information is kept in the consolidated record"
 * description = """
-As a <a href="ActorDefinition-EIRstaffORhealthworker.html">EIR staff OR health worker</a>, I want:
+As a <a href="ActorDefinition-eirstafforhealthworker.html">EIR staff OR health worker</a>, I want:
 >To be able to decide what information to keep from the duplicates
 
 so that
@@ -2616,7 +2616,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to be able to merge records confirmed to be duplicates"
 * extension[userstory].extension[benefit].valueString = "Duplicate records can be merged"
 * description = """
-As a <a href="ActorDefinition-EIRstaff.html">EIR staff</a>, I want:
+As a <a href="ActorDefinition-eirstaff.html">EIR staff</a>, I want:
 >The system to be able to merge records confirmed to be duplicates
 
 so that
@@ -2639,7 +2639,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to support an audit trail when records are merged"
 * extension[userstory].extension[benefit].valueString = "Accountability can be maintained"
 * description = """
-As a <a href="ActorDefinition-EIRstaff.html">EIR staff</a>, I want:
+As a <a href="ActorDefinition-eirstaff.html">EIR staff</a>, I want:
 >The system to support an audit trail when records are merged
 
 so that
@@ -2662,7 +2662,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to be able to provide history of merged record for a given client"
 * extension[userstory].extension[benefit].valueString = "I can double check if the merge was done appropriately"
 * description = """
-As a <a href="ActorDefinition-EIRstaff.html">EIR staff</a>, I want:
+As a <a href="ActorDefinition-eirstaff.html">EIR staff</a>, I want:
 >The system to be able to provide history of merged record for a given client
 
 so that
@@ -2685,7 +2685,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to be able to undo a merge"
 * extension[userstory].extension[benefit].valueString = "I can restore records merged incorrectly"
 * description = """
-As a <a href="ActorDefinition-EIRstaff.html">EIR staff</a>, I want:
+As a <a href="ActorDefinition-eirstaff.html">EIR staff</a>, I want:
 >The system to be able to undo a merge
 
 so that
@@ -2708,7 +2708,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To be able to flag records as \"not a duplicate\""
 * extension[userstory].extension[benefit].valueString = "It is not presented as a possible duplicates by the system"
 * description = """
-As a <a href="ActorDefinition-EIRstaffORhealthworker.html">EIR staff OR health worker</a>, I want:
+As a <a href="ActorDefinition-eirstafforhealthworker.html">EIR staff OR health worker</a>, I want:
 >To be able to flag records as \"not a duplicate\"
 
 so that
@@ -2731,7 +2731,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To be able to enter comments for records marked as \"not a duplicate\""
 * extension[userstory].extension[benefit].valueString = "I can add any additional information to let other users see why it was determined to not be a duplicate"
 * description = """
-As a <a href="ActorDefinition-EIRstaffORhealthworker.html">EIR staff OR health worker</a>, I want:
+As a <a href="ActorDefinition-eirstafforhealthworker.html">EIR staff OR health worker</a>, I want:
 >To be able to enter comments for records marked as \"not a duplicate\"
 
 so that
@@ -2755,7 +2755,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to support a rules-based algorithm to evaluate duplicate events"
 * extension[userstory].extension[benefit].valueString = "Duplicates can be found by the system using pre-defined rules"
 * description = """
-As a <a href="ActorDefinition-EIRstaff.html">EIR staff</a>, I want:
+As a <a href="ActorDefinition-eirstaff.html">EIR staff</a>, I want:
 >The system to support a rules-based algorithm to evaluate duplicate events
 
 so that
@@ -2778,7 +2778,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to automatically flag event records as possible duplicates by marking them as pending for review"
 * extension[userstory].extension[benefit].valueString = "The health worker or EIR staff is informed and aware of pending review"
 * description = """
-As a <a href="ActorDefinition-EIRstaff.html">EIR staff</a>, I want:
+As a <a href="ActorDefinition-eirstaff.html">EIR staff</a>, I want:
 >The system to automatically flag event records as possible duplicates by marking them as pending for review
 
 so that
@@ -2801,7 +2801,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "to be able to modify the business rules used for identifying vaccination events duplicates"
 * extension[userstory].extension[benefit].valueString = "The de-duplication process can be optimized"
 * description = """
-As a <a href="ActorDefinition-EIRstaff.html">EIR staff</a>, I want:
+As a <a href="ActorDefinition-eirstaff.html">EIR staff</a>, I want:
 >to be able to modify the business rules used for identifying vaccination events duplicates
 
 so that
@@ -2824,7 +2824,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to prompt the user that a new vaccination event might already exist"
 * extension[userstory].extension[benefit].valueString = "The user can decide if it is a duplicate and if so not save it"
 * description = """
-As a <a href="ActorDefinition-EIRstaff.html">EIR staff</a>, I want:
+As a <a href="ActorDefinition-eirstaff.html">EIR staff</a>, I want:
 >The system to prompt the user that a new vaccination event might already exist
 
 so that
@@ -2847,7 +2847,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to generate automatically a list of possible duplicated vaccination events"
 * extension[userstory].extension[benefit].valueString = "The review process is optimized"
 * description = """
-As a <a href="ActorDefinition-EIRstaff.html">EIR staff</a>, I want:
+As a <a href="ActorDefinition-eirstaff.html">EIR staff</a>, I want:
 >The system to generate automatically a list of possible duplicated vaccination events
 
 so that
@@ -2870,7 +2870,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To be able to manually initiate duplicates identification process"
 * extension[userstory].extension[benefit].valueString = "It can be done when the user is available to review"
 * description = """
-As a <a href="ActorDefinition-EIRstaffORhealthworker.html">EIR staff OR health worker</a>, I want:
+As a <a href="ActorDefinition-eirstafforhealthworker.html">EIR staff OR health worker</a>, I want:
 >To be able to manually initiate duplicates identification process
 
 so that
@@ -2893,7 +2893,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To be able to manually flag duplicate vaccination events"
 * extension[userstory].extension[benefit].valueString = "I can report duplicates that the system was not able to identify"
 * description = """
-As a <a href="ActorDefinition-EIRstaffORhealthworker.html">EIR staff OR health worker</a>, I want:
+As a <a href="ActorDefinition-eirstafforhealthworker.html">EIR staff OR health worker</a>, I want:
 >To be able to manually flag duplicate vaccination events
 
 so that
@@ -2916,7 +2916,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to display a specific set of data related to the possible duplicated events (such as vaccine type, manufacturer, administration date, etc.) for manual review"
 * extension[userstory].extension[benefit].valueString = "I am able to perform the review"
 * description = """
-As a <a href="ActorDefinition-EIRstaffORhealthworker.html">EIR staff OR health worker</a>, I want:
+As a <a href="ActorDefinition-eirstafforhealthworker.html">EIR staff OR health worker</a>, I want:
 >The system to display a specific set of data related to the possible duplicated events (such as vaccine type, manufacturer, administration date, etc.) for manual review
 
 so that
@@ -2939,7 +2939,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To be able to view simultaneously potential duplicate records"
 * extension[userstory].extension[benefit].valueString = "I can easily compare the records and to determine if they are duplicates"
 * description = """
-As a <a href="ActorDefinition-EIRstaffORhealthworker.html">EIR staff OR health worker</a>, I want:
+As a <a href="ActorDefinition-eirstafforhealthworker.html">EIR staff OR health worker</a>, I want:
 >To be able to view simultaneously potential duplicate records
 
 so that
@@ -2962,7 +2962,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To be able to access the vaccination events while reviewing the duplicates"
 * extension[userstory].extension[benefit].valueString = "I can review other fields to aid in my decision-making"
 * description = """
-As a <a href="ActorDefinition-EIRstaffORhealthworker.html">EIR staff OR health worker</a>, I want:
+As a <a href="ActorDefinition-eirstafforhealthworker.html">EIR staff OR health worker</a>, I want:
 >To be able to access the vaccination events while reviewing the duplicates
 
 so that
@@ -2985,7 +2985,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to automatically select the most accurate/suitable vaccination event to be used as the (primary or master) record"
 * extension[userstory].extension[benefit].valueString = "the manual review process is optimized"
 * description = """
-As a <a href="ActorDefinition-EIRstaffORhealthworker.html">EIR staff OR health worker</a>, I want:
+As a <a href="ActorDefinition-eirstafforhealthworker.html">EIR staff OR health worker</a>, I want:
 >The system to automatically select the most accurate/suitable vaccination event to be used as the (primary or master) record
 
 so that
@@ -3008,7 +3008,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To be able to merge manually duplicate records and decide what information to keep from the duplicates into a consolidated event record"
 * extension[userstory].extension[benefit].valueString = "I make sure the most accurate consolidated record is kept"
 * description = """
-As a <a href="ActorDefinition-EIRstaffORhealthworker.html">EIR staff OR health worker</a>, I want:
+As a <a href="ActorDefinition-eirstafforhealthworker.html">EIR staff OR health worker</a>, I want:
 >To be able to merge manually duplicate records and decide what information to keep from the duplicates into a consolidated event record
 
 so that
@@ -3031,7 +3031,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to support an audit trail when event records are merged"
 * extension[userstory].extension[benefit].valueString = "Accountability can be maintained"
 * description = """
-As a <a href="ActorDefinition-EIRstaff.html">EIR staff</a>, I want:
+As a <a href="ActorDefinition-eirstaff.html">EIR staff</a>, I want:
 >The system to support an audit trail when event records are merged
 
 so that
@@ -3054,7 +3054,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to be able to provide history of merged event records"
 * extension[userstory].extension[benefit].valueString = "I can double check if the merge was done appropriately"
 * description = """
-As a <a href="ActorDefinition-EIRstaff.html">EIR staff</a>, I want:
+As a <a href="ActorDefinition-eirstaff.html">EIR staff</a>, I want:
 >The system to be able to provide history of merged event records
 
 so that
@@ -3077,7 +3077,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to be able to generate a report of duplicate vaccine events including the resolutions"
 * extension[userstory].extension[benefit].valueString = "I can have a summary of the changes made"
 * description = """
-As a <a href="ActorDefinition-EIRstaff.html">EIR staff</a>, I want:
+As a <a href="ActorDefinition-eirstaff.html">EIR staff</a>, I want:
 >The system to be able to generate a report of duplicate vaccine events including the resolutions
 
 so that
@@ -3101,7 +3101,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To be able to configure report parameters when creating new reports (period of time, inactive versus active clients, client's age, vaccine type, vaccine manufacturer, etc.)"
 * extension[userstory].extension[benefit].valueString = "Appropriate reports can be generated"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >To be able to configure report parameters when creating new reports (period of time, inactive versus active clients, client's age, vaccine type, vaccine manufacturer, etc.)
 
 so that
@@ -3124,7 +3124,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To be able to select report parameters when creating vaccination coverage reports (i.e. by vaccine, by dose, by age, by area, by condition, by vaccine manufacturer, etc)"
 * extension[userstory].extension[benefit].valueString = "Appropriate vaccination coverage reports can be generated"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >To be able to select report parameters when creating vaccination coverage reports (i.e. by vaccine, by dose, by age, by area, by condition, by vaccine manufacturer, etc)
 
 so that
@@ -3147,7 +3147,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To be able to customize report parameters for error monitoring reports"
 * extension[userstory].extension[benefit].valueString = "I can generate reports specific to my needs and the nature of potential programmatic errors I want to monitor"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >To be able to customize report parameters for error monitoring reports
 
 so that
@@ -3170,7 +3170,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To be able to select what information a report shows (i.e. display options, summary versus detail report, sort options)"
 * extension[userstory].extension[benefit].valueString = "The report presentation can be customised"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >To be able to select what information a report shows (i.e. display options, summary versus detail report, sort options)
 
 so that
@@ -3193,7 +3193,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "To be able to schedule routine reports (specific date/time, daily, weekly, etc.)"
 * extension[userstory].extension[benefit].valueString = "The reports can be generated automatically and are available at the right time"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >To be able to schedule routine reports (specific date/time, daily, weekly, etc.)
 
 so that
@@ -3216,7 +3216,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to produce and export reports in multiple formats (i.e. CSV, PDF) on demand"
 * extension[userstory].extension[benefit].valueString = "I can select the most appropriate format for my needs"
 * description = """
-As a <a href="ActorDefinition-EIRstaff.html">EIR staff</a>, I want:
+As a <a href="ActorDefinition-eirstaff.html">EIR staff</a>, I want:
 >The system to produce and export reports in multiple formats (i.e. CSV, PDF) on demand
 
 so that
@@ -3239,7 +3239,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to be able to print reports on demand"
 * extension[userstory].extension[benefit].valueString = "I can have a paper version of the report"
 * description = """
-As a <a href="ActorDefinition-EIRstaff.html">EIR staff</a>, I want:
+As a <a href="ActorDefinition-eirstaff.html">EIR staff</a>, I want:
 >The system to be able to print reports on demand
 
 so that
@@ -3262,7 +3262,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to show me a preview of the report before printing"
 * extension[userstory].extension[benefit].valueString = "I can review before printing"
 * description = """
-As a <a href="ActorDefinition-EIRstaff.html">EIR staff</a>, I want:
+As a <a href="ActorDefinition-eirstaff.html">EIR staff</a>, I want:
 >The system to show me a preview of the report before printing
 
 so that
@@ -3285,7 +3285,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to log the actions performed on the reports"
 * extension[userstory].extension[benefit].valueString = "An audit can be performed when needed"
 * description = """
-As a <a href="ActorDefinition-EIRstaff.html">EIR staff</a>, I want:
+As a <a href="ActorDefinition-eirstaff.html">EIR staff</a>, I want:
 >The system to log the actions performed on the reports
 
 so that
@@ -3308,7 +3308,7 @@ Usage: #definition
 * extension[userstory].extension[capability].valueString = "The system to offer the posibility of sending the generated report by email"
 * extension[userstory].extension[benefit].valueString = "I do not have to manually do that"
 * description = """
-As a <a href="ActorDefinition-Healthworker.html">Health worker</a>, I want:
+As a <a href="ActorDefinition-healthworker.html">Health worker</a>, I want:
 >The system to offer the posibility of sending the generated report by email
 
 so that

@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Support ability to calculate values on behalf of user (eliminating need to add, subtract, multiply or divide)"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Usability
 * description = """
 *Category*: Usability
 Support ability to calculate values on behalf of user (eliminating need to add, subtract, multiply or divide)

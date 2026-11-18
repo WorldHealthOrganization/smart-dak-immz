@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.094.E"
 * activity = "Generate list of clients"
 * actor[+] = Reference(healthworker)
-* capabilityString = "The system to display the date the reminder/recall notice was sent to a client"
-* benefitString = "I will know when it was sent and can follow-up accordingly"
+* capabilityMarkdown = "The system to display the date the reminder/recall notice was sent to a client"
+* benefitMarkdown = "I will know when it was sent and can follow-up accordingly"
 * classification[+] = FXREQBusinessProcesses#E
 

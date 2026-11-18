@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Support real-time data-entry validation and feedback to prevent data-entry errors from being recorded"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Usability
 * description = """
 *Category*: Usability
 Support real-time data-entry validation and feedback to prevent data-entry errors from being recorded

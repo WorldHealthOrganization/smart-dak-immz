@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.007.A"
 * activity = "Update/add new vaccination location"
 * actor[+] = Reference(eirstaff)
-* capabilityString = "To be able to include vaccination locations that may not be physical permanent facilities (such as temporary or pop-up clinics)"
-* benefitString = "We will have the flexibility to accommodate temporary vaccination locations"
+* capabilityMarkdown = "To be able to include vaccination locations that may not be physical permanent facilities (such as temporary or pop-up clinics)"
+* benefitMarkdown = "We will have the flexibility to accommodate temporary vaccination locations"
 * classification[+] = FXREQBusinessProcesses#A
 

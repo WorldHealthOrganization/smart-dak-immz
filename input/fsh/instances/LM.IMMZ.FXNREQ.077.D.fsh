@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.077.D"
 * activity = "Update client record"
 * actor[+] = Reference(healthworker)
-* capabilityString = "The system to request confirmation if data is modified"
-* benefitString = "Accidental or erroneous changes will not be saved"
+* capabilityMarkdown = "The system to request confirmation if data is modified"
+* benefitMarkdown = "Accidental or erroneous changes will not be saved"
 * classification[+] = FXREQBusinessProcesses#D
 

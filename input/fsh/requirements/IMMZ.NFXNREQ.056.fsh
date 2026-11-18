@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Provide flexible password control to align to national policy and standard operating procedures, including password format requirements"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Confidentialityprivacyandsecurity
 * description = """
 *Category*: Confidentiality, privacy and security
 Provide flexible password control to align to national policy and standard operating procedures, including password format requirements

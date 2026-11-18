@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.084.E"
 * activity = "Define/evaluate criteria"
 * actor[+] = Reference(healthworker)
-* capabilityString = "To select reminder parameters. May include but not limited to, age range, vaccine type(s), vaccine schedules, geographic area, number of days overdue, number of reminders, etc."
-* benefitString = "Reminders can be optimized"
+* capabilityMarkdown = "To select reminder parameters. May include but not limited to, age range, vaccine type(s), vaccine schedules, geographic area, number of days overdue, number of reminders, etc."
+* benefitMarkdown = "Reminders can be optimized"
 * classification[+] = FXREQBusinessProcesses#E
 

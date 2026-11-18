@@ -8,7 +8,6 @@ Usage: #definition
 * publisher = "WHO"
 * experimental = true
 * actor[+] = Canonical(healthworker)
-* extension[classification][+].valueCoding = FXREQBusinessProcesses#I
 * extension[userstory].extension[capability].valueString = "To be able to schedule routine reports (specific date/time, daily, weekly, etc.)"
 * extension[userstory].extension[benefit].valueString = "The reports can be generated automatically and are available at the right time"
 * description = """

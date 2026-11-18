@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.146.I"
 * activity = "Define parameters for report"
 * actor[+] = Reference(healthworker)
-* capabilityString = "To be able to schedule routine reports (specific date/time, daily, weekly, etc.)"
-* benefitString = "The reports can be generated automatically and are available at the right time"
+* capabilityMarkdown = "To be able to schedule routine reports (specific date/time, daily, weekly, etc.)"
+* benefitMarkdown = "The reports can be generated automatically and are available at the right time"
 * classification[+] = FXREQBusinessProcesses#I
 

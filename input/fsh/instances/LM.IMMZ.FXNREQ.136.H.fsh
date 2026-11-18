@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.136.H"
 * activity = "Evaluate vaccine event records"
 * actor[+] = Reference(eirstafforhealthworker)
-* capabilityString = "To be able to access the vaccination events while reviewing the duplicates"
-* benefitString = "I can review other fields to aid in my decision-making"
+* capabilityMarkdown = "To be able to access the vaccination events while reviewing the duplicates"
+* benefitMarkdown = "I can review other fields to aid in my decision-making"
 * classification[+] = FXREQBusinessProcesses#H
 

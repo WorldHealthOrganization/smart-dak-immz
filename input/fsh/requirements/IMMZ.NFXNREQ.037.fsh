@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Use industry-standard user interface practices and apply them consistently throughout the system"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Usability
 * description = """
 *Category*: Usability
 Use industry-standard user interface practices and apply them consistently throughout the system

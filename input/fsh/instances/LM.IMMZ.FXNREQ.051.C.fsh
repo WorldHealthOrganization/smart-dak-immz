@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.051.C"
 * activity = "Validate client details"
 * actor[+] = Reference(healthworker)
-* capabilityString = "To select the vaccination location of the client from a list of locations"
-* benefitString = "Entry errors are prevented"
+* capabilityMarkdown = "To select the vaccination location of the client from a list of locations"
+* benefitMarkdown = "Entry errors are prevented"
 * classification[+] = FXREQBusinessProcesses#C
 

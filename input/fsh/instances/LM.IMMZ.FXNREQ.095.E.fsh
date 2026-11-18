@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.095.E"
 * activity = "Send notifications"
 * actor[+] = Reference(healthworker)
-* capabilityString = "The system to automatically send reminder notification to client or designated health worker (i.e. community health worker) based on the configured reminder parameters"
-* benefitString = "they will be alerted of an upcoming or overdue appointment"
+* capabilityMarkdown = "The system to automatically send reminder notification to client or designated health worker (i.e. community health worker) based on the configured reminder parameters"
+* benefitMarkdown = "they will be alerted of an upcoming or overdue appointment"
 * classification[+] = FXREQBusinessProcesses#E
 

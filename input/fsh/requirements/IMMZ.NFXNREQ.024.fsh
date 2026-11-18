@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Emphasize ease of use and learnability to reduce training costs"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Usability
 * description = """
 *Category*: Usability
 Emphasize ease of use and learnability to reduce training costs

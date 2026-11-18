@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Link with insurance systems to verify eligibility and submit claims"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Interoperability
 * description = """
 *Category*: Interoperability
 Link with insurance systems to verify eligibility and submit claims

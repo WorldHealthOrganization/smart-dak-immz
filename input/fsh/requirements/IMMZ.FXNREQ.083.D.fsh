@@ -8,7 +8,6 @@ Usage: #definition
 * publisher = "WHO"
 * experimental = true
 * actor[+] = Canonical(healthworker)
-* extension[classification][+].valueCoding = FXREQBusinessProcesses#D
 * extension[userstory].extension[capability].valueString = "The system to apply an authorised digital signature when necessary and appropriate"
 * extension[userstory].extension[benefit].valueString = "The identity of the issuing authority can be validated"
 * description = """

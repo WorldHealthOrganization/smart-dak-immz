@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.110.F"
 * activity = "Update record to document reason/lost follow-up"
 * actor[+] = Reference(healthworker)
-* capabilityString = "To be able to indicate if a client is inactive, identified as either permanently or temporarily, with a reason (e.g. death, moved, refuses vaccine)"
-* benefitString = "No further follow up will be done, and they will not appear as defaulters"
+* capabilityMarkdown = "To be able to indicate if a client is inactive, identified as either permanently or temporarily, with a reason (e.g. death, moved, refuses vaccine)"
+* benefitMarkdown = "No further follow up will be done, and they will not appear as defaulters"
 * classification[+] = FXREQBusinessProcesses#F
 

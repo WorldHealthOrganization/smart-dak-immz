@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.148.I"
 * activity = "Generate report"
 * actor[+] = Reference(eirstaff)
-* capabilityString = "The system to be able to print reports on demand"
-* benefitString = "I can have a paper version of the report"
+* capabilityMarkdown = "The system to be able to print reports on demand"
+* benefitMarkdown = "I can have a paper version of the report"
 * classification[+] = FXREQBusinessProcesses#I
 

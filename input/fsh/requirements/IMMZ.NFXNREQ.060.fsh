@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Allow for maintenance of security updates"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Confidentialityprivacyandsecurity
 * description = """
 *Category*: Confidentiality, privacy and security
 Allow for maintenance of security updates

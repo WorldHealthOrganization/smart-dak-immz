@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.137.H"
 * activity = "Select the most accurate/suitable event record"
 * actor[+] = Reference(eirstafforhealthworker)
-* capabilityString = "The system to automatically select the most accurate/suitable vaccination event to be used as the (primary or master) record"
-* benefitString = "the manual review process is optimized"
+* capabilityMarkdown = "The system to automatically select the most accurate/suitable vaccination event to be used as the (primary or master) record"
+* benefitMarkdown = "the manual review process is optimized"
 * classification[+] = FXREQBusinessProcesses#H
 

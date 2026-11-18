@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Include an administrable content management system"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Maintainability
 * description = """
 *Category*: Maintainability
 Include an administrable content management system

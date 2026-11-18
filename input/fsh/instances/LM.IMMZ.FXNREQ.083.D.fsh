@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.083.D"
 * activity = "Generate verifiable digital certificate"
 * actor[+] = Reference(healthworker)
-* capabilityString = "The system to apply an authorised digital signature when necessary and appropriate"
-* benefitString = "The identity of the issuing authority can be validated"
+* capabilityMarkdown = "The system to apply an authorised digital signature when necessary and appropriate"
+* benefitMarkdown = "The identity of the issuing authority can be validated"
 * classification[+] = FXREQBusinessProcesses#D
 

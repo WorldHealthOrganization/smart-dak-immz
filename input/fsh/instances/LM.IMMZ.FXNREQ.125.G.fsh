@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.125.G"
 * activity = "Mark as \"not a duplicate\" or \"pending\""
 * actor[+] = Reference(eirstafforhealthworker)
-* capabilityString = "To be able to flag records as \"not a duplicate\""
-* benefitString = "It is not presented as a possible duplicates by the system"
+* capabilityMarkdown = "To be able to flag records as \"not a duplicate\""
+* benefitMarkdown = "It is not presented as a possible duplicates by the system"
 * classification[+] = FXREQBusinessProcesses#G
 

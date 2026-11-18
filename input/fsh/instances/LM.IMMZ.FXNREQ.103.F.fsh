@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.103.F"
 * activity = "Record the necessary information to follow-up"
 * actor[+] = Reference(healthworker)
-* capabilityString = "The system to group the defaulters by location and community health worker"
-* benefitString = "I can send to the community health workers the appropriate list"
+* capabilityMarkdown = "The system to group the defaulters by location and community health worker"
+* benefitMarkdown = "I can send to the community health workers the appropriate list"
 * classification[+] = FXREQBusinessProcesses#F
 

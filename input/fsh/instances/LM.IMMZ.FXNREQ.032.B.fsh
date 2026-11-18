@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.032.B"
 * activity = "Record stock taken"
 * actor[+] = Reference(healthworker)
-* capabilityString = "To record stock removed from cold storage and taken to immunization session"
-* benefitString = "The count for the cold storage will be accurate, and the immunization session stock will be accounted for"
+* capabilityMarkdown = "To record stock removed from cold storage and taken to immunization session"
+* benefitMarkdown = "The count for the cold storage will be accurate, and the immunization session stock will be accounted for"
 * classification[+] = FXREQBusinessProcesses#B
 

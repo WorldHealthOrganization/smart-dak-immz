@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.070.D"
 * activity = "Check stock availability of recommended vaccines"
 * actor[+] = Reference(healthworker)
-* capabilityString = "The system to display the expiry date of stock to ensure expired vaccines are not administered"
-* benefitString = "I give safe and effective doses only"
+* capabilityMarkdown = "The system to display the expiry date of stock to ensure expired vaccines are not administered"
+* benefitMarkdown = "I give safe and effective doses only"
 * classification[+] = FXREQBusinessProcesses#D
 

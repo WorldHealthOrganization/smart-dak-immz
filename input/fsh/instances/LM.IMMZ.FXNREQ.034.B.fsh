@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.034.B"
 * activity = "Assemble all needed materials for immunization session"
 * actor[+] = Reference(healthworker)
-* capabilityString = "The system to provide a immunization session materials checklist, which is a list of materials I would need for immunization session"
-* benefitString = "I can make sure I have the materials I need for immunization session"
+* capabilityMarkdown = "The system to provide a immunization session materials checklist, which is a list of materials I would need for immunization session"
+* benefitMarkdown = "I can make sure I have the materials I need for immunization session"
 * classification[+] = FXREQBusinessProcesses#B
 

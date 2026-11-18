@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.043.C"
 * activity = "Query client record"
 * actor[+] = Reference(healthworker)
-* capabilityString = "the system to identify any records that may have been imported from another system"
-* benefitString = "I can verify the quality of imported data"
+* capabilityMarkdown = "the system to identify any records that may have been imported from another system"
+* benefitMarkdown = "I can verify the quality of imported data"
 * classification[+] = FXREQBusinessProcesses#C
 

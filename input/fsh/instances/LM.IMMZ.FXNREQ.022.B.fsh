@@ -12,7 +12,7 @@ Usage: #definition
 * id = "LM.IMMZ.FXNREQ.022.B"
 * activity = "Record details on planning sheet"
 * actor[+] = Reference(healthworker)
-* capabilityString = "To be able to check in the system the available stock at my vaccination location or at the local storage area/warehouse"
-* benefitString = "I can determine the stock available for use"
+* capabilityMarkdown = "To be able to check in the system the available stock at my vaccination location or at the local storage area/warehouse"
+* benefitMarkdown = "I can determine the stock available for use"
 * classification[+] = FXREQBusinessProcesses#B
 
