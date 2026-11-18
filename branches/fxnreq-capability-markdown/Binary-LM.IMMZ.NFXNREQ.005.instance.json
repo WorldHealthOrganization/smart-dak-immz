@@ -1,0 +1,9 @@
+{
+  "resourceType": "http://smart.who.int/base/StructureDefinition/NonFunctionalRequirement",
+  "id": "LM.IMMZ.NFXNREQ.005",
+  "requirement": "Provide real-time response to transactions submitted by connected devices up to the configured national volume level",
+  "category": {
+    "code": "Performance",
+    "system": "http://smart.who.int/dak-immz/CodeSystem/FXREQCategories"
+  }
+}

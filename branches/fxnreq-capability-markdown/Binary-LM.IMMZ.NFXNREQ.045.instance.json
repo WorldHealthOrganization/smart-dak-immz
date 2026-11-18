@@ -1,0 +1,9 @@
+{
+  "resourceType": "http://smart.who.int/base/StructureDefinition/NonFunctionalRequirement",
+  "id": "LM.IMMZ.NFXNREQ.045",
+  "requirement": "Enable backup of data so that information is recoverable in the event of a system or hardware failure",
+  "category": {
+    "code": "Reliability",
+    "system": "http://smart.who.int/dak-immz/CodeSystem/FXREQCategories"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "resourceType": "http://smart.who.int/base/StructureDefinition/NonFunctionalRequirement",
+  "id": "LM.IMMZ.NFXNREQ.024",
+  "requirement": "Emphasize ease of use and learnability to reduce training costs",
+  "category": {
+    "code": "Usability",
+    "system": "http://smart.who.int/dak-immz/CodeSystem/FXREQCategories"
+  }
+}

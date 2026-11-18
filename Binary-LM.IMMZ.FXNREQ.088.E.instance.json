@@ -1,0 +1,18 @@
+{
+  "resourceType": "http://smart.who.int/base/StructureDefinition/FunctionalRequirement",
+  "id": "LM.IMMZ.FXNREQ.088.E",
+  "activity": "Select notification method",
+  "actor": [
+    {
+      "reference": "ActorDefinition/healthworker"
+    }
+  ],
+  "capabilityMarkdown": "To set client's preferred contact method",
+  "benefitMarkdown": "Any notification will go through the client’s preferred method",
+  "classification": [
+    {
+      "code": "E",
+      "system": "http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses"
+    }
+  ]
+}

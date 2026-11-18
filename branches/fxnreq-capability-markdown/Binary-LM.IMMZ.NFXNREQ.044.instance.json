@@ -1,0 +1,9 @@
+{
+  "resourceType": "http://smart.who.int/base/StructureDefinition/NonFunctionalRequirement",
+  "id": "LM.IMMZ.NFXNREQ.044",
+  "requirement": "Enable earlier versions of a record to be recoverable",
+  "category": {
+    "code": "Reliability",
+    "system": "http://smart.who.int/dak-immz/CodeSystem/FXREQCategories"
+  }
+}

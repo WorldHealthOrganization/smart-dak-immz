@@ -1,0 +1,18 @@
+{
+  "resourceType": "http://smart.who.int/base/StructureDefinition/FunctionalRequirement",
+  "id": "LM.IMMZ.FXNREQ.084.E",
+  "activity": "Define/evaluate criteria",
+  "actor": [
+    {
+      "reference": "ActorDefinition/healthworker"
+    }
+  ],
+  "capabilityMarkdown": "To select reminder parameters. May include but not limited to, age range, vaccine type(s), vaccine schedules, geographic area, number of days overdue, number of reminders, etc.",
+  "benefitMarkdown": "Reminders can be optimized",
+  "classification": [
+    {
+      "code": "E",
+      "system": "http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses"
+    }
+  ]
+}

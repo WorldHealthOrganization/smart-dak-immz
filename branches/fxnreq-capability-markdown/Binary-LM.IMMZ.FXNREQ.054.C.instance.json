@@ -1,0 +1,18 @@
+{
+  "resourceType": "http://smart.who.int/base/StructureDefinition/FunctionalRequirement",
+  "id": "LM.IMMZ.FXNREQ.054.C",
+  "activity": "Create client record",
+  "actor": [
+    {
+      "reference": "ActorDefinition/healthworker"
+    }
+  ],
+  "capabilityMarkdown": "Validate a unique identifier when system is offline",
+  "benefitMarkdown": "Entry errors are prevented",
+  "classification": [
+    {
+      "code": "C",
+      "system": "http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses"
+    }
+  ]
+}

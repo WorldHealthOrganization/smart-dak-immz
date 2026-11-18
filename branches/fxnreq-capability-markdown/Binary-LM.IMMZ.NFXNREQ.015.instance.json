@@ -1,0 +1,9 @@
+{
+  "resourceType": "http://smart.who.int/base/StructureDefinition/NonFunctionalRequirement",
+  "id": "LM.IMMZ.NFXNREQ.015",
+  "requirement": "Provide access to data through application programming interfaces",
+  "category": {
+    "code": "Interoperability",
+    "system": "http://smart.who.int/dak-immz/CodeSystem/FXREQCategories"
+  }
+}

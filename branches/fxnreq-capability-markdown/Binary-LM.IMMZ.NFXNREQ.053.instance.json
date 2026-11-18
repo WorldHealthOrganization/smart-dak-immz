@@ -1,0 +1,9 @@
+{
+  "resourceType": "http://smart.who.int/base/StructureDefinition/NonFunctionalRequirement",
+  "id": "LM.IMMZ.NFXNREQ.053",
+  "requirement": "Allow the administrator to establish access privileges and priorities",
+  "category": {
+    "code": "Confidentialityprivacyandsecurity",
+    "system": "http://smart.who.int/dak-immz/CodeSystem/FXREQCategories"
+  }
+}

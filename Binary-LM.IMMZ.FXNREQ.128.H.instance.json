@@ -1,0 +1,18 @@
+{
+  "resourceType": "http://smart.who.int/base/StructureDefinition/FunctionalRequirement",
+  "id": "LM.IMMZ.FXNREQ.128.H",
+  "activity": "Identify groups of vaccination events for evaluation",
+  "actor": [
+    {
+      "reference": "ActorDefinition/eirstaff"
+    }
+  ],
+  "capabilityMarkdown": "The system to automatically flag event records as possible duplicates by marking them as pending for review",
+  "benefitMarkdown": "The health worker or EIR staff is informed and aware of pending review",
+  "classification": [
+    {
+      "code": "H",
+      "system": "http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses"
+    }
+  ]
+}

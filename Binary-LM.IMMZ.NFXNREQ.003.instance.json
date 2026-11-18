@@ -1,0 +1,9 @@
+{
+  "resourceType": "http://smart.who.int/base/StructureDefinition/NonFunctionalRequirement",
+  "id": "LM.IMMZ.NFXNREQ.003",
+  "requirement": "Support data capacity considerations (including those for data transmission, storage and processing) for all users over the expected lifetime of the system",
+  "category": {
+    "code": "Performance",
+    "system": "http://smart.who.int/dak-immz/CodeSystem/FXREQCategories"
+  }
+}

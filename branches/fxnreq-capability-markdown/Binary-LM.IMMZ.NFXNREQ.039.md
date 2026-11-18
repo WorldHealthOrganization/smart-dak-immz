@@ -1,0 +1,32 @@
+# LM.IMMZ.NFXNREQ.039 - SMART DAK IMMZ v1.1.1
+
+* [**Table of Contents**](toc.md)
+* [**Indices**](indices.md)
+* [**Artifact Index**](artifacts.md)
+* **LM.IMMZ.NFXNREQ.039**
+
+## Binary: LM.IMMZ.NFXNREQ.039
+
+```
+
+{
+  "resourceType": "http://smart.who.int/base/StructureDefinition/NonFunctionalRequirement",
+  "id": "LM.IMMZ.NFXNREQ.039",
+  "requirement": "Be reliable and robust (minimize the number of system crashes)",
+  "category": {
+    "code": "Usability",
+    "system": "http://smart.who.int/dak-immz/CodeSystem/FXREQCategories"
+  }
+}
+
+```
+
+
+
+## Resource Binary Content
+
+application/fhir+json:
+
+```
+{snip}
+```

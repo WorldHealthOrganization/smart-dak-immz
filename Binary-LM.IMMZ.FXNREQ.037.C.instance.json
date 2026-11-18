@@ -1,0 +1,18 @@
+{
+  "resourceType": "http://smart.who.int/base/StructureDefinition/FunctionalRequirement",
+  "id": "LM.IMMZ.FXNREQ.037.C",
+  "activity": "Query client record",
+  "actor": [
+    {
+      "reference": "ActorDefinition/healthworker"
+    }
+  ],
+  "capabilityMarkdown": "The system to return all potential matches based upon search criteria",
+  "benefitMarkdown": "I can find the best match",
+  "classification": [
+    {
+      "code": "C",
+      "system": "http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses"
+    }
+  ]
+}

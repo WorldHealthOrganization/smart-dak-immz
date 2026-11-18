@@ -1,0 +1,18 @@
+{
+  "resourceType": "http://smart.who.int/base/StructureDefinition/FunctionalRequirement",
+  "id": "LM.IMMZ.FXNREQ.089.E",
+  "activity": "Generate list of clients",
+  "actor": [
+    {
+      "reference": "ActorDefinition/healthworker"
+    }
+  ],
+  "capabilityMarkdown": "The system to track the number of reminders attempts (i.e. per client and total)",
+  "benefitMarkdown": "I can know if additional action may be required, or when to stop sending reminders",
+  "classification": [
+    {
+      "code": "E",
+      "system": "http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses"
+    }
+  ]
+}

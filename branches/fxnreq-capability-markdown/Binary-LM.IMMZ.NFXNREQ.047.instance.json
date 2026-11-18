@@ -1,0 +1,9 @@
+{
+  "resourceType": "http://smart.who.int/base/StructureDefinition/NonFunctionalRequirement",
+  "id": "LM.IMMZ.NFXNREQ.047",
+  "requirement": "Be able to reliably perform tasks within appropriate time with resistance to failures or deadlocks",
+  "category": {
+    "code": "Reliability",
+    "system": "http://smart.who.int/dak-immz/CodeSystem/FXREQCategories"
+  }
+}

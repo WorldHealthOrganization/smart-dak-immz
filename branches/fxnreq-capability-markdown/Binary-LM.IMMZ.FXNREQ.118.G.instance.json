@@ -1,0 +1,18 @@
+{
+  "resourceType": "http://smart.who.int/base/StructureDefinition/FunctionalRequirement",
+  "id": "LM.IMMZ.FXNREQ.118.G",
+  "activity": "Perform manual review",
+  "actor": [
+    {
+      "reference": "ActorDefinition/eirstafforhealthworker"
+    }
+  ],
+  "capabilityMarkdown": "To be able to view simultaneously potential duplicate records",
+  "benefitMarkdown": "I can easily compare the records and determine if they are duplicates",
+  "classification": [
+    {
+      "code": "G",
+      "system": "http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses"
+    }
+  ]
+}

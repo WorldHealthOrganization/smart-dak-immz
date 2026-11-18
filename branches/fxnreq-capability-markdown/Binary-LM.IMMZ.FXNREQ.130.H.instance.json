@@ -1,0 +1,18 @@
+{
+  "resourceType": "http://smart.who.int/base/StructureDefinition/FunctionalRequirement",
+  "id": "LM.IMMZ.FXNREQ.130.H",
+  "activity": "Identify groups of vaccination events for evaluation",
+  "actor": [
+    {
+      "reference": "ActorDefinition/eirstaff"
+    }
+  ],
+  "capabilityMarkdown": "The system to prompt the user that a new vaccination event might already exist",
+  "benefitMarkdown": "The user can decide if it is a duplicate and if so not save it",
+  "classification": [
+    {
+      "code": "H",
+      "system": "http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses"
+    }
+  ]
+}

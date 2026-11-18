@@ -1,0 +1,9 @@
+{
+  "resourceType": "http://smart.who.int/base/StructureDefinition/NonFunctionalRequirement",
+  "id": "LM.IMMZ.NFXNREQ.010",
+  "requirement": "Support flexible models for data collection (e.g. including paper forms, web forms, SMS, barcode, etc.)",
+  "category": {
+    "code": "Compatibility",
+    "system": "http://smart.who.int/dak-immz/CodeSystem/FXREQCategories"
+  }
+}

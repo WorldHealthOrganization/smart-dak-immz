@@ -1,0 +1,18 @@
+{
+  "resourceType": "http://smart.who.int/base/StructureDefinition/FunctionalRequirement",
+  "id": "LM.IMMZ.FXNREQ.066.D",
+  "activity": "Determine vaccine(s) to be administered based on contraindications",
+  "actor": [
+    {
+      "reference": "ActorDefinition/healthworker"
+    }
+  ],
+  "capabilityMarkdown": "To be alerted of any relevant potential contraindications for the vaccine (e.g. based on age, previous allergic reactions, etc.)",
+  "benefitMarkdown": "I can withhold the vaccine, if contraindicated",
+  "classification": [
+    {
+      "code": "D",
+      "system": "http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "resourceType": "http://smart.who.int/base/StructureDefinition/FunctionalRequirement",
+  "id": "LM.IMMZ.FXNREQ.010.A",
+  "activity": "Verify information for additional data",
+  "actor": [
+    {
+      "reference": "ActorDefinition/eirstaff"
+    }
+  ],
+  "capabilityMarkdown": "The system to automatically identify changes in vaccination locations information, retrieved from other interconnected systems, and prompt for validation",
+  "benefitMarkdown": "I will know what changes are being made and can validate them",
+  "classification": [
+    {
+      "code": "A",
+      "system": "http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses"
+    }
+  ]
+}

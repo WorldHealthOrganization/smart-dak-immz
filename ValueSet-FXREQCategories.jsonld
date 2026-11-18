@@ -1,0 +1,67 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@base": "http://smart.who.int/dak-immz/ValueSet-FXREQCategories.jsonld",
+    "name": "http://www.w3.org/2000/01/rdf-schema#label",
+    "fhir": "https://smart.who.int/base/DataTypes.jsonld#",
+    "id": "@id",
+    "generatedAt": {
+      "@id": "http://www.w3.org/ns/prov#generatedAtTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "fhir:CodeSystem": {
+      "@type": "@id"
+    },
+    "cs": "http://smart.who.int/dak-immz/CodeSystem-FXREQCategories"
+  },
+  "@id": "http://smart.who.int/dak-immz/ValueSet-FXREQCategories.jsonld",
+  "@type": "http://www.w3.org/ns/prov#Entity",
+  "generatedAt": "2026-11-18T22:07:27.059835Z",
+  "@graph": [
+    {
+      "id": "#Performance",
+      "name": "Performance"
+    },
+    {
+      "id": "#Compatibility",
+      "name": "Compatibility"
+    },
+    {
+      "id": "#Interoperability",
+      "name": "Interoperability"
+    },
+    {
+      "id": "#Configuration",
+      "name": "Configuration"
+    },
+    {
+      "id": "#Usability",
+      "name": "Usability"
+    },
+    {
+      "id": "#Reliability",
+      "name": "Reliability"
+    },
+    {
+      "id": "#Confidentialityprivacyandsecurity",
+      "name": "Confidentiality, privacy and security"
+    },
+    {
+      "id": "#Maintainability",
+      "name": "Maintainability"
+    },
+    {
+      "id": "#Portability",
+      "name": "Portability"
+    },
+    {
+      "id": "#General",
+      "name": "General"
+    },
+    {
+      "id": "#Scalability",
+      "name": "Scalability"
+    }
+  ],
+  "fhir:CodeSystem": "cs"
+}

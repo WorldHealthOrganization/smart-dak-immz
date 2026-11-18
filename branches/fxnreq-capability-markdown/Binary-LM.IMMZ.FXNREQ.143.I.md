@@ -1,0 +1,41 @@
+# LM.IMMZ.FXNREQ.143.I - SMART DAK IMMZ v1.1.1
+
+* [**Table of Contents**](toc.md)
+* [**Indices**](indices.md)
+* [**Artifact Index**](artifacts.md)
+* **LM.IMMZ.FXNREQ.143.I**
+
+## Binary: LM.IMMZ.FXNREQ.143.I
+
+```
+
+{
+  "resourceType": "http://smart.who.int/base/StructureDefinition/FunctionalRequirement",
+  "id": "LM.IMMZ.FXNREQ.143.I",
+  "activity": "Define parameters for report",
+  "actor": [
+    {
+      "reference": "ActorDefinition/healthworker"
+    }
+  ],
+  "capabilityMarkdown": "To be able to select report parameters when creating vaccination coverage reports (i.e. by vaccine, by dose, by age, by area, by condition, by vaccine manufacturer, etc)",
+  "benefitMarkdown": "Appropriate vaccination coverage reports can be generated",
+  "classification": [
+    {
+      "code": "I",
+      "system": "http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses"
+    }
+  ]
+}
+
+```
+
+
+
+## Resource Binary Content
+
+application/fhir+json:
+
+```
+{snip}
+```

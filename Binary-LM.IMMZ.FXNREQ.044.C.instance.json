@@ -1,0 +1,18 @@
+{
+  "resourceType": "http://smart.who.int/base/StructureDefinition/FunctionalRequirement",
+  "id": "LM.IMMZ.FXNREQ.044.C",
+  "activity": "Query client record",
+  "actor": [
+    {
+      "reference": "ActorDefinition/healthworker"
+    }
+  ],
+  "capabilityMarkdown": "The system to prompt a search for the client (check if it is already in the system) prior to starting a new record",
+  "benefitMarkdown": "Duplicates are prevented",
+  "classification": [
+    {
+      "code": "C",
+      "system": "http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses"
+    }
+  ]
+}

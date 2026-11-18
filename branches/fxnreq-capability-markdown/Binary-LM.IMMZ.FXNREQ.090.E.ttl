@@ -1,0 +1,20 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://smart.who.int/dak-immz/Binary/LM.IMMZ.FXNREQ.090.E> a fhir:Binary ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "LM.IMMZ.FXNREQ.090.E"] ;
+  fhir:Binary.contentType [ fhir:value "application/fhir+json"] ;
+  fhir:Binary.data [ fhir:value "ewogICJyZXNvdXJjZVR5cGUiOiAiaHR0cDovL3NtYXJ0Lndoby5pbnQvYmFzZS9TdHJ1Y3R1cmVEZWZpbml0aW9uL0Z1bmN0aW9uYWxSZXF1aXJlbWVudCIsCiAgImlkIjogIkxNLklNTVouRlhOUkVRLjA5MC5FIiwKICAiYWN0aXZpdHkiOiAiR2VuZXJhdGUgbGlzdCBvZiBjbGllbnRzIiwKICAiYWN0b3IiOiBbCiAgICB7CiAgICAgICJyZWZlcmVuY2UiOiAiQWN0b3JEZWZpbml0aW9uL2hlYWx0aHdvcmtlciIKICAgIH0KICBdLAogICJjYXBhYmlsaXR5TWFya2Rvd24iOiAiVGhlIHN5c3RlbSB0byBwcmV2ZW50IGFsbCByZWNvcmRzIGdpdmVuIGFuIGluYWN0aXZlIG9yIGRlY2Vhc2VkIHN0YXR1cyBmcm9tIGJlaW5nIGluY2x1ZGVkIGluIHRoZSBsaXN0IG9mIGNsaWVudHMgZm9yIHJlbWluZGVyL3JlY2FsbCIsCiAgImJlbmVmaXRNYXJrZG93biI6ICJOb3RpZmljYXRpb25zIHdpbGwgbm90IGJlIGluYXBwcm9wcmlhdGVseSBzZW50IHRvIGNsaWVudHMiLAogICJjbGFzc2lmaWNhdGlvbiI6IFsKICAgIHsKICAgICAgImNvZGUiOiAiRSIsCiAgICAgICJzeXN0ZW0iOiAiaHR0cDovL3NtYXJ0Lndoby5pbnQvZGFrLWltbXovQ29kZVN5c3RlbS9GWFJFUUJ1c2luZXNzUHJvY2Vzc2VzIgogICAgfQogIF0KfQo="^^xsd:base64Binary] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://smart.who.int/dak-immz/Binary/LM.IMMZ.FXNREQ.090.E.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

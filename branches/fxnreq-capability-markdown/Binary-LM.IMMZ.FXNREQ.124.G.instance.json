@@ -1,0 +1,18 @@
+{
+  "resourceType": "http://smart.who.int/base/StructureDefinition/FunctionalRequirement",
+  "id": "LM.IMMZ.FXNREQ.124.G",
+  "activity": "Merge records",
+  "actor": [
+    {
+      "reference": "ActorDefinition/eirstaff"
+    }
+  ],
+  "capabilityMarkdown": "The system to be able to undo a merge",
+  "benefitMarkdown": "I can restore records merged incorrectly",
+  "classification": [
+    {
+      "code": "G",
+      "system": "http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses"
+    }
+  ]
+}

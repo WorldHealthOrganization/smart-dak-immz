@@ -1,0 +1,18 @@
+{
+  "resourceType": "http://smart.who.int/base/StructureDefinition/FunctionalRequirement",
+  "id": "LM.IMMZ.FXNREQ.108.F",
+  "activity": "Update record to document reason/lost follow-up",
+  "actor": [
+    {
+      "reference": "ActorDefinition/healthworker"
+    }
+  ],
+  "capabilityMarkdown": "To update client information such as including change of address (moved permanently or temporarily)",
+  "benefitMarkdown": "To facilitate the client being contacted or being removed from a immunization session’s list",
+  "classification": [
+    {
+      "code": "F",
+      "system": "http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses"
+    }
+  ]
+}

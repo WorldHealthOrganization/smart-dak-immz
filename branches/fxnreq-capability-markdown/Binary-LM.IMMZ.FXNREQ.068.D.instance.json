@@ -1,0 +1,18 @@
+{
+  "resourceType": "http://smart.who.int/base/StructureDefinition/FunctionalRequirement",
+  "id": "LM.IMMZ.FXNREQ.068.D",
+  "activity": "Check stock availability of recommended vaccines",
+  "actor": [
+    {
+      "reference": "ActorDefinition/healthworker"
+    }
+  ],
+  "capabilityMarkdown": "The system to display stock availability of recommended vaccines",
+  "benefitMarkdown": "I can check if the vaccines are available",
+  "classification": [
+    {
+      "code": "D",
+      "system": "http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses"
+    }
+  ]
+}

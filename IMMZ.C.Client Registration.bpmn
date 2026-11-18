@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:bioc="http://bpmn.io/schema/bpmn/biocolor/1.0" xmlns:color="http://www.omg.org/spec/BPMN/non-normative/color/1.0" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:zeebe="http://camunda.org/schema/zeebe/1.0" id="Definitions_WHO_ClientRegistration" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Web Modeler" exporterVersion="047cf72" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.7.0">
+  <bpmn:collaboration id="Collaboration_ClientRegistration">
+    <bpmn:participant id="Participant_Client" name="Client" processRef="WHO_ClientRegistrationProcess" />
+    <bpmn:participant id="Participant_VaccinationLocation" name="Vaccination location - Health worker" processRef="Process_HealthWorker" />
+    <bpmn:messageFlow id="Flow_1ndv89y" sourceRef="IMMZ.C1" targetRef="IMMZ.C2" />
+  </bpmn:collaboration>
+  <bpmn:process id="WHO_ClientRegistrationProcess" name="WHO Client Registration Business Process" isExecutable="true">
+    <bpmn:startEvent id="StartEvent_1" name="Start">
+      <bpmn:outgoing>Flow_Start_to_1</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:task id="IMMZ.C1" name="1. Arrive at vaccination location">
+      <bpmn:incoming>Flow_Start_to_1</bpmn:incoming>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="Flow_Start_to_1" sourceRef="StartEvent_1" targetRef="IMMZ.C1" />
+  </bpmn:process>
+  <bpmn:process id="Process_HealthWorker" name="Health Worker Process" isExecutable="false">
+    <bpmn:subProcess id="IMMZ.C2" name="2. Query client record">
+      <bpmn:outgoing>Flow_083rx30</bpmn:outgoing>
+      <bpmn:task id="IMMZ.C2.1" name="2.1. Gather client&#39;s details">
+        <bpmn:outgoing>Flow_2.1_to_2.2</bpmn:outgoing>
+      </bpmn:task>
+      <bpmn:task id="IMMZ.C2.2" name="2.2. Search for client record">
+        <bpmn:incoming>Flow_2.1_to_2.2</bpmn:incoming>
+        <bpmn:incoming>Flow_2.5_to_2.2</bpmn:incoming>
+        <bpmn:outgoing>Flow_2.2_to_2.3</bpmn:outgoing>
+      </bpmn:task>
+      <bpmn:exclusiveGateway id="IMMZ.C2.3" name="2.3. Possible match found?">
+        <bpmn:incoming>Flow_2.2_to_2.3</bpmn:incoming>
+        <bpmn:outgoing>Flow_2.3_No_to_2.4</bpmn:outgoing>
+        <bpmn:outgoing>Flow_1qwz53g</bpmn:outgoing>
+      </bpmn:exclusiveGateway>
+      <bpmn:exclusiveGateway id="IMMZ.C2.4" name="2.4. Modify search?">
+        <bpmn:incoming>Flow_2.3_No_to_2.4</bpmn:incoming>
+        <bpmn:incoming>Flow_11woa9b</bpmn:incoming>
+        <bpmn:outgoing>Flow_2.4_Yes_to_2.5</bpmn:outgoing>
+        <bpmn:outgoing>Flow_19ybxcb</bpmn:outgoing>
+      </bpmn:exclusiveGateway>
+      <bpmn:task id="IMMZ.C2.5" name="2.5. Add/modify search criteria">
+        <bpmn:incoming>Flow_2.4_Yes_to_2.5</bpmn:incoming>
+        <bpmn:outgoing>Flow_2.5_to_2.2</bpmn:outgoing>
+      </bpmn:task>
+      <bpmn:sequenceFlow id="Flow_2.1_to_2.2" sourceRef="IMMZ.C2.1" targetRef="IMMZ.C2.2" />
+      <bpmn:sequenceFlow id="Flow_2.2_to_2.3" sourceRef="IMMZ.C2.2" targetRef="IMMZ.C2.3" />
+      <bpmn:sequenceFlow id="Flow_2.3_No_to_2.4" name="No" sourceRef="IMMZ.C2.3" targetRef="IMMZ.C2.4" />
+      <bpmn:sequenceFlow id="Flow_2.4_Yes_to_2.5" name="Yes" sourceRef="IMMZ.C2.4" targetRef="IMMZ.C2.5" />
+      <bpmn:sequenceFlow id="Flow_2.5_to_2.2" sourceRef="IMMZ.C2.5" targetRef="IMMZ.C2.2" />
+      <bpmn:task id="IMMZ.C5" name="5. Validate client details">
+        <bpmn:incoming>Flow_1t60gaw</bpmn:incoming>
+      </bpmn:task>
+      <bpmn:exclusiveGateway id="IMMZ.C3" name="3. Is client record correct?">
+        <bpmn:incoming>Flow_1qwz53g</bpmn:incoming>
+        <bpmn:outgoing>Flow_11woa9b</bpmn:outgoing>
+        <bpmn:outgoing>Flow_1t60gaw</bpmn:outgoing>
+      </bpmn:exclusiveGateway>
+      <bpmn:sequenceFlow id="Flow_11woa9b" name="No" sourceRef="IMMZ.C3" targetRef="IMMZ.C2.4" />
+      <bpmn:sequenceFlow id="Flow_1qwz53g" name="Yes" sourceRef="IMMZ.C2.3" targetRef="IMMZ.C3" />
+      <bpmn:sequenceFlow id="Flow_19ybxcb" sourceRef="IMMZ.C2.4" targetRef="IMMZ.C4" />
+      <bpmn:sequenceFlow id="Flow_1t60gaw" sourceRef="IMMZ.C3" targetRef="IMMZ.C5" />
+      <bpmn:userTask id="IMMZ.C4" name="4. Create client record">
+        <bpmn:extensionElements>
+          <zeebe:userTask />
+          <zeebe:formDefinition externalReference="QIMMZC4" />
+        </bpmn:extensionElements>
+        <bpmn:incoming>Flow_19ybxcb</bpmn:incoming>
+      </bpmn:userTask>
+    </bpmn:subProcess>
+    <bpmn:task id="IMMZ.C6" name="6. Check in client">
+      <bpmn:incoming>Flow_083rx30</bpmn:incoming>
+      <bpmn:incoming>Flow_1jwpp58</bpmn:incoming>
+      <bpmn:outgoing>Flow_00awgrd</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:subProcess id="IMMZ.C5_Subprocess" name="5. Validate client details">
+      <bpmn:outgoing>Flow_1jwpp58</bpmn:outgoing>
+      <bpmn:task id="IMMZ.C5.1" name="5.1. Review socio-demographic data with client">
+        <bpmn:incoming>Flow_0x7f4ml</bpmn:incoming>
+        <bpmn:outgoing>Flow_5.1_to_5.2</bpmn:outgoing>
+      </bpmn:task>
+      <bpmn:exclusiveGateway id="IMMZ.C5.2" name="5.2. Update needed?">
+        <bpmn:incoming>Flow_5.1_to_5.2</bpmn:incoming>
+        <bpmn:outgoing>Flow_5.2_Yes_to_5.3</bpmn:outgoing>
+        <bpmn:outgoing>Flow_5.2_No_to_End_Subprocess</bpmn:outgoing>
+      </bpmn:exclusiveGateway>
+      <bpmn:task id="IMMZ.C5.3" name="5.3. Update client details">
+        <bpmn:incoming>Flow_5.2_Yes_to_5.3</bpmn:incoming>
+        <bpmn:outgoing>Flow_5.3_to_End_Subprocess</bpmn:outgoing>
+      </bpmn:task>
+      <bpmn:endEvent id="EndEvent_Subprocess">
+        <bpmn:incoming>Flow_5.2_No_to_End_Subprocess</bpmn:incoming>
+        <bpmn:incoming>Flow_5.3_to_End_Subprocess</bpmn:incoming>
+      </bpmn:endEvent>
+      <bpmn:sequenceFlow id="Flow_5.1_to_5.2" sourceRef="IMMZ.C5.1" targetRef="IMMZ.C5.2" />
+      <bpmn:sequenceFlow id="Flow_5.2_Yes_to_5.3" name="Yes" sourceRef="IMMZ.C5.2" targetRef="IMMZ.C5.3" />
+      <bpmn:sequenceFlow id="Flow_5.2_No_to_End_Subprocess" name="No" sourceRef="IMMZ.C5.2" targetRef="EndEvent_Subprocess" />
+      <bpmn:sequenceFlow id="Flow_5.3_to_End_Subprocess" sourceRef="IMMZ.C5.3" targetRef="EndEvent_Subprocess" />
+      <bpmn:intermediateThrowEvent id="Event_0pxkxkr">
+        <bpmn:outgoing>Flow_0x7f4ml</bpmn:outgoing>
+      </bpmn:intermediateThrowEvent>
+      <bpmn:sequenceFlow id="Flow_0x7f4ml" sourceRef="Event_0pxkxkr" targetRef="IMMZ.C5.1" />
+    </bpmn:subProcess>
+    <bpmn:sequenceFlow id="Flow_083rx30" sourceRef="IMMZ.C2" targetRef="IMMZ.C6" />
+    <bpmn:sequenceFlow id="Flow_1jwpp58" sourceRef="IMMZ.C5_Subprocess" targetRef="IMMZ.C6" />
+    <bpmn:callActivity id="Activity_095eh1i" name="IMMZ.D.Administer Vaccine">
+      <bpmn:extensionElements>
+        <zeebe:calledElement processId="Process_0cjqolv" propagateAllChildVariables="false" />
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_00awgrd</bpmn:incoming>
+    </bpmn:callActivity>
+    <bpmn:sequenceFlow id="Flow_00awgrd" sourceRef="IMMZ.C6" targetRef="Activity_095eh1i" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_WHO_ClientRegistration">
+    <bpmndi:BPMNPlane id="BPMNPlane_WHO_ClientRegistration" bpmnElement="Collaboration_ClientRegistration">
+      <bpmndi:BPMNShape id="Participant_Client_di" bpmnElement="Participant_Client" isHorizontal="true">
+        <dc:Bounds x="160" y="480" width="1920" height="180" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="StartEvent_1_di" bpmnElement="StartEvent_1">
+        <dc:Bounds x="242" y="552" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="250" y="595" width="25" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="IMMZ_C1_di" bpmnElement="IMMZ.C1">
+        <dc:Bounds x="320" y="530" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_Start_to_1_di" bpmnElement="Flow_Start_to_1">
+        <di:waypoint x="278" y="570" />
+        <di:waypoint x="320" y="570" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="Participant_VaccinationLocation_di" bpmnElement="Participant_VaccinationLocation" isHorizontal="true">
+        <dc:Bounds x="160" y="660" width="1920" height="470" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="IMMZ_C2_di" bpmnElement="IMMZ.C2" isExpanded="true" bioc:stroke="#6b3c00" bioc:fill="#ffe0b2" color:background-color="#ffe0b2" color:border-color="#6b3c00">
+        <dc:Bounds x="300" y="710" width="800" height="360" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="IMMZ_C2.1_di" bpmnElement="IMMZ.C2.1">
+        <dc:Bounds x="330" y="770" width="100" height="60" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="IMMZ_C2.2_di" bpmnElement="IMMZ.C2.2">
+        <dc:Bounds x="470" y="770" width="100" height="60" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="IMMZ_C2.3_di" bpmnElement="IMMZ.C2.3" isMarkerVisible="true">
+        <dc:Bounds x="615" y="775" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="607" y="740" width="67" height="27" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="IMMZ_C2.4_di" bpmnElement="IMMZ.C2.4" isMarkerVisible="true">
+        <dc:Bounds x="615" y="875" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="613" y="966" width="55" height="27" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="IMMZ_C2.5_di" bpmnElement="IMMZ.C2.5">
+        <dc:Bounds x="470" y="870" width="100" height="60" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="IMMZ_C5_di" bpmnElement="IMMZ.C5">
+        <dc:Bounds x="880" y="770" width="100" height="60" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="IMMZ_C3_di" bpmnElement="IMMZ.C3" isMarkerVisible="true">
+        <dc:Bounds x="755" y="775" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="738" y="740" width="84" height="27" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1cz72qi_di" bpmnElement="IMMZ.C4">
+        <dc:Bounds x="860" y="930" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_2.1_to_2.2_di" bpmnElement="Flow_2.1_to_2.2">
+        <di:waypoint x="430" y="800" />
+        <di:waypoint x="470" y="800" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_2.2_to_2.3_di" bpmnElement="Flow_2.2_to_2.3">
+        <di:waypoint x="570" y="800" />
+        <di:waypoint x="615" y="800" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_2.3_No_to_2.4_di" bpmnElement="Flow_2.3_No_to_2.4">
+        <di:waypoint x="640" y="825" />
+        <di:waypoint x="640" y="875" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="648" y="847" width="15" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_2.4_Yes_to_2.5_di" bpmnElement="Flow_2.4_Yes_to_2.5">
+        <di:waypoint x="615" y="900" />
+        <di:waypoint x="570" y="900" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="584" y="882" width="18" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_2.5_to_2.2_di" bpmnElement="Flow_2.5_to_2.2">
+        <di:waypoint x="520" y="870" />
+        <di:waypoint x="520" y="830" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_11woa9b_di" bpmnElement="Flow_11woa9b">
+        <di:waypoint x="780" y="825" />
+        <di:waypoint x="780" y="900" />
+        <di:waypoint x="665" y="900" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="788" y="860" width="15" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1qwz53g_di" bpmnElement="Flow_1qwz53g">
+        <di:waypoint x="665" y="800" />
+        <di:waypoint x="755" y="800" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="701" y="782" width="18" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_19ybxcb_di" bpmnElement="Flow_19ybxcb">
+        <di:waypoint x="640" y="925" />
+        <di:waypoint x="640" y="960" />
+        <di:waypoint x="860" y="960" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1t60gaw_di" bpmnElement="Flow_1t60gaw">
+        <di:waypoint x="805" y="800" />
+        <di:waypoint x="880" y="800" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="IMMZ_C6_di" bpmnElement="IMMZ.C6">
+        <dc:Bounds x="1470" y="900" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="IMMZ_C5_Subprocess_di" bpmnElement="IMMZ.C5_Subprocess" isExpanded="true" bioc:stroke="#6b3c00" bioc:fill="#ffe0b2" color:background-color="#ffe0b2" color:border-color="#6b3c00">
+        <dc:Bounds x="1190" y="690" width="740" height="160" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="IMMZ_C5.1_di" bpmnElement="IMMZ.C5.1">
+        <dc:Bounds x="1360" y="730" width="100" height="60" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="IMMZ_C5.2_di" bpmnElement="IMMZ.C5.2" isMarkerVisible="true">
+        <dc:Bounds x="1505" y="735" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1502" y="710" width="57" height="27" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="IMMZ_C5.3_di" bpmnElement="IMMZ.C5.3">
+        <dc:Bounds x="1630" y="730" width="100" height="60" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="EndEvent_Subprocess_di" bpmnElement="EndEvent_Subprocess">
+        <dc:Bounds x="1812" y="742" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1784" y="717" width="71" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0pxkxkr_di" bpmnElement="Event_0pxkxkr">
+        <dc:Bounds x="1242" y="742" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_5.1_to_5.2_di" bpmnElement="Flow_5.1_to_5.2">
+        <di:waypoint x="1460" y="760" />
+        <di:waypoint x="1505" y="760" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_5.2_Yes_to_5.3_di" bpmnElement="Flow_5.2_Yes_to_5.3">
+        <di:waypoint x="1555" y="760" />
+        <di:waypoint x="1630" y="760" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1584" y="742" width="18" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_5.2_No_to_End_Subprocess_di" bpmnElement="Flow_5.2_No_to_End_Subprocess">
+        <di:waypoint x="1530" y="785" />
+        <di:waypoint x="1530" y="820" />
+        <di:waypoint x="1830" y="820" />
+        <di:waypoint x="1830" y="778" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1672" y="802" width="15" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_5.3_to_End_Subprocess_di" bpmnElement="Flow_5.3_to_End_Subprocess">
+        <di:waypoint x="1730" y="760" />
+        <di:waypoint x="1812" y="760" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0x7f4ml_di" bpmnElement="Flow_0x7f4ml">
+        <di:waypoint x="1278" y="760" />
+        <di:waypoint x="1360" y="760" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="Activity_095eh1i_di" bpmnElement="Activity_095eh1i">
+        <dc:Bounds x="1620" y="900" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_083rx30_di" bpmnElement="Flow_083rx30">
+        <di:waypoint x="1100" y="940" />
+        <di:waypoint x="1470" y="940" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1jwpp58_di" bpmnElement="Flow_1jwpp58">
+        <di:waypoint x="1520" y="850" />
+        <di:waypoint x="1520" y="900" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_00awgrd_di" bpmnElement="Flow_00awgrd">
+        <di:waypoint x="1570" y="940" />
+        <di:waypoint x="1620" y="940" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1ndv89y_di" bpmnElement="Flow_1ndv89y">
+        <di:waypoint x="370" y="610" />
+        <di:waypoint x="370" y="710" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

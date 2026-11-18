@@ -1,0 +1,18 @@
+{
+  "resourceType": "http://smart.who.int/base/StructureDefinition/FunctionalRequirement",
+  "id": "LM.IMMZ.FXNREQ.002.A",
+  "activity": "Validate against national master facility list",
+  "actor": [
+    {
+      "reference": "ActorDefinition/eirstaff"
+    }
+  ],
+  "capabilityMarkdown": "The system to interface with National Master Facility List (NMFL) database to validate the EIR master list of vaccination locations",
+  "benefitMarkdown": "I can ensure the lists are synchronized",
+  "classification": [
+    {
+      "code": "A",
+      "system": "http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses"
+    }
+  ]
+}

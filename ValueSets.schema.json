@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "#/ValueSets.schema.json",
+  "title": "ValueSet Enumeration Schema",
+  "description": "JSON Schema defining the structure of the ValueSet enumeration endpoint response",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string",
+      "const": "valueset",
+      "description": "The type of schemas enumerated (valueset)"
+    },
+    "count": {
+      "type": "integer",
+      "description": "Total number of schemas available"
+    },
+    "schemas": {
+      "type": "array",
+      "description": "Array of available schemas",
+      "items": {
+        "type": "object",
+        "properties": {
+          "filename": {
+            "type": "string",
+            "description": "Schema filename"
+          },
+          "id": {
+            "type": "string",
+            "description": "Schema $id"
+          },
+          "title": {
+            "type": "string",
+            "description": "Schema title"
+          },
+          "description": {
+            "type": "string",
+            "description": "Schema description"
+          },
+          "url": {
+            "type": "string",
+            "description": "Relative URL to the schema file"
+          },
+          "valueSetUrl": {
+            "type": "string",
+            "description": "FHIR canonical URL of the ValueSet"
+          },
+          "codeCount": {
+            "type": "integer",
+            "description": "Number of codes in the ValueSet"
+          }
+        },
+        "required": [
+          "filename",
+          "title",
+          "url"
+        ]
+      }
+    }
+  },
+  "required": [
+    "type",
+    "count",
+    "schemas"
+  ],
+  "example": {
+    "type": "valueset",
+    "count": 2,
+    "schemas": [
+      {
+        "filename": "ValueSet-FXREQBusinessProcesses.schema.json",
+        "id": "http://smart.who.int/dak-immz/ValueSet-FXREQBusinessProcesses.schema.json",
+        "title": "Functional Requirements Business Processes Schema",
+        "description": "JSON Schema for Functional Requirements Business Processes ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+        "url": "./ValueSet-FXREQBusinessProcesses.schema.json",
+        "valueSetUrl": "http://smart.who.int/dak-immz/ValueSet/FXREQBusinessProcesses"
+      },
+      {
+        "filename": "ValueSet-FXREQCategories.schema.json",
+        "id": "http://smart.who.int/dak-immz/ValueSet-FXREQCategories.schema.json",
+        "title": "Functional Requirement Categories Schema",
+        "description": "JSON Schema for Functional Requirement Categories ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+        "url": "./ValueSet-FXREQCategories.schema.json",
+        "valueSetUrl": "http://smart.who.int/dak-immz/ValueSet/FXREQCategories"
+      }
+    ]
+  }
+}

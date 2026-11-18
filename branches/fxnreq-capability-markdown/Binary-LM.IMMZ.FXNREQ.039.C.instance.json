@@ -1,0 +1,18 @@
+{
+  "resourceType": "http://smart.who.int/base/StructureDefinition/FunctionalRequirement",
+  "id": "LM.IMMZ.FXNREQ.039.C",
+  "activity": "Query client record",
+  "actor": [
+    {
+      "reference": "ActorDefinition/healthworker"
+    }
+  ],
+  "capabilityMarkdown": "The system to allow search parameters configuration: mandatory fields, when partial information is acceptable, etc.",
+  "benefitMarkdown": "A search can be optimized without compromising confidentiality",
+  "classification": [
+    {
+      "code": "C",
+      "system": "http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses"
+    }
+  ]
+}

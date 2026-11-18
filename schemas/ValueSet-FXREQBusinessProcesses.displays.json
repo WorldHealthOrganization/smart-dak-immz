@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://smart.who.int/dak-immz/ValueSet-FXREQBusinessProcesses.displays.json",
+  "title": "Functional Requirements Business Processes Display Values",
+  "description": "Display values for Functional Requirements Business Processes ValueSet codes. Generated from FHIR expansions.",
+  "type": "object",
+  "properties": {
+    "fhir:displays": {
+      "type": "object",
+      "description": "Multilingual display values for ValueSet codes using IRI format to match JSON schema enum values",
+      "patternProperties": {
+        "^https?://.*": {
+          "type": "object",
+          "description": "Display values for a specific IRI-formatted code by language",
+          "properties": {
+            "en": {
+              "type": "string",
+              "description": "English display value"
+            }
+          },
+          "patternProperties": {
+            "^[a-z]{2}(-[A-Z]{2})?$": {
+              "type": "string",
+              "description": "Display value in the specified language (ISO 639-1 code)"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "fhir:displays"
+  ],
+  "additionalProperties": true,
+  "fhir:displays": {
+    "http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses#A": {
+      "en": "vaccination location registration"
+    },
+    "http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses#B": {
+      "en": "plan service delivery"
+    },
+    "http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses#C": {
+      "en": "client registration"
+    },
+    "http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses#D": {
+      "en": "administer vaccine"
+    },
+    "http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses#E": {
+      "en": "client reminder"
+    },
+    "http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses#F": {
+      "en": "defaulter tracing"
+    },
+    "http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses#G": {
+      "en": "resolve duplicate client records"
+    },
+    "http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses#H": {
+      "en": "resolve duplicate vaccination events"
+    },
+    "http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses#I": {
+      "en": "report generation"
+    }
+  },
+  "fhir:valueSet": "http://smart.who.int/dak-immz/ValueSet/FXREQBusinessProcesses",
+  "fhir:version": "1.1.1",
+  "fhir:expansionTimestamp": "2026-11-18T22:07:03.903142"
+}

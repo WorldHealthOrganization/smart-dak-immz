@@ -1,0 +1,18 @@
+{
+  "resourceType": "http://smart.who.int/base/StructureDefinition/FunctionalRequirement",
+  "id": "LM.IMMZ.FXNREQ.020.B",
+  "activity": "Review past vaccination records to estimate vaccines needed",
+  "actor": [
+    {
+      "reference": "ActorDefinition/healthworker"
+    }
+  ],
+  "capabilityMarkdown": "The system to provide range estimates for needed vaccines based on historical data (high and low ranges)",
+  "benefitMarkdown": "I can know how much vaccine has typically been used and adjust my specific list accordingly",
+  "classification": [
+    {
+      "code": "B",
+      "system": "http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses"
+    }
+  ]
+}

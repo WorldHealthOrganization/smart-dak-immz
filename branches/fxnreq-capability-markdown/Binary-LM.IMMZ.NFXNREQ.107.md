@@ -1,0 +1,32 @@
+# LM.IMMZ.NFXNREQ.107 - SMART DAK IMMZ v1.1.1
+
+* [**Table of Contents**](toc.md)
+* [**Indices**](indices.md)
+* [**Artifact Index**](artifacts.md)
+* **LM.IMMZ.NFXNREQ.107**
+
+## Binary: LM.IMMZ.NFXNREQ.107
+
+```
+
+{
+  "resourceType": "http://smart.who.int/base/StructureDefinition/NonFunctionalRequirement",
+  "id": "LM.IMMZ.NFXNREQ.107",
+  "requirement": "Be able to provide continuity and access to data throughout changes in infrastructure (e.g. telecommunication, power) at the health-post level",
+  "category": {
+    "code": "Portability",
+    "system": "http://smart.who.int/dak-immz/CodeSystem/FXREQCategories"
+  }
+}
+
+```
+
+
+
+## Resource Binary Content
+
+application/fhir+json:
+
+```
+{snip}
+```

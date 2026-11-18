@@ -1,0 +1,9 @@
+{
+  "resourceType": "http://smart.who.int/base/StructureDefinition/NonFunctionalRequirement",
+  "id": "LM.IMMZ.NFXNREQ.074",
+  "requirement": "Provide a mechanism to securely change a user's password",
+  "category": {
+    "code": "Confidentialityprivacyandsecurity",
+    "system": "http://smart.who.int/dak-immz/CodeSystem/FXREQCategories"
+  }
+}

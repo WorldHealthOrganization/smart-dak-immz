@@ -1,0 +1,18 @@
+{
+  "resourceType": "http://smart.who.int/base/StructureDefinition/FunctionalRequirement",
+  "id": "LM.IMMZ.FXNREQ.115.G",
+  "activity": "Flag client records for evaluation",
+  "actor": [
+    {
+      "reference": "ActorDefinition/eirstaff"
+    }
+  ],
+  "capabilityMarkdown": "The system to automatically flag client records as possible duplicates by marking them as pending for review",
+  "benefitMarkdown": "The health worker or EIR staff is informed and aware of pending review",
+  "classification": [
+    {
+      "code": "G",
+      "system": "http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses"
+    }
+  ]
+}

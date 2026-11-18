@@ -1,0 +1,91 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://smart.who.int/dak-immz/Basic/eirstafforhealthworker> a fhir:Basic ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "eirstafforhealthworker"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://smart.who.int/base/StructureDefinition/SGActor" ;
+       fhir:index 0 ;
+       fhir:link <http://smart.who.int/base/StructureDefinition/SGActor>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ActorDefinition eirstafforhealthworker</b></p><a name=\"eirstafforhealthworker\"> </a><a name=\"hceirstafforhealthworker\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/WorldHealthOrganization/smart-base/StructureDefinition-SGActor.html\">SGActor</a></p></div><table class=\"grid\"><tr><td><b>Actor: EIR staff OR health worker </b></td><td>EIR staff OR health worker</td><td>Type: person </td></tr><tr><td colspan=\"3\"/></tr></table></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.url" ] ;
+     fhir:Extension.valueUri [ fhir:value "http://smart.who.int/dak-immz/ActorDefinition/eirstafforhealthworker" ]
+  ], [
+     fhir:index 1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.version" ] ;
+     fhir:Extension.valueString [ fhir:value "1.1.1" ]
+  ], [
+     fhir:index 2 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.name" ] ;
+     fhir:Extension.valueString [ fhir:value "EIR staff OR health worker" ]
+  ], [
+     fhir:index 3 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.title" ] ;
+     fhir:Extension.valueString [ fhir:value "EIR staff OR health worker" ]
+  ], [
+     fhir:index 4 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.status" ] ;
+     fhir:Extension.valueCode [ fhir:value "active" ]
+  ], [
+     fhir:index 5 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.experimental" ] ;
+     fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+  ], [
+     fhir:index 6 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.date" ] ;
+     fhir:Extension.valueDateTime [ fhir:value "2026-11-18T22:05:43+00:00"^^xsd:dateTime ]
+  ], [
+     fhir:index 7 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.publisher" ] ;
+     fhir:Extension.valueString [ fhir:value "WHO" ]
+  ], [
+     fhir:index 8 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.contact" ] ;
+     fhir:Extension.valueContactDetail [
+       fhir:ContactDetail.name [ fhir:value "WHO" ] ;
+       fhir:ContactDetail.telecom [
+         fhir:index 0 ;
+         fhir:ContactPoint.system [ fhir:value "url" ] ;
+         fhir:ContactPoint.value [ fhir:value "http://who.int" ]
+       ]
+     ]
+  ], [
+     fhir:index 9 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.description" ] ;
+     fhir:Extension.valueMarkdown [ fhir:value "Actor EIR staff OR health worker from Function Requirements" ]
+  ], [
+     fhir:index 10 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.jurisdiction" ]
+  ], [
+     fhir:index 11 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.type" ] ;
+     fhir:Extension.valueCode [ fhir:value "person" ]
+  ] ;
+  fhir:Basic.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/fhir-types" ] ;
+       fhir:Coding.code [ fhir:value "ActorDefinition" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://smart.who.int/dak-immz/Basic/eirstafforhealthworker.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

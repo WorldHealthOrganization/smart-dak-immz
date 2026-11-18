@@ -1,0 +1,41 @@
+# LM.IMMZ.FXNREQ.004.A - SMART DAK IMMZ v1.1.1
+
+* [**Table of Contents**](toc.md)
+* [**Indices**](indices.md)
+* [**Artifact Index**](artifacts.md)
+* **LM.IMMZ.FXNREQ.004.A**
+
+## Binary: LM.IMMZ.FXNREQ.004.A
+
+```
+
+{
+  "resourceType": "http://smart.who.int/base/StructureDefinition/FunctionalRequirement",
+  "id": "LM.IMMZ.FXNREQ.004.A",
+  "activity": "Validate against national master facility list",
+  "actor": [
+    {
+      "reference": "ActorDefinition/eirstaff"
+    }
+  ],
+  "capabilityMarkdown": "The system to be able to link a vaccination location’s NMFL identification (ID) with the corresponding EIR identifier",
+  "benefitMarkdown": "There will be a common understanding of what vaccination location is being referenced",
+  "classification": [
+    {
+      "code": "A",
+      "system": "http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses"
+    }
+  ]
+}
+
+```
+
+
+
+## Resource Binary Content
+
+application/fhir+json:
+
+```
+{snip}
+```

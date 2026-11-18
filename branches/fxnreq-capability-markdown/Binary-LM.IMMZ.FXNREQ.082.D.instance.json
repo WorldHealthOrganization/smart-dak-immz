@@ -1,0 +1,18 @@
+{
+  "resourceType": "http://smart.who.int/base/StructureDefinition/FunctionalRequirement",
+  "id": "LM.IMMZ.FXNREQ.082.D",
+  "activity": "Does client require a verifiable digital certificate?",
+  "actor": [
+    {
+      "reference": "ActorDefinition/healthworker"
+    }
+  ],
+  "capabilityMarkdown": "To be prompted to ask client if they want a digital vaccination certificate where appropriate",
+  "benefitMarkdown": "The digital vaccination certificate can be generated",
+  "classification": [
+    {
+      "code": "D",
+      "system": "http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses"
+    }
+  ]
+}

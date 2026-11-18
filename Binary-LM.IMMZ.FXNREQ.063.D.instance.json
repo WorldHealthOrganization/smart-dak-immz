@@ -1,0 +1,18 @@
+{
+  "resourceType": "http://smart.who.int/base/StructureDefinition/FunctionalRequirement",
+  "id": "LM.IMMZ.FXNREQ.063.D",
+  "activity": "Determine required vaccination(s)",
+  "actor": [
+    {
+      "reference": "ActorDefinition/healthworker"
+    }
+  ],
+  "capabilityMarkdown": "The system to display vaccines due according to predefined vaccine protocol",
+  "benefitMarkdown": "I can assess which vaccines need to be administered",
+  "classification": [
+    {
+      "code": "D",
+      "system": "http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses"
+    }
+  ]
+}

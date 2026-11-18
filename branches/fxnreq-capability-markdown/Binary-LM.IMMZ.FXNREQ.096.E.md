@@ -1,0 +1,41 @@
+# LM.IMMZ.FXNREQ.096.E - SMART DAK IMMZ v1.1.1
+
+* [**Table of Contents**](toc.md)
+* [**Indices**](indices.md)
+* [**Artifact Index**](artifacts.md)
+* **LM.IMMZ.FXNREQ.096.E**
+
+## Binary: LM.IMMZ.FXNREQ.096.E
+
+```
+
+{
+  "resourceType": "http://smart.who.int/base/StructureDefinition/FunctionalRequirement",
+  "id": "LM.IMMZ.FXNREQ.096.E",
+  "activity": "Send notifications",
+  "actor": [
+    {
+      "reference": "ActorDefinition/healthworker"
+    }
+  ],
+  "capabilityMarkdown": "The notification to include specific details about upcoming immunization session dates and times or outreach dates and times as appropriate",
+  "benefitMarkdown": "The client will know specifically when and where to go to receive a vaccination",
+  "classification": [
+    {
+      "code": "E",
+      "system": "http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses"
+    }
+  ]
+}
+
+```
+
+
+
+## Resource Binary Content
+
+application/fhir+json:
+
+```
+{snip}
+```

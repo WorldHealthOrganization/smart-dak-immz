@@ -1,0 +1,41 @@
+# LM.IMMZ.FXNREQ.090.E - SMART DAK IMMZ v1.1.1
+
+* [**Table of Contents**](toc.md)
+* [**Indices**](indices.md)
+* [**Artifact Index**](artifacts.md)
+* **LM.IMMZ.FXNREQ.090.E**
+
+## Binary: LM.IMMZ.FXNREQ.090.E
+
+```
+
+{
+  "resourceType": "http://smart.who.int/base/StructureDefinition/FunctionalRequirement",
+  "id": "LM.IMMZ.FXNREQ.090.E",
+  "activity": "Generate list of clients",
+  "actor": [
+    {
+      "reference": "ActorDefinition/healthworker"
+    }
+  ],
+  "capabilityMarkdown": "The system to prevent all records given an inactive or deceased status from being included in the list of clients for reminder/recall",
+  "benefitMarkdown": "Notifications will not be inappropriately sent to clients",
+  "classification": [
+    {
+      "code": "E",
+      "system": "http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses"
+    }
+  ]
+}
+
+```
+
+
+
+## Resource Binary Content
+
+application/fhir+json:
+
+```
+{snip}
+```

@@ -1,0 +1,15 @@
+# The system to be able to undo a merge - XML Representation - SMART DAK IMMZ v1.1.1
+
+* [**Table of Contents**](toc.md)
+* [**Indices**](indices.md)
+* [**Artifact Index**](artifacts.md)
+* **The system to be able to undo a merge**
+
+## : The system to be able to undo a merge - XML Representation
+
+| |
+| :--- |
+| Active as of 2026-11-18 |
+
+[Raw xml](Requirements-IMMZFXNREQ124.xml) | [Download](Requirements-IMMZFXNREQ124.xml)
+

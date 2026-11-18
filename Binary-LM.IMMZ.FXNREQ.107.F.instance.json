@@ -1,0 +1,18 @@
+{
+  "resourceType": "http://smart.who.int/base/StructureDefinition/FunctionalRequirement",
+  "id": "LM.IMMZ.FXNREQ.107.F",
+  "activity": "Update record to document reason/lost follow-up",
+  "actor": [
+    {
+      "reference": "ActorDefinition/healthworker"
+    }
+  ],
+  "capabilityMarkdown": "To record reason vaccine was missed",
+  "benefitMarkdown": "This information can be used for planning and reporting purposes",
+  "classification": [
+    {
+      "code": "F",
+      "system": "http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses"
+    }
+  ]
+}

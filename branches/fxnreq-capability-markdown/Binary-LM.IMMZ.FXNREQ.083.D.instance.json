@@ -1,0 +1,18 @@
+{
+  "resourceType": "http://smart.who.int/base/StructureDefinition/FunctionalRequirement",
+  "id": "LM.IMMZ.FXNREQ.083.D",
+  "activity": "Generate verifiable digital certificate",
+  "actor": [
+    {
+      "reference": "ActorDefinition/healthworker"
+    }
+  ],
+  "capabilityMarkdown": "The system to apply an authorised digital signature when necessary and appropriate",
+  "benefitMarkdown": "The identity of the issuing authority can be validated",
+  "classification": [
+    {
+      "code": "D",
+      "system": "http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses"
+    }
+  ]
+}

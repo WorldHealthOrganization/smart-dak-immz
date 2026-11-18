@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:zeebe="http://camunda.org/schema/zeebe/1.0" xmlns:modeler="http://camunda.org/schema/modeler/1.0" id="Definitions_WHO_ClientReminder" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Web Modeler" exporterVersion="047cf72" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.7.0">
+  <bpmn:collaboration id="Collaboration_ClientReminder">
+    <bpmn:participant id="Participant_EIR" name="Electronic immunization registry" processRef="WHO_ClientReminderProcess" />
+    <bpmn:participant id="Participant_VaccinationLocation" name="Vaccination location - Health worker" processRef="Process_HealthWorker" />
+    <bpmn:messageFlow id="Flow_1jwadom" sourceRef="IMMZ.E2" targetRef="IMMZ.E3" />
+    <bpmn:messageFlow id="Flow_0udebea" sourceRef="IMMZ.E4" targetRef="Activity_0p3we5s" />
+  </bpmn:collaboration>
+  <bpmn:process id="WHO_ClientReminderProcess" name="WHO Client Reminder Business Process" isExecutable="true">
+    <bpmn:sequenceFlow id="Flow_0duynwc" sourceRef="IMMZ.E3" targetRef="IMMZ.E4" />
+    <bpmn:task id="IMMZ.E3" name="3. Generate list of clients">
+      <bpmn:outgoing>Flow_0duynwc</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="IMMZ.E4" name="4. Send notifications">
+      <bpmn:incoming>Flow_0duynwc</bpmn:incoming>
+    </bpmn:task>
+  </bpmn:process>
+  <bpmn:process id="Process_HealthWorker" name="Health Worker Process" isExecutable="false">
+    <bpmn:sequenceFlow id="Flow_6_Yes_to_1_Health" name="Yes" targetRef="IMMZ.E1" />
+    <bpmn:startEvent id="StartEvent_1" name="Start">
+      <bpmn:outgoing>Flow_Start_to_1</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:task id="IMMZ.E1" name="1. Define/evaluate criteria">
+      <bpmn:incoming>Flow_Start_to_1</bpmn:incoming>
+      <bpmn:incoming>Flow_6_Yes_to_1_Health</bpmn:incoming>
+      <bpmn:incoming>Flow_1u5f0fq</bpmn:incoming>
+      <bpmn:outgoing>Flow_1_to_2_Health</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="IMMZ.E2" name="2. Select notification method">
+      <bpmn:incoming>Flow_1_to_2_Health</bpmn:incoming>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="Flow_Start_to_1" sourceRef="StartEvent_1" targetRef="IMMZ.E1" />
+    <bpmn:sequenceFlow id="Flow_1_to_2_Health" sourceRef="IMMZ.E1" targetRef="IMMZ.E2" />
+    <bpmn:sequenceFlow id="Flow_19365se" name="No" sourceRef="IMMZ.E5" targetRef="IMMZ.E6" />
+    <bpmn:sequenceFlow id="Flow_1rk9dld" name="No" sourceRef="IMMZ.E6" targetRef="IMMZ.F" />
+    <bpmn:sequenceFlow id="Flow_1u5f0fq" name="Yes" sourceRef="IMMZ.E6" targetRef="IMMZ.E1" />
+    <bpmn:task id="Activity_0p3we5s" name="Await client walk in">
+      <bpmn:outgoing>Flow_08vndsg</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="Flow_08vndsg" sourceRef="Activity_0p3we5s" targetRef="IMMZ.E5" />
+    <bpmn:exclusiveGateway id="IMMZ.E5" name="5. Did client show up for vaccination?">
+      <bpmn:incoming>Flow_08vndsg</bpmn:incoming>
+      <bpmn:outgoing>Flow_19365se</bpmn:outgoing>
+      <bpmn:outgoing>Flow_1yzj87a</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:exclusiveGateway id="IMMZ.E6" name="6. Is another reminder needed?">
+      <bpmn:incoming>Flow_19365se</bpmn:incoming>
+      <bpmn:outgoing>Flow_1rk9dld</bpmn:outgoing>
+      <bpmn:outgoing>Flow_1u5f0fq</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:callActivity id="IMMZ.D" name="IMMZ.D.Administer Vaccine">
+      <bpmn:extensionElements>
+        <zeebe:calledElement processId="Process_0cjqolv" propagateAllChildVariables="false" />
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_1yzj87a</bpmn:incoming>
+    </bpmn:callActivity>
+    <bpmn:sequenceFlow id="Flow_1yzj87a" name="Yes" sourceRef="IMMZ.E5" targetRef="IMMZ.D" />
+    <bpmn:callActivity id="IMMZ.F" name="IMMZ.F.Defaulter Tracing">
+      <bpmn:extensionElements>
+        <zeebe:calledElement processId="WHO_DefaulterTracingProcess" propagateAllChildVariables="false" />
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_1rk9dld</bpmn:incoming>
+    </bpmn:callActivity>
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_WHO_ClientReminder">
+    <bpmndi:BPMNPlane id="BPMNPlane_WHO_ClientReminder" bpmnElement="Collaboration_ClientReminder">
+      <bpmndi:BPMNShape id="Participant_EIR_di" bpmnElement="Participant_EIR" isHorizontal="true">
+        <dc:Bounds x="160" y="440" width="1400" height="140" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="IMMZ_E3_di" bpmnElement="IMMZ.E3">
+        <dc:Bounds x="450" y="480" width="100" height="60" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="IMMZ_E4_di" bpmnElement="IMMZ.E4">
+        <dc:Bounds x="690" y="480" width="100" height="60" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_0duynwc_di" bpmnElement="Flow_0duynwc">
+        <di:waypoint x="550" y="510" />
+        <di:waypoint x="690" y="510" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="Participant_VaccinationLocation_di" bpmnElement="Participant_VaccinationLocation" isHorizontal="true">
+        <dc:Bounds x="160" y="580" width="1400" height="420" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="StartEvent_1_di" bpmnElement="StartEvent_1">
+        <dc:Bounds x="222" y="662" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="230" y="705" width="25" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="IMMZ_E1_di" bpmnElement="IMMZ.E1">
+        <dc:Bounds x="300" y="640" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="IMMZ_E2_di" bpmnElement="IMMZ.E2">
+        <dc:Bounds x="450" y="640" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0p3we5s_di" bpmnElement="Activity_0p3we5s">
+        <dc:Bounds x="690" y="640" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="IMMZ_E5_di" bpmnElement="IMMZ.E5" isMarkerVisible="true">
+        <dc:Bounds x="845" y="655" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="836" y="600" width="88" height="40" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="IMMZ_E6_di" bpmnElement="IMMZ.E6" isMarkerVisible="true">
+        <dc:Bounds x="965" y="655" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="945" y="617.5" width="90" height="27" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0vc25v5_di" bpmnElement="IMMZ.D">
+        <dc:Bounds x="820" y="815" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_11hvf6z_di" bpmnElement="IMMZ.F">
+        <dc:Bounds x="1170" y="665" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_Start_to_1_di" bpmnElement="Flow_Start_to_1">
+        <di:waypoint x="258" y="680" />
+        <di:waypoint x="300" y="680" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1_to_2_Health_di" bpmnElement="Flow_1_to_2_Health">
+        <di:waypoint x="400" y="680" />
+        <di:waypoint x="450" y="680" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_19365se_di" bpmnElement="Flow_19365se">
+        <di:waypoint x="895" y="680" />
+        <di:waypoint x="965" y="680" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="923" y="662" width="15" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1rk9dld_di" bpmnElement="Flow_1rk9dld">
+        <di:waypoint x="1015" y="680" />
+        <di:waypoint x="1170" y="680" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1085" y="662" width="15" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1u5f0fq_di" bpmnElement="Flow_1u5f0fq">
+        <di:waypoint x="990" y="705" />
+        <di:waypoint x="990" y="950" />
+        <di:waypoint x="350" y="950" />
+        <di:waypoint x="350" y="720" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="661" y="932" width="18" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_08vndsg_di" bpmnElement="Flow_08vndsg">
+        <di:waypoint x="790" y="680" />
+        <di:waypoint x="845" y="680" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1yzj87a_di" bpmnElement="Flow_1yzj87a">
+        <di:waypoint x="870" y="705" />
+        <di:waypoint x="870" y="815" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="876" y="757" width="18" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1jwadom_di" bpmnElement="Flow_1jwadom">
+        <di:waypoint x="500" y="640" />
+        <di:waypoint x="500" y="540" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0udebea_di" bpmnElement="Flow_0udebea">
+        <di:waypoint x="740" y="540" />
+        <di:waypoint x="740" y="640" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

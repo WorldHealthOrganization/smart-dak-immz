@@ -1,0 +1,18 @@
+{
+  "resourceType": "http://smart.who.int/base/StructureDefinition/FunctionalRequirement",
+  "id": "LM.IMMZ.FXNREQ.114.G",
+  "activity": "Flag client records for evaluation",
+  "actor": [
+    {
+      "reference": "ActorDefinition/eirstaff"
+    }
+  ],
+  "capabilityMarkdown": "To be able to modify the business rules used for identifying duplicate client records",
+  "benefitMarkdown": "The de-duplication process is optimized",
+  "classification": [
+    {
+      "code": "G",
+      "system": "http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses"
+    }
+  ]
+}

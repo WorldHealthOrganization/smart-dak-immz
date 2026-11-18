@@ -1,0 +1,57 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Functional Requirement Categories Schema API",
+    "description": "JSON Schema for Functional Requirement Categories ValueSet codes. Generated from FHIR expansions using IRI format.",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/ValueSet-FXREQCategories.schema.json": {
+      "get": {
+        "summary": "JSON Schema definition for the enumeration ValueSet-FXREQCategories",
+        "description": "This endpoint serves the JSON Schema definition for the enumeration ValueSet-FXREQCategories.",
+        "responses": {
+          "200": {
+            "description": "The JSON Schema for ValueSet-FXREQCategories",
+            "content": {
+              "application/schema+json": {
+                "schema": {
+                  "$ref": "./ValueSet-FXREQCategories.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ValueSet-FXREQCategories": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "http://smart.who.int/dak-immz/ValueSet-FXREQCategories.schema.json",
+        "title": "Functional Requirement Categories Schema",
+        "description": "JSON Schema for Functional Requirement Categories ValueSet codes. Generated from FHIR expansions using IRI format.",
+        "type": "string",
+        "enum": [
+          "http://smart.who.int/dak-immz/CodeSystem/FXREQCategories#Performance",
+          "http://smart.who.int/dak-immz/CodeSystem/FXREQCategories#Compatibility",
+          "http://smart.who.int/dak-immz/CodeSystem/FXREQCategories#Interoperability",
+          "http://smart.who.int/dak-immz/CodeSystem/FXREQCategories#Configuration",
+          "http://smart.who.int/dak-immz/CodeSystem/FXREQCategories#Usability",
+          "http://smart.who.int/dak-immz/CodeSystem/FXREQCategories#Reliability",
+          "http://smart.who.int/dak-immz/CodeSystem/FXREQCategories#Confidentialityprivacyandsecurity",
+          "http://smart.who.int/dak-immz/CodeSystem/FXREQCategories#Maintainability",
+          "http://smart.who.int/dak-immz/CodeSystem/FXREQCategories#Portability",
+          "http://smart.who.int/dak-immz/CodeSystem/FXREQCategories#General",
+          "http://smart.who.int/dak-immz/CodeSystem/FXREQCategories#Scalability"
+        ],
+        "narrative": "This schema validates IRI-formatted codes for the Functional Requirement Categories ValueSet. Each enum value includes the system URI in the format {systemuri}#{code} to match JSON-LD enumeration IRIs. Display values are available at http://smart.who.int/dak-immz/ValueSet-FXREQCategories.displays.json. For a complete listing of all ValueSets, see artifacts.html#terminology-value-sets.",
+        "fhir:displays": "http://smart.who.int/dak-immz/ValueSet-FXREQCategories.displays.json",
+        "fhir:valueSet": "http://smart.who.int/dak-immz/ValueSet/FXREQCategories",
+        "fhir:version": "1.1.1",
+        "fhir:expansionTimestamp": "2026-11-18T21:57:50.093625"
+      }
+    }
+  }
+}

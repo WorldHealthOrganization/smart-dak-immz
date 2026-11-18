@@ -1,0 +1,18 @@
+{
+  "resourceType": "http://smart.who.int/base/StructureDefinition/FunctionalRequirement",
+  "id": "LM.IMMZ.FXNREQ.103.F",
+  "activity": "Record the necessary information to follow-up",
+  "actor": [
+    {
+      "reference": "ActorDefinition/healthworker"
+    }
+  ],
+  "capabilityMarkdown": "The system to group the defaulters by location and community health worker",
+  "benefitMarkdown": "I can send to the community health workers the appropriate list",
+  "classification": [
+    {
+      "code": "F",
+      "system": "http://smart.who.int/dak-immz/CodeSystem/FXREQBusinessProcesses"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://smart.who.int/dak-immz/Basic/IMMZ.NFXNREQ.109> a fhir:Basic ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "IMMZ.NFXNREQ.109"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://smart.who.int/base/StructureDefinition/SGRequirements" ;
+       fhir:index 0 ;
+       fhir:link <http://smart.who.int/base/StructureDefinition/SGRequirements>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Requirements IMMZ.NFXNREQ.109</b></p><a name=\"IMMZ.NFXNREQ.109\"> </a><a name=\"hcIMMZ.NFXNREQ.109\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://build.fhir.org/ig/WorldHealthOrganization/smart-base/StructureDefinition-SGRequirements.html\">SMART Guidelines Requirements</a></p></div><table class=\"grid\"/></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.url" ] ;
+     fhir:Extension.valueUri [ fhir:value "http://smart.who.int/dak-immz/Requirements/IMMZ.NFXNREQ.109" ]
+  ], [
+     fhir:index 1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.version" ] ;
+     fhir:Extension.valueString [ fhir:value "1.1.1" ]
+  ], [
+     fhir:index 2 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.name" ] ;
+     fhir:Extension.valueString [ fhir:value "Generate IDs that are unique across different locations or sites" ]
+  ], [
+     fhir:index 3 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.title" ] ;
+     fhir:Extension.valueString [ fhir:value "Generate IDs that are unique across different locations or sites" ]
+  ], [
+     fhir:index 4 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.status" ] ;
+     fhir:Extension.valueCode [ fhir:value "active" ]
+  ], [
+     fhir:index 5 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.experimental" ] ;
+     fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+  ], [
+     fhir:index 6 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.date" ] ;
+     fhir:Extension.valueDateTime [ fhir:value "2026-11-18T21:56:28+00:00"^^xsd:dateTime ]
+  ], [
+     fhir:index 7 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.publisher" ] ;
+     fhir:Extension.valueString [ fhir:value "WHO" ]
+  ], [
+     fhir:index 8 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.contact" ] ;
+     fhir:Extension.valueContactDetail [
+       fhir:ContactDetail.name [ fhir:value "WHO" ] ;
+       fhir:ContactDetail.telecom [
+         fhir:index 0 ;
+         fhir:ContactPoint.system [ fhir:value "url" ] ;
+         fhir:ContactPoint.value [ fhir:value "http://who.int" ]
+       ]
+     ]
+  ], [
+     fhir:index 9 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.description" ] ;
+     fhir:Extension.valueMarkdown [ fhir:value "*Category*: General\nGenerate IDs that are unique across different locations or sites" ]
+  ], [
+     fhir:index 10 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.jurisdiction" ]
+  ] ;
+  fhir:Basic.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/fhir-types" ] ;
+       fhir:Coding.code [ fhir:value "Requirements" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://smart.who.int/dak-immz/Basic/IMMZ.NFXNREQ.109.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
