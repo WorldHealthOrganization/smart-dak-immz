@@ -1,5 +1,5 @@
 ### v1.1.0 release
-The IDs of the data elements listed in the table below were modified to align with the notation used for all the other data elements †(_"Process ID".ìDEî.ìRunning numberî_).
+The IDs of the data elements listed in the table below were modified to align with the notation used for all the other data elements ¬†(_"Process ID".‚ÄúDE‚Äù.‚ÄúRunning number‚Äù_).
 
 | Old ID | Data element label | New ID |
 | --- | --- | --- |
@@ -33,7 +33,7 @@ The IDs of the data elements listed in the table below were modified to align wi
 | IMMZ.D1.DE.66 | WC vaccine | IMMZ.D.DE.230 |
 | IMMZ.D1.DE.67 | WC-rBS vaccine | IMMZ.D.DE.231 |
 | IMMZ.D1.DE.68 | Type of meningococcal dose | IMMZ.D.DE.232 |
-| IMMZ.D1.DE.69 | MenA conjugate vaccine (5µg) | IMMZ.D.DE.233 |
+| IMMZ.D1.DE.69 | MenA conjugate vaccine (5¬µg) | IMMZ.D.DE.233 |
 | IMMZ.D1.DE.70 | Monovalent MenC conjugate | IMMZ.D.DE.234 |
 | IMMZ.D1.DE.71 | Quadrivalent conjugate | IMMZ.D.DE.235 |
 | IMMZ.D1.DE.72 | Age in months when client received first meningococcal dose | IMMZ.D.DE.236 |
