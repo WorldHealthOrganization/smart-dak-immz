@@ -8,7 +8,6 @@ Usage: #definition
 * publisher = "WHO"
 * experimental = true
 * actor[+] = Canonical(healthworker)
-* extension[classification][+].valueCoding = FXREQBusinessProcesses#F
 * extension[userstory].extension[capability].valueString = "To flag when there is a change of address and a new client has been added to another catchment area"
 * extension[userstory].extension[benefit].valueString = "The client will appear on the correct list for follow up"
 * description = """

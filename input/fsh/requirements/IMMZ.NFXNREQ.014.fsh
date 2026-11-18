@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Enable streamlined data collection, organization and dissemination"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Compatibility
 * description = """
 *Category*: Compatibility
 Enable streamlined data collection, organization and dissemination

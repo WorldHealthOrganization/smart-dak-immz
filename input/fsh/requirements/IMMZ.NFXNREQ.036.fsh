@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Alert the user when navigating away from a form without saving"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Usability
 * description = """
 *Category*: Usability
 Alert the user when navigating away from a form without saving

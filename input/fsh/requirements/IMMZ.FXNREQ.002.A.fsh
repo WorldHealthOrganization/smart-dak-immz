@@ -8,7 +8,6 @@ Usage: #definition
 * publisher = "WHO"
 * experimental = true
 * actor[+] = Canonical(eirstaff)
-* extension[classification][+].valueCoding = FXREQBusinessProcesses#A
 * extension[userstory].extension[capability].valueString = "The system to interface with National Master Facility List (NMFL) database to validate the EIR master list of vaccination locations"
 * extension[userstory].extension[benefit].valueString = "I can ensure the lists are synchronized"
 * description = """

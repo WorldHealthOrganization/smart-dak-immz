@@ -8,7 +8,6 @@ Usage: #definition
 * publisher = "WHO"
 * experimental = true
 * actor[+] = Canonical(eirstaff)
-* extension[classification][+].valueCoding = FXREQBusinessProcesses#A
 * extension[userstory].extension[capability].valueString = "To be able to include vaccination locations that may not be physical permanent facilities (such as temporary or pop-up clinics)"
 * extension[userstory].extension[benefit].valueString = "We will have the flexibility to accommodate temporary vaccination locations"
 * description = """

@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Record all authentication violations"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Confidentialityprivacyandsecurity
 * description = """
 *Category*: Confidentiality, privacy and security
 Record all authentication violations

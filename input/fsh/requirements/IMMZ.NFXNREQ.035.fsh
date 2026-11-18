@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Provide informative error messages and tooltips"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Usability
 * description = """
 *Category*: Usability
 Provide informative error messages and tooltips

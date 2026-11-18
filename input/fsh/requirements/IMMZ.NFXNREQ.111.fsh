@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Show the number of records that are not yet synchronized"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#General
 * description = """
 *Category*: General
 Show the number of records that are not yet synchronized

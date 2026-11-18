@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Be well-documented, including known issues"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Maintainability
 * description = """
 *Category*: Maintainability
 Be well-documented, including known issues

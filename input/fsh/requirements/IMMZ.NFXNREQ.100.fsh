@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Provide a unique version number for each version (all future updates and releases)"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Maintainability
 * description = """
 *Category*: Maintainability
 Provide a unique version number for each version (all future updates and releases)

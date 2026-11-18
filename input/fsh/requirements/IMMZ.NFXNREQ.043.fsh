@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Allow a task to be interrupted and resumed"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Reliability
 * description = """
 *Category*: Reliability
 Allow a task to be interrupted and resumed

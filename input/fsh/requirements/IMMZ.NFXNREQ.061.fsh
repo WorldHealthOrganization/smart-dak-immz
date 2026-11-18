@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Have a source code audit against security threats"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Confidentialityprivacyandsecurity
 * description = """
 *Category*: Confidentiality, privacy and security
 Have a source code audit against security threats

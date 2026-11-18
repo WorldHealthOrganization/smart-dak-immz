@@ -8,7 +8,6 @@ Usage: #definition
 * publisher = "WHO"
 * experimental = true
 * actor[+] = Canonical(healthworker)
-* extension[classification][+].valueCoding = FXREQBusinessProcesses#B
 * extension[userstory].extension[capability].valueString = "To be able to check in the system the available stock at my vaccination location or at the local storage area/warehouse"
 * extension[userstory].extension[benefit].valueString = "I can determine the stock available for use"
 * description = """

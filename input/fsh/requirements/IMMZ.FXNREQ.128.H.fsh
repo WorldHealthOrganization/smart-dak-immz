@@ -8,7 +8,6 @@ Usage: #definition
 * publisher = "WHO"
 * experimental = true
 * actor[+] = Canonical(eirstaff)
-* extension[classification][+].valueCoding = FXREQBusinessProcesses#H
 * extension[userstory].extension[capability].valueString = "The system to automatically flag event records as possible duplicates by marking them as pending for review"
 * extension[userstory].extension[benefit].valueString = "The health worker or EIR staff is informed and aware of pending review"
 * description = """

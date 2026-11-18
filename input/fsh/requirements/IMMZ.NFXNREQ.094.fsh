@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Support reusability of the system source code"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Maintainability
 * description = """
 *Category*: Maintainability
 Support reusability of the system source code

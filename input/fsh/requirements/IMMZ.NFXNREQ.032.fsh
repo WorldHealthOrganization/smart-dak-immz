@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Provide an appropriate localized experience with both language and cultural translations"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Usability
 * description = """
 *Category*: Usability
 Provide an appropriate localized experience with both language and cultural translations

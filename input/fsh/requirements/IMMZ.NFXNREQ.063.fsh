@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Maintain a transaction log history (system logins and logouts)"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Confidentialityprivacyandsecurity
 * description = """
 *Category*: Confidentiality, privacy and security
 Maintain a transaction log history (system logins and logouts)

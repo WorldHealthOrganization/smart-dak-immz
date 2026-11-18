@@ -8,7 +8,6 @@ Usage: #definition
 * publisher = "WHO"
 * experimental = true
 * actor[+] = Canonical(eirstaff)
-* extension[classification][+].valueCoding = FXREQBusinessProcesses#G
 * extension[userstory].extension[capability].valueString = "The system to be able to provide history of merged record for a given client"
 * extension[userstory].extension[benefit].valueString = "I can double check if the merge was done appropriately"
 * description = """

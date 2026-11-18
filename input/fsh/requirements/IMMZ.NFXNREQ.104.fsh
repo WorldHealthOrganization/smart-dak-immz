@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Support changes to organizational alignment of facilities and personnel"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Maintainability
 * description = """
 *Category*: Maintainability
 Support changes to organizational alignment of facilities and personnel

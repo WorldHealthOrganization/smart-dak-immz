@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Be deployed in an environment subject to power loss"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Reliability
 * description = """
 *Category*: Reliability
 Be deployed in an environment subject to power loss

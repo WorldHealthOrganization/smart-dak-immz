@@ -8,7 +8,6 @@ Usage: #definition
 * publisher = "WHO"
 * experimental = true
 * actor[+] = Canonical(eirstafforhealthworker)
-* extension[classification][+].valueCoding = FXREQBusinessProcesses#H
 * extension[userstory].extension[capability].valueString = "To be able to manually flag duplicate vaccination events"
 * extension[userstory].extension[benefit].valueString = "I can report duplicates that the system was not able to identify"
 * description = """

@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Provide real-time messages such as \"report processing\" or \"in progress\" for transactions that affect the system performance"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Performance
 * description = """
 *Category*: Performance
 Provide real-time messages such as \"report processing\" or \"in progress\" for transactions that affect the system performance

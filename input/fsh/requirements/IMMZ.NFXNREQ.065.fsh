@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Design software security protections to ensure system availability"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Confidentialityprivacyandsecurity
 * description = """
 *Category*: Confidentiality, privacy and security
 Design software security protections to ensure system availability

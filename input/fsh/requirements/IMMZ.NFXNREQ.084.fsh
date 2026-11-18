@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Log all data and system errors"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Confidentialityprivacyandsecurity
 * description = """
 *Category*: Confidentiality, privacy and security
 Log all data and system errors

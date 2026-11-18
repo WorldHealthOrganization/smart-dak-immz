@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Use open standards to promote interoperability"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Compatibility
 * description = """
 *Category*: Compatibility
 Use open standards to promote interoperability

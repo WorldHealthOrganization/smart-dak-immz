@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Anonymize data that are exported from the system"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Confidentialityprivacyandsecurity
 * description = """
 *Category*: Confidentiality, privacy and security
 Anonymize data that are exported from the system

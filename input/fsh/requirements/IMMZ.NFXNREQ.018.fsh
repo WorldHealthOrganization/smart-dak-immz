@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Configure the system centrally"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Configuration
 * description = """
 *Category*: Configuration
 Configure the system centrally

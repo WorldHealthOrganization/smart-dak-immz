@@ -8,7 +8,6 @@ Usage: #definition
 * publisher = "WHO"
 * experimental = true
 * actor[+] = Canonical(healthworker)
-* extension[classification][+].valueCoding = FXREQBusinessProcesses#E
 * extension[userstory].extension[capability].valueString = "The system to display the date the reminder/recall notice was sent to a client"
 * extension[userstory].extension[benefit].valueString = "I will know when it was sent and can follow-up accordingly"
 * description = """

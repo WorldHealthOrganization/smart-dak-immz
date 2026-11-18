@@ -8,7 +8,6 @@ Usage: #definition
 * publisher = "WHO"
 * experimental = true
 * actor[+] = Canonical(eirstaff)
-* extension[classification][+].valueCoding = FXREQBusinessProcesses#G
 * extension[userstory].extension[capability].valueString = "The system to support an audit trail when records are merged"
 * extension[userstory].extension[benefit].valueString = "Accountability can be maintained"
 * description = """

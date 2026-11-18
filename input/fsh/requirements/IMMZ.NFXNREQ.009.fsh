@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Provide access from internet-enabled devices"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Compatibility
 * description = """
 *Category*: Compatibility
 Provide access from internet-enabled devices

@@ -8,7 +8,6 @@ Usage: #definition
 * publisher = "WHO"
 * experimental = true
 * actor[+] = Canonical(eirstaff)
-* extension[classification][+].valueCoding = FXREQBusinessProcesses#A
 * extension[userstory].extension[capability].valueString = "The system to generate a unique EIR identifier which may be linked to national ID or health ID"
 * extension[userstory].extension[benefit].valueString = "The vaccination location will have an unique identifier in the EIR system"
 * description = """

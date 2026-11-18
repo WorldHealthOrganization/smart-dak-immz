@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Be user-friendly for people with low computer literacy"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Usability
 * description = """
 *Category*: Usability
 Be user-friendly for people with low computer literacy

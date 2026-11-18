@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Enable configuration to any national or subnational administrative structure or number of levels"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Configuration
 * description = """
 *Category*: Configuration
 Enable configuration to any national or subnational administrative structure or number of levels

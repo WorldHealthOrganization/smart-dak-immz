@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Be able to accommodate at least [x number of] health-care facilities"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Scalability
 * description = """
 *Category*: Scalability
 Be able to accommodate at least [x number of] health-care facilities

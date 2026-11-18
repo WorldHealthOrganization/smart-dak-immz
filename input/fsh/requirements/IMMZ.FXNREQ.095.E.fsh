@@ -8,7 +8,6 @@ Usage: #definition
 * publisher = "WHO"
 * experimental = true
 * actor[+] = Canonical(healthworker)
-* extension[classification][+].valueCoding = FXREQBusinessProcesses#E
 * extension[userstory].extension[capability].valueString = "The system to automatically send reminder notification to client or designated health worker (i.e. community health worker) based on the configured reminder parameters"
 * extension[userstory].extension[benefit].valueString = "they will be alerted of an upcoming or overdue appointment"
 * description = """

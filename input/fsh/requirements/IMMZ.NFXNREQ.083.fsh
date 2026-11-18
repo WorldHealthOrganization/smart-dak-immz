@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Generate analysis of the use of different system features and reports"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Confidentialityprivacyandsecurity
 * description = """
 *Category*: Confidentiality, privacy and security
 Generate analysis of the use of different system features and reports

@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Able to access the system at all levels/stores"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Maintainability
 * description = """
 *Category*: Maintainability
 Able to access the system at all levels/stores

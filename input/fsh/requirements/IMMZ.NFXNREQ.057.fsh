@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Protect system servers through the use of an internet firewall"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Confidentialityprivacyandsecurity
 * description = """
 *Category*: Confidentiality, privacy and security
 Protect system servers through the use of an internet firewall

@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Support data capacity considerations (including those for data transmission, storage and processing) for all users over the expected lifetime of the system"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Performance
 * description = """
 *Category*: Performance
 Support data capacity considerations (including those for data transmission, storage and processing) for all users over the expected lifetime of the system

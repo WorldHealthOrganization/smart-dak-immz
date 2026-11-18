@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Provide real-time response to transactions submitted by connected devices up to the configured national volume level"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Performance
 * description = """
 *Category*: Performance
 Provide real-time response to transactions submitted by connected devices up to the configured national volume level

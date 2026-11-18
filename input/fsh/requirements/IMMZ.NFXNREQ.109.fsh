@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Generate IDs that are unique across different locations or sites"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#General
 * description = """
 *Category*: General
 Generate IDs that are unique across different locations or sites

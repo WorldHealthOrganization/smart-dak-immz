@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Be able to provide continuity and access to data throughout changes in infrastructure (e.g. telecommunication, power) at the health-post level"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Portability
 * description = """
 *Category*: Portability
 Be able to provide continuity and access to data throughout changes in infrastructure (e.g. telecommunication, power) at the health-post level

@@ -8,7 +8,6 @@ Usage: #definition
 * publisher = "WHO"
 * experimental = true
 * actor[+] = Canonical(healthworker)
-* extension[classification][+].valueCoding = FXREQBusinessProcesses#E
 * extension[userstory].extension[capability].valueString = "To associate a client with a vaccination location to generate a provider-based reminder/recall"
 * extension[userstory].extension[benefit].valueString = "Vaccination location specific lists of clients can be generated"
 * description = """

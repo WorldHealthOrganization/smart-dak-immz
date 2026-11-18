@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Prevent unauthorized access to clients' protected health information"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Confidentialityprivacyandsecurity
 * description = """
 *Category*: Confidentiality, privacy and security
 Prevent unauthorized access to clients' protected health information

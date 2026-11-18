@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Notify the user of a password change to their account"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Confidentialityprivacyandsecurity
 * description = """
 *Category*: Confidentiality, privacy and security
 Notify the user of a password change to their account

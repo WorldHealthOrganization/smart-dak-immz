@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Allow the administrator to establish access privileges and priorities"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Confidentialityprivacyandsecurity
 * description = """
 *Category*: Confidentiality, privacy and security
 Allow the administrator to establish access privileges and priorities

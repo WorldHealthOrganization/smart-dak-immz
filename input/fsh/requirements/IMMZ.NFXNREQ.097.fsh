@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Enable local control of operations"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Maintainability
 * description = """
 *Category*: Maintainability
 Enable local control of operations

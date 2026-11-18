@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Promote easier acquisition by supporting a range of devices and form factors"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Maintainability
 * description = """
 *Category*: Maintainability
 Promote easier acquisition by supporting a range of devices and form factors

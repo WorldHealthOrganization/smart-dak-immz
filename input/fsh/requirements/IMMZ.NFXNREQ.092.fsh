@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Be built using technologies that enable local control, open competition and transparency of the code"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Maintainability
 * description = """
 *Category*: Maintainability
 Be built using technologies that enable local control, open competition and transparency of the code

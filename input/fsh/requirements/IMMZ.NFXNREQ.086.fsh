@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Allow roles to be associated with specific geographical areas or health-care facilities"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Confidentialityprivacyandsecurity
 * description = """
 *Category*: Confidentiality, privacy and security
 Allow roles to be associated with specific geographical areas or health-care facilities

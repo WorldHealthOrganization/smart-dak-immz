@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Scalable to accommodate new demands"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Scalability
 * description = """
 *Category*: Scalability
 Scalable to accommodate new demands

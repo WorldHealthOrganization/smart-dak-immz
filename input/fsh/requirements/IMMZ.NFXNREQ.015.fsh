@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Provide access to data through application programming interfaces"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Interoperability
 * description = """
 *Category*: Interoperability
 Provide access to data through application programming interfaces

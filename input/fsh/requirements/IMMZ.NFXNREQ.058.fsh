@@ -7,7 +7,6 @@ Usage: #definition
 * name = "Comply with country's existing health information storage policies"
 * publisher = "WHO"
 * experimental = true
-* extension[classification][+].valueCoding = FXREQCategories#Confidentialityprivacyandsecurity
 * description = """
 *Category*: Confidentiality, privacy and security
 Comply with country's existing health information storage policies
